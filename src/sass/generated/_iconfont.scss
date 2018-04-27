@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('../fonts/iconfont.eot');
+  src: url('../fonts/iconfont.eot?#iefix') format('eot'),
+    url('../fonts/iconfont.woff2') format('woff2'),
+    url('../fonts/iconfont.woff') format('woff'),
+    url('../fonts/iconfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$icon-cart: "\EA01";
+$icon-close: "\EA02";
+$icon-dealer: "\EA03";
+$icon-delivery: "\EA04";
+$icon-heart: "\EA05";
+$icon-music-off: "\EA06";
+$icon-music-on: "\EA07";
+$icon-phone: "\EA08";
+$icon-sale: "\EA09";
+$icon-search: "\EA0A";
+$icon-top-banner: "\EA0B";
+
+
+%icon {
+  font-family: "iconfont";
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: auto;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon {
+  @extend %icon;
+  display: inline-block;
+}
+
+.icon-cart:before { content: $icon-cart; }
+.icon-close:before { content: $icon-close; }
+.icon-dealer:before { content: $icon-dealer; }
+.icon-delivery:before { content: $icon-delivery; }
+.icon-heart:before { content: $icon-heart; }
+.icon-music-off:before { content: $icon-music-off; }
+.icon-music-on:before { content: $icon-music-on; }
+.icon-phone:before { content: $icon-phone; }
+.icon-sale:before { content: $icon-sale; }
+.icon-search:before { content: $icon-search; }
+.icon-top-banner:before { content: $icon-top-banner; }

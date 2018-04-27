@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="66px" height="19px" viewBox="0 0 66 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>sale</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="header" transform="translate(-342.000000, -88.000000)" fill="#AF0808">
+            <g id="top-bar" transform="translate(0.000000, 33.000000)">
+                <g id="Group-7" transform="translate(185.000000, 55.000000)">
+                    <g id="Group" transform="translate(157.000000, 0.000000)">
+                        <path d="M2.7,3.94372848e-17 L52.822554,-2.39808173e-14 C54.0584341,-2.42078448e-14 55.2608342,0.401680541 56.2485603,1.14451095 L64.4229297,7.29213678 C65.6146846,8.1884094 65.8542204,9.88109019 64.9579478,11.0728451 C64.8056046,11.2754127 64.6254972,11.4555201 64.4229297,11.6078632 L56.2485603,17.7554891 C55.2608342,18.4983195 54.0584341,18.9 52.822554,18.9 L2.7,18.9 C1.20883118,18.9 1.95897235e-15,17.6911688 1.77635684e-15,16.2 L-4.4408921e-16,2.7 C-6.26704723e-16,1.20883118 1.20883118,7.18012479e-16 2.7,4.4408921e-16 Z M53.1,11.7 C54.5911688,11.7 55.8,10.4911688 55.8,9 C55.8,7.50883118 54.5911688,6.3 53.1,6.3 C51.6088312,6.3 50.4,7.50883118 50.4,9 C50.4,10.4911688 51.6088312,11.7 53.1,11.7 Z" id="sale" transform="translate(32.750120, 9.450000) scale(-1, 1) translate(-32.750120, -9.450000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

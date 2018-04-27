@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>music-on</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="header" transform="translate(-615.000000, -54.000000)" fill="#C59850" fill-rule="nonzero">
+            <g id="top-bar" transform="translate(0.000000, 33.000000)">
+                <g id="Group-10" transform="translate(615.000000, 21.000000)">
+                    <path d="M0,5.92132269 L0,12.0786773 L4,12.0786773 L9,17.2098062 L9,0.790193843 L4,5.92132269 L0,5.92132269 Z M13.5,9 C13.5,7.18358039 12.48,5.62371722 11,4.86431015 L11,13.1254276 C12.48,12.3762828 13.5,10.8164196 13.5,9 Z M11,0 L11,2.11402509 C13.89,2.99657925 16,5.74686431 16,9 C16,12.2531357 13.89,15.0034208 11,15.8859749 L11,18 C15.01,17.0661345 18,13.3922463 18,9 C18,4.60775371 15.01,0.93386545 11,0 Z" id="music-on"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

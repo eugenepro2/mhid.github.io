@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
+        <path id="a" d="M1 0h20v25H1z"/>
+    </defs><symbol id="icon-cart" viewBox="0 0 26 23">
+    <title>
+        cart
+    </title>
+    <path d="M21.693 18.577H7.492 7.49a1.08 1.08 0 0 1-.77-.319 1.08 1.08 0 0 1-.324-.773c0-.294.114-.565.32-.77.209-.208.483-.324.776-.324H21.55a.465.465 0 0 0 .453-.352l3.124-12.445a.472.472 0 0 0-.085-.399.475.475 0 0 0-.368-.177H4.708L4.035.351C4.022.307 3.981.286 3.96.246c-.03-.05-.05-.093-.098-.13C3.81.072 3.753.062 3.69.044 3.651.032 3.626 0 3.583 0H.463a.462.462 0 1 0 0 .925h2.76l3.702 14.652c-.32.093-.624.238-.867.48-.381.38-.591.886-.591 1.426 0 .542.211 1.048.596 1.43.054.054.127.079.189.126-.061.047-.137.071-.192.126-.382.384-.592.89-.592 1.43 0 1.11.909 2.015 2.024 2.015h.004c.543 0 1.05-.21 1.433-.59.383-.383.593-.89.591-1.425 0-.413-.155-.774-.367-1.093h10.88c-.216.325-.366.69-.366 1.093 0 1.11.908 2.015 2.024 2.015h.007c.54 0 1.05-.21 1.43-.59.382-.383.592-.89.592-1.425a2.024 2.024 0 0 0-2.027-2.018zm-.505-3.111H7.858l-2.11-8.408H23.3l-2.112 8.408zM24.08 3.945l-.548 2.187H5.515l-.549-2.187H24.08zM8.591 20.598a1.086 1.086 0 0 1-1.094 1.089h-.006a1.094 1.094 0 0 1-.773-1.864 1.1 1.1 0 0 1 1.873.775zm13.88.77a1.096 1.096 0 0 1-.774.319h-.008a1.095 1.095 0 0 1-1.095-1.093c0-.29.114-.565.32-.77.208-.207.486-.32.783-.32a1.093 1.093 0 0 1 .773 1.864z" fill-rule="evenodd"/>
+</symbol><symbol id="icon-close" viewBox="0 0 14 14">
+    <title>
+        close
+    </title>
+    <path d="M6.874 6.39L13.167.097a.34.34 0 0 1 .477.007c.133.133.14.343.007.477L7.357 6.874l6.294 6.293a.34.34 0 0 1-.007.477.334.334 0 0 1-.477.007L6.874 7.357.58 13.651a.34.34 0 0 1-.477-.007.334.334 0 0 1-.007-.477L6.39 6.874.097.58A.34.34 0 0 1 .104.104.334.334 0 0 1 .58.097L6.874 6.39z" fill-rule="evenodd"/>
+</symbol><symbol id="icon-dealer" viewBox="0 0 20 25">
+    <title>
+        dealer
+    </title>
+    
+    <g transform="translate(-1)" fill-rule="evenodd">
+        <image x="1" width="20" height="25" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAbCAYAAAB4Kn/lAAAABGdBTUEAALGOGCHvlwAAAutJREFUSA2tVc1rE1EQnzdv029sPNQeipiLl3owIJ6CErzpyUtjqbVGQTwUNBfP1r/AIvQgfhBaLLW5xIMVFHQVWw8i9NKec2lBUjD9wKTp7jzf7HbpsruNifYddt5785sfs7+Z2QU44jX/dKiXKcVR8X55OTQY6+mZIqIKgZg1gsQfZ0bPtrcZ71HIE66PTAYLsM0aiWWjVitfvF1Y9eIcfEzmEI0s3yGCCcoeDGW8NDd6X2D7pBfYuuVEsIzBQM4qeNfKmZQaZHyI+NLIzGdBtNIKWQC7HknMl/XfOxkCuxIIaOqIQjhxoYw52imOov/Q2TYjiZk8dW360b9k7bYbhIvHpN4iG155++YsmRLwNGMPzdhxEn1ojtBFKbKWFeKZC8P5QkPi1PXpN1HErkRkApCpbKt0gFElTz5n8tzpMVK7ZK9wux0AwztSexOVbSsf74lNIGJCSCwpqhcVtA0IEAkEdw6MxddjD5UNJUQ51YkSFuezFdZ2z7KedcQg7ae2rb3s1kZ5Id7fzyOf9HwC29LCyR7Pk7LzfG9oQLoK1kTnPgpBxjX/uCHl+P6VYzhTJj3W1/9Dx5z0+9w9pnX2ULPqJp8djTtQJYmg4ALCTyIrv1apTvbqTKWMInVjWF9PSuRKgpK51PCLjH6N5SAtZ7q2+Ts3EO82/a8fxPFZkCsD7/HXjj0ppJH4Nn/rU2W7fpWz42qzre7uJkFheeB4d+lvpEzGXGx5OZ/Npbkbj3UBck6rkCqCUCVQIgko0qy5C238tMjOcP96KId44cnlPi5KI/28gCjL9WEp/T6neFfuvStvlX+e069f9Dub2XNd1ja37gSxoT/I19mxmwbKBzyaQbD/7Mimv4DcLZm7hU2/j/chYg/w9vnIqd4uQ/cmJFhvPWVxAt2WeniEou/r29ViFKEX35Llzmk2oOFHqFmSKNyhUjCY5ejskgmeTK1aQqHMgtZVS1Hhn25tY2OVC8/YI13cpocR/gGkDlILCVmgFQAAAABJRU5ErkJggg=="/>
+        <use xlink:href="#a"/>
+    </g>
+</symbol><symbol id="icon-delivery" viewBox="0 0 27 19">
+    <title>
+        Group 9
+    </title>
+    <g fill-rule="evenodd">
+        <circle cx="5.5" cy="16.5" r="2.5"/>
+        <circle cx="21.5" cy="16.5" r="2.5"/>
+        <path d="M0 0h16v10H0z"/>
+        <path d="M2.243 17H0v-6h17.41V3.41a1 1 0 0 1 1-1h5.109a1 1 0 0 1 .915.597l2.055 4.656V17h-1.732a3.295 3.295 0 1 0-6.514 0H8.757a3.295 3.295 0 1 0-6.514 0zm16.64-13.023l-.017 5.213h6.065V7.748L23.4 4.546a1 1 0 0 0-.902-.569h-3.617z"/>
+    </g>
+</symbol><symbol id="icon-heart" viewBox="0 0 22 20">
+    <style>
+        .st0{fill:#646464}
+    </style>
+    <title>
+        heart
+    </title>
+    <g id="Symbols">
+        <g id="header" transform="translate(-1163 -71)">
+            <path class="st0" d="M1174 57.6c-.4 0-.8-.2-1.3-.7l-7.8-9c-.7-1-1.4-2.2-1.4-3.8 0-3.1 2.5-5.6 5.5-5.6 1.9 0 3.6.8 5 2.3 1.5-1.5 3.2-2.3 5-2.3 3.1 0 5.5 2.5 5.5 5.6 0 1.4-.4 2.6-1.4 3.8l-7.8 9c-.5.5-.9.7-1.3.7zm-5-18.1c-2.7 0-4.5 2.4-4.5 4.5 0 1.3.6 2.2 1.2 3.1l7.7 8.9c.3.2.5.4.5.4.1 0 .3-.2.6-.5l7.7-8.9c.8-1 1.1-1.9 1.1-3.1 0-2.2-1.7-4.5-4.5-4.5-1.7 0-3.2.8-4.6 2.4l-.4.5-.4-.5c-.7-1-2.2-2.3-4.4-2.3z" transform="translate(0 33)" id="top-bar"/>
+        </g>
+    </g>
+</symbol><symbol id="icon-music-off" viewBox="0 0 18 18">
+    <title>
+        music-off
+    </title>
+    <path d="M13.5 9A4.5 4.5 0 0 0 11 4.97v2.21l2.45 2.45c.03-.2.05-.41.05-.63zM16 9c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.796 8.796 0 0 0 18 9c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM1.27 0L0 1.27 4.73 6H0v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a8.99 8.99 0 0 0 3.69-1.81L16.73 18 18 16.73l-9-9L1.27 0zM9 1L6.91 3.09 9 5.18V1z" fill-rule="nonzero"/>
+</symbol><symbol id="icon-music-on" viewBox="0 0 18 18">
+    <title>
+        music-on
+    </title>
+    <path d="M0 5.921v6.158h4l5 5.13V.79L4 5.921H0zM13.5 9A4.631 4.631 0 0 0 11 4.864v8.261A4.604 4.604 0 0 0 13.5 9zM11 0v2.114c2.89.883 5 3.633 5 6.886s-2.11 6.003-5 6.886V18c4.01-.934 7-4.608 7-9S15.01.934 11 0z" fill-rule="nonzero"/>
+</symbol><symbol id="icon-phone" viewBox="0 0 22 22">
+    <style>
+        .st0{fill:#646464}
+    </style>
+    <title>
+        phone
+    </title>
+    <g id="Symbols">
+        <g id="header" transform="translate(-1112 -70)">
+            <path class="st0" d="M1130 58.5s-.1 0 0 0c-3.7-.1-7.9-3.6-10.9-6.5-2.9-2.9-6.5-7.1-6.6-10.7 0-1.3 3.1-3.5 3.1-3.5.8-.6 1.7-.4 2.1.1.3.4 2.6 3.9 2.9 4.3.3.4.2 1-.1 1.7-.2.3-.8 1.4-1.1 1.9.3.4 1.1 1.5 2.8 3.1 1.7 1.6 2.7 2.5 3.2 2.8.5-.3 1.6-.9 1.9-1.1.6-.3 1.3-.4 1.7-.1.4.3 4 2.6 4.3 2.8.2.2.4.5.5.8.1.4 0 .9-.3 1.3 0 .1-2.3 3.1-3.5 3.1zm-13.3-20c-.1 0-.3 0-.5.2-1 .7-2.6 2.2-2.7 2.7.1 3.2 3.5 7.2 6.3 10s6.9 6.1 10.2 6.2c.5 0 2-1.7 2.7-2.6.3-.4.1-.6.1-.7-.3-.2-3.9-2.5-4.3-2.8-.1-.1-.4 0-.7.1-.4.2-2.1 1.2-2.2 1.2l-.2.1-.2-.1c-.1 0-1.3-.7-3.6-3.1-2.4-2.3-3.1-3.5-3.1-3.6l-.2-.3.1-.3s1-1.7 1.2-2.1c.2-.3.2-.6.1-.7-.3-.5-2.6-3.9-2.8-4.2h-.2z" transform="translate(0 33)" id="top-bar"/>
+        </g>
+    </g>
+</symbol><symbol id="icon-sale" viewBox="0 0 66 19">
+    <title>
+        sale
+    </title>
+    <path d="M62.8 0H12.678a5.7 5.7 0 0 0-3.426 1.145L1.077 7.292a2.7 2.7 0 0 0 0 4.316l8.175 6.147a5.7 5.7 0 0 0 3.426 1.145H62.8a2.7 2.7 0 0 0 2.7-2.7V2.7A2.7 2.7 0 0 0 62.8 0zM12.4 11.7a2.7 2.7 0 1 1 0-5.4 2.7 2.7 0 0 1 0 5.4z" fill-rule="evenodd"/>
+</symbol><symbol id="icon-search" viewBox="0 0 22 22">
+    <style>
+        .st0{fill:#646464}
+    </style>
+    <title>
+        search
+    </title>
+    <g id="Symbols">
+        <g id="header" transform="translate(-1062 -70)">
+            <path class="st0" d="M1063.1 58.5c-.2 0-.3-.1-.5-.2-.3-.3-.3-.7 0-.9l6.4-6.4c.1-.1.1-.1.2-.1-1.2-1.4-2-3.3-2-5.3 0-4.5 3.6-8.1 8.1-8.1s8.1 3.6 8.1 8.1-3.6 8.1-8.1 8.1c-2 0-3.9-.7-5.3-2 0 .1-.1.1-.1.2l-6.4 6.4c0 .1-.2.2-.4.2zm.3-.4zm-.5-.5zm12.5-19.1c-3.9 0-7.1 3.2-7.1 7.1s3.2 7.1 7.1 7.1 7.1-3.2 7.1-7.1-3.2-7.1-7.1-7.1z" transform="translate(0 33)" id="top-bar"/>
+        </g>
+    </g>
+</symbol><symbol id="icon-top-banner" viewBox="0 0 220 21">
+    <title>
+        top-banner
+    </title>
+    <path d="M3 0h204.86l10.774 8.102a3 3 0 0 1 0 4.796L207.86 21H3a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3z" fill-rule="evenodd"/>
+</symbol></svg>

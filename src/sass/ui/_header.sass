@@ -1,0 +1,133 @@
+.header
+  height: 100px
+  .logo
+    width: 125px
+  &__info
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-left: 50px
+    margin-bottom: 20px
+    div
+      display: flex
+      align-items: center
+      i
+        color: $primary
+        margin-right: 12px
+      p
+        color: rgba($black-two, 0.6)
+        text-transform: uppercase
+        font-size: 11px
+        letter-spacing: 1px
+  nav
+    margin-left: 50px
+    ul
+      display: flex
+      justify-content: space-between
+      a
+        text-decoration: none
+        color: rgba($black-three, 0.7)
+        text-transform: uppercase
+        font-size: 12px
+        font-weight: 500
+        display: flex
+        align-items: center
+        letter-spacing: 1px
+        div
+          position: relative
+          font-size: 11px
+          letter-spacing: 0.6px
+          margin-left: 20px
+          +center
+          color: #ffffff
+          i
+            font-size: 19px
+            color: $red
+            position: absolute
+            z-index: -1
+          span
+            padding-left: 10px
+            padding-bottom: 1px
+  &__phone
+    display: flex
+    justify-content: space-between
+    align-items: center
+    a
+      font-size: 25px
+      font-weight: 300
+      letter-spacing: 0.6px
+      text-decoration: none
+      color: $black-two
+      border-bottom: 1px dashed $black-two
+      position: relative
+      top: -3.5px
+    p
+      text-transform: uppercase
+      font-size: 10px
+      letter-spacing: 1px
+      color: rgba($black-three, 0.5)
+      width: 32%
+      line-height: 1.5
+  &__toolbar
+    display: flex
+    justify-content: space-between
+    align-items: center
+    a
+      i
+        font-size: 20px
+        color: #646464
+    .cart
+      position: relative
+      i
+        font-size: 25px
+      &__count
+        width: 18px
+        height: 18px
+        border-radius: 50%
+        background: $primary
+        color: $white
+        font-size: 10px
+        font-weight: 500
+        +center
+        position: absolute
+        top: -5px
+        right: -5px
+
+.top__banner
+  height: 35px
+  background-image: url('../img/top-banner.jpg')
+  +cover
+  color: $white
+  .container
+    position: relative
+  p 
+    font-weight: 900
+    font-size: 11px
+    text-transform: uppercase
+    letter-spacing: 1px
+  a
+    +center
+    position: relative
+    text-decoration: none
+    color: $white
+    text-transform: uppercase
+    font-size: 10px
+    letter-spacing: 1px
+    i
+      font-size: 21px
+      color: $primary
+      position: absolute
+      z-index: 1
+    span
+      position: relative
+      z-index: 2
+  .close
+    width: 35px
+    height: 35px
+    +center
+    position: absolute
+    right: 0
+    top: 0
+    background: $primary
+    i
+      font-size: 14px
