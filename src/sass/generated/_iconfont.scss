@@ -14,12 +14,16 @@ $icon-close: "\EA02";
 $icon-dealer: "\EA03";
 $icon-delivery: "\EA04";
 $icon-heart: "\EA05";
-$icon-music-off: "\EA06";
-$icon-music-on: "\EA07";
-$icon-phone: "\EA08";
-$icon-sale: "\EA09";
-$icon-search: "\EA0A";
-$icon-top-banner: "\EA0B";
+$icon-info-1: "\EA06";
+$icon-info-2: "\EA07";
+$icon-info-3: "\EA08";
+$icon-info-4: "\EA09";
+$icon-music-off: "\EA0A";
+$icon-music-on: "\EA0B";
+$icon-phone: "\EA0C";
+$icon-sale: "\EA0D";
+$icon-search: "\EA0E";
+$icon-top-banner: "\EA0F";
 
 
 %icon {
@@ -43,6 +47,10 @@ $icon-top-banner: "\EA0B";
 .icon-dealer:before { content: $icon-dealer; }
 .icon-delivery:before { content: $icon-delivery; }
 .icon-heart:before { content: $icon-heart; }
+.icon-info-1:before { content: $icon-info-1; }
+.icon-info-2:before { content: $icon-info-2; }
+.icon-info-3:before { content: $icon-info-3; }
+.icon-info-4:before { content: $icon-info-4; }
 .icon-music-off:before { content: $icon-music-off; }
 .icon-music-on:before { content: $icon-music-on; }
 .icon-phone:before { content: $icon-phone; }
