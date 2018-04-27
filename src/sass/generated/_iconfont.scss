@@ -9,21 +9,22 @@
   font-style: normal;
 }
 
-$icon-cart: "\EA01";
-$icon-close: "\EA02";
-$icon-dealer: "\EA03";
-$icon-delivery: "\EA04";
-$icon-heart: "\EA05";
-$icon-info-1: "\EA06";
-$icon-info-2: "\EA07";
-$icon-info-3: "\EA08";
-$icon-info-4: "\EA09";
-$icon-music-off: "\EA0A";
-$icon-music-on: "\EA0B";
-$icon-phone: "\EA0C";
-$icon-sale: "\EA0D";
-$icon-search: "\EA0E";
-$icon-top-banner: "\EA0F";
+$icon-arrow-right: "\EA01";
+$icon-cart: "\EA02";
+$icon-close: "\EA03";
+$icon-dealer: "\EA04";
+$icon-delivery: "\EA05";
+$icon-heart: "\EA06";
+$icon-info-1: "\EA07";
+$icon-info-2: "\EA08";
+$icon-info-3: "\EA09";
+$icon-info-4: "\EA0A";
+$icon-music-off: "\EA0B";
+$icon-music-on: "\EA0C";
+$icon-phone: "\EA0D";
+$icon-sale: "\EA0E";
+$icon-search: "\EA0F";
+$icon-top-banner: "\EA10";
 
 
 %icon {
@@ -42,6 +43,7 @@ $icon-top-banner: "\EA0F";
   display: inline-block;
 }
 
+.icon-arrow-right:before { content: $icon-arrow-right; }
 .icon-cart:before { content: $icon-cart; }
 .icon-close:before { content: $icon-close; }
 .icon-dealer:before { content: $icon-dealer; }

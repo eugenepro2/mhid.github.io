@@ -1,0 +1,57 @@
+.card
+  display: flex
+  flex-wrap: wrap
+  margin-top: 40px
+  &__block
+    width: calc(50% - 10px)
+    height: 400px
+    overflow: hidden
+    display: flex
+    flex-direction: column
+    margin-bottom: 50px
+    &:nth-of-type(odd)
+      margin-right: 20px
+    h2
+      font-size: 24px
+      font-weight: 300
+      line-height: 1.08
+      letter-spacing: 7px
+      text-align: center
+      color: $black-three
+      text-transform: uppercase
+      margin-bottom: 25px
+      position: relative
+      display: inline-block
+      div
+        position: absolute
+        right: 0
+        top: 0
+        i
+          font-size: 21px
+          color: $red
+          display: inline-block
+          transform: rotate(180deg)
+        span
+          font-size: 12px
+          letter-spacing: 1px
+  &__image
+    height: 400px
+    position: relative
+    +cover
+    a
+      background: $primary
+      text-decoration: none
+      color: $white
+      font-size: 13px
+      width: 230px
+      height: 30px
+      +center
+      border-radius: 3px
+      position: absolute
+      bottom: 50px
+      left: 50%
+      transform: translateX(-50%)
+      text-transform: uppercase
+      i
+        margin-left: 30px
+        font-size: 9px
