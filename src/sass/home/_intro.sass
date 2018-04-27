@@ -1,0 +1,40 @@
+.intro
+  color: $white
+  &-slider
+    height: 560px
+  .swiper
+    &-slide
+      +cover
+    &-pagination
+      max-width: 1200px
+      text-align: left
+      display: flex
+      left: 50%
+      transform: translateX(-50%)
+      bottom: 50px
+      &-bullet
+        width: 16px
+        height: 16px
+        background: $white
+        opacity: 1
+        +tr
+        left: 0
+        text-align: left
+        &-active
+          background: $primary
+  article
+    padding-top: 55px
+    h1
+      font-size: 42px
+      font-weight: 600
+      line-height: 1.43
+      letter-spacing: 5px
+      text-transform: uppercase
+      width: 32%
+      margin-bottom: 24px
+    p
+      font-size: 15px
+      line-height: 1.33
+      letter-spacing: 0.3px
+      width: 32%
+      margin-bottom: 45px

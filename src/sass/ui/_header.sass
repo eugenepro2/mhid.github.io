@@ -106,7 +106,8 @@
     text-transform: uppercase
     letter-spacing: 1px
   a
-    +center
+    display: flex
+    align-items: center
     position: relative
     text-decoration: none
     color: $white
@@ -121,9 +122,11 @@
     span
       position: relative
       z-index: 2
+      padding-left: 10px
   .close
     width: 35px
     height: 35px
+    cursor: pointer
     +center
     position: absolute
     right: 0
