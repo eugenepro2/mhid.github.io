@@ -1,0 +1,97 @@
+.footer
+  padding-top: 30px
+  padding-bottom: 30px
+  background: $white
+  &__row
+    display: flex
+    justify-content: space-between
+  &__list
+    a
+      font-size: 12px
+      letter-spacing: 1px
+      text-align: center
+      color: rgba($black-three, 0.7)
+      text-decoration: none
+      text-transform: uppercase
+      display: flex
+      div
+        +center
+        margin-left: 15px
+        i
+          font-size: 19px
+          color: $red
+          position: absolute
+        span
+          position: relative
+          z-index: 10
+          color: $white
+          left: 7px
+    ul
+      margin-top: 15px
+      li
+        margin-bottom: 13px
+        a
+          text-transform: none
+          font-size: 13px
+          letter-spacing: 0.3px
+          color: rgba($black-three, 0.8)
+  &__contact
+    +center
+    a
+      font-size: 25px
+      font-weight: 300
+      letter-spacing: 0.6px
+      text-decoration: none
+      color: $black-two
+      border-bottom: 1px dashed $black-two
+      position: relative
+      top: -3.5px
+      &:first-child
+        margin-right: 30px
+    p
+      text-transform: uppercase
+      font-size: 10px
+      letter-spacing: 1px
+      color: rgba($black-three, 0.5)
+      width: 19%
+      line-height: 1.5
+      margin-left: 13px
+  &__social
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    margin-top: 100px
+    a
+      text-decoration: none
+      color: $primary
+      font-size: 20px
+      &:nth-of-type(3)
+        font-size: 16px
+      &:not(:last-child)
+        margin-right: 20px
+  &__copy
+    p
+      font-size: 10px
+      line-height: 2.5
+      letter-spacing: 1px
+      color: rgba(#101010, 0.6)
+      text-transform: uppercase
+      display: inline-block
+      &:first-child
+        margin-right: 35px
+  &__view
+    display: flex
+    align-items: center
+    height: 100%
+    p 
+      font-size: 12px
+      letter-spacing: 1px
+      text-align: center
+      color: $black-three
+      text-transform: uppercase
+      a
+        color: $primary
+        text-decoration: none
+
+
+      

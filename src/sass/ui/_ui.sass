@@ -1,7 +1,8 @@
 
 body
   font-family: 'Lato'
-  background: #F0F0F0
+  background: $grey
+  font-size: 15px
 
 .container
   width: 100%
@@ -11,20 +12,64 @@ body
   height: 100%
 
 
-
-
+h2
+  font-size: 24px
+  font-weight: 300
+  line-height: 1.08
+  letter-spacing: 7px
+  text-align: center
+  color: $black-three
+  text-transform: uppercase
+  margin-bottom: 25px
+  position: relative
+  +center
 
 //Button
 .btn
-  padding: 20px
   font-size: 15px
   letter-spacing: 1px
   text-transform: uppercase
   color: rgba($white, 0.9)
   text-decoration: none
+  border: solid 1px $primary
+  border-radius: 3px
+  +center
+  +tr
   &-primary
     background: $primary
-    border-radius: 3px
     box-shadow: 0 12px 23px 0 rgba(0, 0, 0, 0.2)
-    border: solid 1px $primary
+    height: 56px
+    width: 240px
+    &:hover
+      background: transparent
+      color: $primary
+  &-secondary
+    color: $primary
+    height: 48px
+    width: 230px
+    &:hover
+      background: $primary
+      color: $white
 
+
+//Slider
+.swiper
+  &-slide
+    +cover
+.swiper-container .swiper-pagination-bullets
+    max-width: 1200px
+    text-align: left
+    display: flex
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 50px
+.swiper-pagination-bullet
+  width: 16px
+  height: 16px
+  background: $white
+  opacity: 1
+  +tr
+  left: 0
+  text-align: left
+  &-active
+    background: $primary

@@ -1,0 +1,108 @@
+.product
+  &__card
+    width: 260px
+    background: $white
+    height: 100%
+    display: block
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.17)
+    border-radius: 2px
+    margin-left: 10px
+    &__header
+      padding: 15px 20px
+      position: relative
+      &__image
+        width: 100%
+        height: 100%
+        overflow: hidden
+        img
+          width: 100%
+        &--no-stock
+          position: absolute
+          height: 40px
+          width: 100%
+          background-color: rgba(#383838, 0.35)
+          border-radius: 1.6px
+          bottom: 0
+          +center
+          color: $white
+          font-size: 15px
+          font-weight: 500
+          letter-spacing: 1.1px
+          text-transform: uppercase
+          margin: 0 -20px
+      .top
+        position: absolute
+        top: 15px
+        font-size: 14px
+        color: $white
+        width: 60px
+        height: 30px
+        text-transform: uppercase
+        letter-spacing: 1.1px
+        border-radius: 1.6px
+        +center
+      &__hits
+        left: 20px
+        background: $green
+        +center
+      &__sale
+        top: 20px
+        left: 85px
+        background: $red
+      &__wishlist
+        position: absolute
+        top: 15px
+        right: 15px
+        i
+          font-size: 23px
+          color: $red
+    &__content
+      padding: 30px
+      text-align: center
+      h3
+        font-size: 18px
+        text-transform: uppercase
+        line-height: 1.33
+        letter-spacing: 1px
+        color: rgba($black-three, 0.9)
+        font-weight: 400
+        margin-bottom: 10px
+      span
+        display: block
+        font-weight: 400
+        font-size: 14px
+        color: rgba($black-three, 0.8)
+        margin-bottom: 15px
+      &__price
+        s
+          color: #acacac
+          margin-right: 5px
+          font-weight: 500
+          letter-spacing: 0.6px
+        p
+          color: $green
+          font-weight: normal
+          display: inline-block
+        h4
+          margin: 10px
+          margin-bottom: 10px
+          font-size: 24px
+          font-weight: bold
+          letter-spacing: 1.1px
+          color: #393939
+          height: 30px
+      .btn
+        +center
+        height: 45px
+        padding: 0
+        width: 100%
+      &.no-stock
+        p
+          color: $primary
+        h4
+          font-size: 21px
+          color: #acacac
+          font-weight: 500
+
+
+

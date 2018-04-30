@@ -14,17 +14,26 @@ $icon-cart: "\EA02";
 $icon-close: "\EA03";
 $icon-dealer: "\EA04";
 $icon-delivery: "\EA05";
-$icon-heart: "\EA06";
-$icon-info-1: "\EA07";
-$icon-info-2: "\EA08";
-$icon-info-3: "\EA09";
-$icon-info-4: "\EA0A";
-$icon-music-off: "\EA0B";
-$icon-music-on: "\EA0C";
-$icon-phone: "\EA0D";
-$icon-sale: "\EA0E";
-$icon-search: "\EA0F";
-$icon-top-banner: "\EA10";
+$icon-facebook: "\EA06";
+$icon-heart: "\EA07";
+$icon-info-1: "\EA08";
+$icon-info-2: "\EA09";
+$icon-info-3: "\EA0A";
+$icon-info-4: "\EA0B";
+$icon-instagram: "\EA0C";
+$icon-linkedin: "\EA0D";
+$icon-music-off: "\EA0E";
+$icon-music-on: "\EA0F";
+$icon-od: "\EA10";
+$icon-phone: "\EA11";
+$icon-pinterest: "\EA12";
+$icon-sale: "\EA13";
+$icon-search: "\EA14";
+$icon-slider-left: "\EA15";
+$icon-slider-right: "\EA16";
+$icon-top-banner: "\EA17";
+$icon-twitter: "\EA18";
+$icon-vk: "\EA19";
 
 
 %icon {
@@ -48,14 +57,23 @@ $icon-top-banner: "\EA10";
 .icon-close:before { content: $icon-close; }
 .icon-dealer:before { content: $icon-dealer; }
 .icon-delivery:before { content: $icon-delivery; }
+.icon-facebook:before { content: $icon-facebook; }
 .icon-heart:before { content: $icon-heart; }
 .icon-info-1:before { content: $icon-info-1; }
 .icon-info-2:before { content: $icon-info-2; }
 .icon-info-3:before { content: $icon-info-3; }
 .icon-info-4:before { content: $icon-info-4; }
+.icon-instagram:before { content: $icon-instagram; }
+.icon-linkedin:before { content: $icon-linkedin; }
 .icon-music-off:before { content: $icon-music-off; }
 .icon-music-on:before { content: $icon-music-on; }
+.icon-od:before { content: $icon-od; }
 .icon-phone:before { content: $icon-phone; }
+.icon-pinterest:before { content: $icon-pinterest; }
 .icon-sale:before { content: $icon-sale; }
 .icon-search:before { content: $icon-search; }
+.icon-slider-left:before { content: $icon-slider-left; }
+.icon-slider-right:before { content: $icon-slider-right; }
 .icon-top-banner:before { content: $icon-top-banner; }
+.icon-twitter:before { content: $icon-twitter; }
+.icon-vk:before { content: $icon-vk; }

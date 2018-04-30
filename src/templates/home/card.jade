@@ -1,24 +1,32 @@
 .card 
-	.card__block
+	a(href="#").card__block
 		h2 Весь каталог
 		.card__image(style="background-image: url('img/card/1.jpg')")
-			a(href="#") Перейти в каталог
+			span Перейти в каталог
 				i.icon.icon-arrow-right
-	.card__block
+			.overlay
+				p Перейти в каталог
+	a(href="#").card__block
 		h2 В наличии
 			div
 				i.icon.icon-sale
 				span %SALE
 		.card__image(style="background-image: url('img/card/2.jpg')")
-			a(href="#") Товары в наличии
+			span Товары в наличии
 				i.icon.icon-arrow-right
-	.card__block
+			.overlay
+				p Товары в наличии
+	a(href="#").card__block
 		h2 Бренды
 		.card__image(style="background-image: url('img/card/3.jpg')")
-			a(href="#") Все бренды
+			span Все бренды
 				i.icon.icon-arrow-right
-	.card__block
+			.overlay
+				p Все бренды
+	a(href="#").card__block
 		h2 Категории
 		.card__image(style="background-image: url('img/card/4.jpg')")
-			a(href="#") Все коллекции
+			span Все коллекции
 				i.icon.icon-arrow-right
+			.overlay
+				p Все коллекции

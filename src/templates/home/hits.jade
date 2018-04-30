@@ -1,0 +1,31 @@
+.hits
+  .container
+    .row
+      .col-xs-12
+        h2 Хиты продаж
+      .col-xs-12
+        .swiper-container.hits-slider
+          .swiper-wrapper
+            .swiper-slide
+              +product(true, true, true)
+            .swiper-slide
+              +product(true, false, true)
+            .swiper-slide
+              +product(false, false, true)
+            .swiper-slide
+              +product(false, false, false)
+            .swiper-slide
+              +product(true, true, true)
+            .swiper-slide
+              +product(true, false, true)
+            .swiper-slide
+              +product(false, false, true)
+            .swiper-slide
+              +product(false, false, false)
+          .swiper-pagination
+        .swiper-button-prev
+          i.icon.icon-slider-left
+        .swiper-button-next
+          i.icon.icon-slider-right
+      a(href="#").btn.btn-secondary Все хиты продаж
+

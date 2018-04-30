@@ -7,3 +7,40 @@ mixin icon(name, modClass)
     - var modClass = ' ' + modClass
   svg(class=name + modClass)
     use(xlink:href= svgSprite + '#' + name)
+
+//Product Style 1
+mixin product(hits, sale, in_stock)
+  .product__card
+    .product__card__header
+      .product__card__header__image
+        img(src="img/catalog/product/1.jpg", alt="")
+        if !in_stock
+          .product__card__header__image--no-stock Продано
+      if hits
+        .product__card__header__hits.top Хит
+      if sale
+        .product__card__header__sale.top -60%
+      a(href="#").product__card__header__wishlist
+        i.icon.icon-heart
+    if in_stock
+      .product__card__content
+        h3 Кровать After Eight
+        span AICO (Michael Amini)
+        .product__card__content__price 
+          if sale
+            s 445 256 руб.
+          p В наличии
+          h4 356 000 руб.
+        a(href="#").btn.btn-secondary Купить
+    else
+      .product__card__content.no-stock
+        h3 Кровать After Eight
+        span AICO (Michael Amini)
+        .product__card__content__price
+          if sale
+            s 445 256 руб.
+          p Под заказ
+          h4 Цена по запросу
+        a(href="#").btn.btn-secondary Запросить цену
+
+    

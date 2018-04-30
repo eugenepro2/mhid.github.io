@@ -1,0 +1,35 @@
+.hits
+  padding-top: 60px
+  padding-bottom: 70px
+  .container
+    position: relative
+  h2
+    margin-bottom: 45px
+  .swiper
+    &-button
+      &-prev, &-next
+        background: none
+        color: $primary
+        font-size: 38px
+        opacity: 0.9
+      &-disabled
+        opacity: 0.3
+      &-prev
+        left: 0
+      &-next
+        right: -5px
+  .swiper-container
+    width: calc(100% - 80px)
+    .swiper
+      &-pagination
+        margin-top: 40px
+        transform: translateX(0)
+        position: static
+        margin-bottom: 35px
+        +center
+  .btn
+    position: relative
+    left: 50%
+    transform: translateX(-50%)
+    width: 280px
+

@@ -1,27 +1,5 @@
 .intro
   color: $white
-  &-slider
-    height: 560px
-  .swiper
-    &-slide
-      +cover
-    &-pagination
-      max-width: 1200px
-      text-align: left
-      display: flex
-      left: 50%
-      transform: translateX(-50%)
-      bottom: 50px
-      &-bullet
-        width: 16px
-        height: 16px
-        background: $white
-        opacity: 1
-        +tr
-        left: 0
-        text-align: left
-        &-active
-          background: $primary
   article
     padding-top: 55px
     h1
@@ -38,3 +16,5 @@
       letter-spacing: 0.3px
       width: 32%
       margin-bottom: 45px
+  &-slider
+    height: 560px
