@@ -24,7 +24,7 @@ header.header
           div
             i.icon.icon-dealer
             p Вход для дилеров
-          div
+          div.music
             i.icon.icon-music-on
             p Музыка вкл.
         nav
@@ -37,18 +37,18 @@ header.header
                   i.icon.icon-sale
                   span %Sale
             li
-              a(href="#") Каталог
+              a(href="#") Бренды
             li
-              a(href="#") Каталог
+              a(href="#") Дилерам
             li
-              a(href="#") Каталог     
+              a(href="#") О компании     
       .col-md-3
         .header__phone
           a(href="tel:8 800 2000 779") 8 800 2000 779
           p Бесплатно по всей России
       .col-md-2
         .header__toolbar
-          a(href="#")
+          a(href="#").open-seacrh
             i.icon.icon-search
           a(href="#")
             i.icon.icon-phone
@@ -57,5 +57,10 @@ header.header
           a(href="#").cart
             i.icon.icon-cart
             span.cart__count 4
+  .search
+    div
+      i.icon.icon-search
+      input(type="text" placeholder="Поиск по сайту")
+      i.icon.icon-close.close
 
 //END header
