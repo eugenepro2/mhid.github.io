@@ -12,10 +12,23 @@
     line-height: 1.38
     color: $black-three
     padding: 0 250px
+    +r($tablet)
+      padding: 0 20px
+    +r($mobile)
+      padding: 0
+  a
+    left: 50%
+    transform: translateX(-50%)
+    +r($tablet)
+      transform: translateX(0)
+    +r($mobile)
+      transform: translateX(-50%)
   .swiper
     &-container
       height: 600px
       margin-top: 50px
+      +r($tablet)
+        height: 460px
     &-slide
       display: flex
       align-items: center
@@ -28,6 +41,7 @@
         color: $white
         padding: 0
         margin-bottom: 35px
+        font-weight: 500
       a
         background: $primary
         color: $white
@@ -41,8 +55,13 @@
         i
           font-size: 10px
           margin-left: 60px
+        +r($mobile)
+          left: 0
+          transform: translateX(0)
   .swiper-container
     .swiper-pagination
       bottom: 170px
       display: flex
       justify-content: center
+      +r($mobile)
+        bottom: 20px

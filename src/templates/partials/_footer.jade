@@ -1,7 +1,7 @@
 footer.footer
   .container
     .row
-      .col-md-7
+      .col-md-7.col-sm-12.col-xs-12
         .footer__row
           .footer__list
             a(href="#") Каталог
@@ -43,11 +43,13 @@ footer.footer
                 a(href="#") Контакты 
               li
                 a(href="#") Пользовательское соглашение
-      .col-md-5
+      .col-md-5.col-sm-12.col-xs-12
         .footer__contact
-          a(href="mailto:info@mhid.ru") info@mhid.ru
-          a(href="tel:8 800 2000 779") 8 800 2000 779
-          p Бесплатно по всей России
+          .footer__contact__block
+            a(href="mailto:info@mhid.ru") info@mhid.ru
+          .footer__contact__block
+            a(href="tel:8 800 2000 779") 8 800 2000 779
+            p Бесплатно по всей России
         .footer__social
           a(href="#")
             i.icon.icon-facebook
@@ -63,11 +65,12 @@ footer.footer
             i.icon.icon-od
           a(href="#")
             i.icon.icon-pinterest
-      .col-md-5
+    .row
+      .col-md-5.col-sm-12.col-xs-12
         .footer__copy
           p ©m.house 2017
           p Нижний Новгород, ул. Республиканская д. 43, к. 7
-      .col-md-3.col-md-offset-4
+      .col-md-3.col-md-offset-4.col-sm-12.col-xs-12.first-sm
         .footer__view
           p Рады видеть вас в 
             a(href="#") салонах M. House

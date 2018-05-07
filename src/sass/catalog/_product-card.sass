@@ -7,6 +7,11 @@
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.17)
     border-radius: 2px
     margin-left: 10px
+    +r($tablet)
+      width: 220px
+      margin-left: 0
+    +r($mobile)
+      width: 100%
     &__header
       padding: 15px 20px
       position: relative
@@ -41,14 +46,23 @@
         letter-spacing: 1.1px
         border-radius: 1.6px
         +center
+        +r($tablet)
+          width: 43px
+          height: 22px
+          font-size: 11px
+          letter-spacing: 0.9px
       &__hits
         left: 20px
         background: $green
         +center
+        +r($tablet)
+          left: 12px
       &__sale
         top: 20px
         left: 85px
         background: $red
+        +r($tablet)
+          left: 60px
       &__wishlist
         position: absolute
         top: 15px
@@ -56,6 +70,10 @@
         i
           font-size: 23px
           color: $red
+          +r($tablet)
+            font-size: 18px
+            top: 2px
+            position: relative
     &__content
       padding: 30px
       text-align: center
@@ -67,22 +85,31 @@
         color: rgba($black-three, 0.9)
         font-weight: 400
         margin-bottom: 10px
+        +r($tablet)
+          font-size: 13px
       span
         display: block
         font-weight: 400
         font-size: 14px
         color: rgba($black-three, 0.8)
         margin-bottom: 15px
+        +r($tablet)
+          font-size: 10px
       &__price
         s
           color: #acacac
           margin-right: 5px
           font-weight: 500
           letter-spacing: 0.6px
+          +r($tablet)
+            font-size: 11px
         p
           color: $green
           font-weight: normal
           display: inline-block
+          +r($tablet)
+            font-size: 11px
+            font-weight: 600
         h4
           margin: 10px
           margin-bottom: 10px
@@ -91,6 +118,9 @@
           letter-spacing: 1.1px
           color: #393939
           height: 30px
+          +r($tablet)
+            font-size: 18px
+            letter-spacing: 0.8px
       .btn
         +center
         height: 45px

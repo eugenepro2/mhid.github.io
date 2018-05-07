@@ -2,9 +2,9 @@
 .top__banner
   .container
     .row.middle-xs
-      .col-xs-8
+      .col-md-8.col-sm-7.col-xs7
         p Скидка 50% на весь ассортимент Hooker
-      .col-xs-4
+      .col-md-4.col-sm-5.col-sm-5.hidden-xs
         a(href="#")
           i.icon.icon-top-banner
           span Перейти в каталог бренда
@@ -13,23 +13,26 @@
 header.header
   .container
     .row.middle-xs
-      .col-md-1
+      .col-sm-1.hidden-md.col-xs-2
+        .open-menu
+          div
+      .col-md-1.col-sm-2.col-xs-4
         .logo
           img(src="img/logo.svg", alt="")
-      .col-md-6
+      .col-md-6.hidden-sm.hidden-xs
         .header__info
-          div
+          a(href="#")
             i.icon.icon-delivery
             p Доставка по всей России
-          div
+          a(href="#")
             i.icon.icon-dealer
             p Вход для дилеров
-          div.music
+          a(href="#").music
             i.icon.icon-music-on
             p Музыка вкл.
         nav
           ul
-            li
+            li.sub-open
               a(href="#") Каталог
               .sub
                 .sub__triangle
@@ -133,11 +136,11 @@ header.header
               a(href="#") Дилерам
             li
               a(href="#") О компании     
-      .col-md-3
+      .col-md-3.col-sm-5.hidden-xs
         .header__phone
           a(href="tel:8 800 2000 779") 8 800 2000 779
           p Бесплатно по всей России
-      .col-md-2
+      .col-md-2.col-sm-3.col-sm-offset-1.col-md-offset-0.col-xs-6
         .header__toolbar
           a(href="#").open-seacrh
             i.icon.icon-search

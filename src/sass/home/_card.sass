@@ -4,7 +4,7 @@
   margin-top: 40px
   &__block
     width: calc(50% - 10px)
-    height: 400px
+    max-height: 400px
     overflow: hidden
     display: flex
     flex-direction: column
@@ -12,6 +12,9 @@
     text-decoration: none
     &:nth-of-type(odd)
       margin-right: 20px
+    +r($mobile)
+      width: 100%
+      margin-right: 0 !important
     h2
       div
         +center
@@ -34,6 +37,8 @@
     height: 400px
     position: relative
     +cover
+    +r($mobile)
+      height: 200px
     span
       background: $primary
       text-decoration: none
@@ -49,6 +54,8 @@
       transform: translateX(-50%)
       text-transform: uppercase
       +tr
+      +r($mobile)
+        bottom: 15px
       i
         margin-left: 30px
         font-size: 9px

@@ -2,6 +2,8 @@
   color: $white
   article
     padding-top: 55px
+    +r($mobile)
+      padding-top: 15px
     h1
       font-size: 42px
       font-weight: 600
@@ -10,11 +12,35 @@
       text-transform: uppercase
       width: 32%
       margin-bottom: 24px
+      +r($tablet)
+        width: 55%
+        font-size: 36px
+        margin-bottom: 18px
+      +r($mobile)
+        width: 100%
+        font-size: 28px
+        margin-bottom: 12px
     p
       font-size: 15px
       line-height: 1.33
       letter-spacing: 0.3px
       width: 32%
       margin-bottom: 45px
+      +r($tablet)
+        width: 65%
+        margin-bottom: 25px
+      +r($mobile)
+        width: 100%
+        font-size: 14px
+        margin-bottom: 20px
   &-slider
     height: 560px
+    +r($tablet)
+      height: 490px
+    +r($mobile)
+      height: 400px
+  .swiper-pagination
+    +r($mobile)
+      left: 50% !important
+      transform: translateX(-50%) !important
+      width: initial !important

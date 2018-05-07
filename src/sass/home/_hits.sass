@@ -1,6 +1,7 @@
 .hits
   padding-top: 60px
   padding-bottom: 70px
+  overflow: hidden
   .container
     position: relative
   h2
@@ -12,6 +13,8 @@
         color: $primary
         font-size: 38px
         opacity: 0.9
+        +r($tablet)
+          display: none
       &-disabled
         opacity: 0.3
       &-prev
@@ -20,6 +23,9 @@
         right: -5px
   .swiper-container
     width: calc(100% - 80px)
+    +r($tablet)
+      width: 100%
+      overflow: visible
     .swiper
       &-pagination
         margin-top: 40px

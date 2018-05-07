@@ -1,97 +1,124 @@
 .footer
-  padding-top: 30px
-  padding-bottom: 30px
-  background: $white
-  &__row
-    display: flex
-    justify-content: space-between
-  &__list
-    a
-      font-size: 12px
-      letter-spacing: 1px
-      text-align: center
-      color: rgba($black-three, 0.7)
-      text-decoration: none
-      text-transform: uppercase
-      display: flex
-      div
-        +center
-        margin-left: 15px
-        i
-          font-size: 19px
-          color: $red
-          position: absolute
-        span
-          position: relative
-          z-index: 10
-          color: $white
-          left: 7px
-    ul
-      margin-top: 15px
-      li
-        margin-bottom: 13px
-        a
-          text-transform: none
-          font-size: 13px
-          letter-spacing: 0.3px
-          color: rgba($black-three, 0.8)
-  &__contact
-    +center
-    a
-      font-size: 25px
-      font-weight: 300
-      letter-spacing: 0.6px
-      text-decoration: none
-      color: $black-two
-      border-bottom: 1px dashed $black-two
-      position: relative
-      top: -3.5px
-      &:first-child
-        margin-right: 30px
-    p
-      text-transform: uppercase
-      font-size: 10px
-      letter-spacing: 1px
-      color: rgba($black-three, 0.5)
-      width: 19%
-      line-height: 1.5
-      margin-left: 13px
-  &__social
-    display: flex
-    justify-content: flex-end
-    align-items: center
-    margin-top: 100px
-    a
-      text-decoration: none
-      color: $primary
-      font-size: 20px
-      &:nth-of-type(3)
-        font-size: 16px
-      &:not(:last-child)
-        margin-right: 20px
-  &__copy
-    p
-      font-size: 10px
-      line-height: 2.5
-      letter-spacing: 1px
-      color: rgba(#101010, 0.6)
-      text-transform: uppercase
-      display: inline-block
-      &:first-child
-        margin-right: 35px
-  &__view
-    display: flex
-    align-items: center
-    height: 100%
-    p 
-      font-size: 12px
-      letter-spacing: 1px
-      text-align: center
-      color: $black-three
-      text-transform: uppercase
-      a
-        color: $primary
-        text-decoration: none
+	padding-top: 30px
+	padding-bottom: 30px
+	background: $white
+	&__row
+		display: flex
+		justify-content: space-between
+		+r($mobile)
+			flex-direction: column
+	&__list
+		a
+			font-size: 12px
+			letter-spacing: 1px
+			text-align: center
+			color: rgba($black-three, 0.7)
+			text-decoration: none
+			text-transform: uppercase
+			display: flex
+			+r($mobile)
+				margin-bottom: 20px
+			div
+				+center
+				margin-left: 15px
+				i
+					font-size: 19px
+					color: $red
+					position: absolute
+				span
+					position: relative
+					z-index: 10
+					color: $white
+					left: 7px
+		ul
+			margin-top: 15px
+			+r($mobile)
+				display: none
+			li
+				margin-bottom: 13px
+				a
+					text-transform: none
+					font-size: 13px
+					letter-spacing: 0.3px
+					color: rgba($black-three, 0.8)
+	&__contact
+		+center
+		+r($tablet)
+			justify-content: flex-start
+			margin-top: 40px
+		+r($mobile)
+			flex-wrap: wrap
+			flex-direction: column-reverse
+		a
+			font-size: 25px
+			font-weight: 300
+			letter-spacing: 0.6px
+			text-decoration: none
+			color: $black-two
+			border-bottom: 1px dashed $black-two
+			position: relative
+			top: -3.5px
+			+r($mobile)
+				font-size: 23px
+		p
+			text-transform: uppercase
+			font-size: 10px
+			letter-spacing: 1px
+			color: rgba($black-three, 0.5)
+			width: 30%
+			line-height: 1.5
+			margin-left: 13px
+			+r($mobile)
+				width: 33%
+		&__block
+			display: flex
+			+r($mobile)
+				width: 100%
+			&:first-child
+				margin-right: 30px
+				+r($mobile)
+					justify-content: center
+					margin-top: 25px
+	&__social
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		margin-top: 100px
+		+r($tablet)
+			margin-top: 35px
+			justify-content: flex-start
+			margin-bottom: 60px
+		a
+			text-decoration: none
+			color: $primary
+			font-size: 20px
+			&:nth-of-type(3)
+				font-size: 16px
+			&:not(:last-child)
+				margin-right: 20px
+	&__copy
+		p
+			font-size: 10px
+			line-height: 2.5
+			letter-spacing: 1px
+			color: rgba(#101010, 0.6)
+			text-transform: uppercase
+			display: inline-block
+			&:first-child
+				margin-right: 35px
+	&__view
+		display: flex
+		align-items: center
+		height: 100%
+		p 
+			font-size: 12px
+			letter-spacing: 1px
+			text-align: center
+			color: $black-three
+			text-transform: uppercase
+			a
+				color: $primary
+				text-decoration: none
 
 
-      
+			

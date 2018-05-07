@@ -1,75 +1,116 @@
-
+html
 body
-  font-family: 'Lato'
-  background: $grey
-  font-size: 15px
+	font-family: 'Lato'
+	background: $grey
+	font-size: 15px
+	overflow-x: hidden
+	-webkit-text-size-adjust: 100%
+	-ms-text-size-adjust: 100%
+	-webkit-font-smoothing: antialiased !important
+	text-rendering: optimizelegibility
+	-moz-osx-font-smoothing: grayscale
+	box-sizing: border-box
+
++r($mobile)
+	.hidden-xs
+		display: none !important
+@media only screen and (min-width: 768px) and (max-width: 1023px)
+	.hidden-sm
+		display: none !important
++rmin(1025)
+	.hidden-md
+		display: none !important
 
 .container
-  width: 100%
-  max-width: 1200px
-  height: 100%
+	width: 100% !important
+	max-width: 1200px
+	height: 100%
+	box-sizing: border-box
+	+r($tablet)
+		padding: 0 30px
+	+r($mobile)
+		padding: 0 20px
 .row
-  height: 100%
+	height: 100%
 
 
 h2
-  font-size: 24px
-  font-weight: 300
-  line-height: 1.08
-  letter-spacing: 7px
-  text-align: center
-  color: $black-three
-  text-transform: uppercase
-  margin-bottom: 25px
-  position: relative
-  +center
+	font-size: 24px
+	font-weight: 300
+	line-height: 1.08
+	letter-spacing: 7px
+	text-align: center
+	color: $black-three
+	text-transform: uppercase
+	margin-bottom: 25px
+	position: relative
+	+center
 
 //Button
 .btn
-  font-size: 15px
-  letter-spacing: 1px
-  text-transform: uppercase
-  color: rgba($white, 0.9)
-  text-decoration: none
-  border: solid 1px $primary
-  border-radius: 3px
-  +center
-  +tr
-  &-primary
-    background: $primary
-    box-shadow: 0 12px 23px 0 rgba(0, 0, 0, 0.2)
-    height: 56px
-    width: 240px
-    &:hover
-      background: transparent
-      color: $primary
-  &-secondary
-    color: $primary
-    height: 48px
-    width: 230px
-    &:hover
-      background: $primary
-      color: $white
-
-
+	font-size: 15px
+	letter-spacing: 1px
+	text-transform: uppercase
+	color: rgba($white, 0.9)
+	text-decoration: none
+	border: solid 1px $primary
+	border-radius: 3px
+	transform: perspective(1px) translateZ(0)
+	transition-property: color
+	transition-duration: 0.3s
+	position: relative
+	+center
+	&-primary
+		background: $primary
+		box-shadow: 0 12px 23px 0 rgba(0, 0, 0, 0.2)
+		height: 56px
+		width: 240px
+		color: #ffffff
+		&:hover
+			&:before
+				transform: scale(1)
+				background: #D9A866
+	&-secondary
+		color: $primary
+		height: 48px
+		width: 230px
+		&:hover
+			color: $white
+			&:before
+				transform: scale(1)
+				background: $primary
+	&:before
+		content: ''
+		position: absolute
+		z-index: -1
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		transform: scaleY(0)
+		transform-origin: 50% 100%
+		transition-property: transform
+		+tr
 //Slider
 .swiper
-  &-slide
-    +cover
+	&-slide
+		+cover
 .swiper-container .swiper-pagination-bullets
-    max-width: 1200px
-    text-align: left
-    display: flex
-    left: 50%
-    transform: translateX(-50%)
-    bottom: 50px
+		max-width: 1200px
+		text-align: left
+		display: flex
+		left: 50%
+		transform: translateX(-50%)
+		bottom: 50px
+		+r($tablet)
+			padding: 0 30px
 .swiper-pagination-bullet
-  width: 16px
-  height: 16px
-  background: $white
-  opacity: 1
-  +tr
-  left: 0
-  text-align: left
-  &-active
-    background: $primary
+	width: 16px
+	height: 16px
+	background: $white
+	opacity: 1
+	+tr
+	left: 0
+	text-align: left
+	&-active
+		background: $primary
