@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="7px" viewBox="0 0 11 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Path 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="adaptive" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="menu-768" transform="translate(-111.000000, -193.000000)" fill="#565656">
+            <g id="menu" transform="translate(0.000000, 99.000000)">
+                <g id="Group-7" transform="translate(30.000000, 88.000000)">
+                    <path d="M84.7071057,14.1778541 L88.8488072,10.0361526 C89.2393315,9.64562835 89.2393315,9.01246337 88.8488072,8.62193908 C88.8465308,8.61966272 88.8442435,8.61739737 88.8419452,8.6151431 L84.7002438,4.55267782 C84.3059662,4.16594327 83.6728307,4.17205812 83.2860962,4.56633572 C83.102722,4.75328648 82.9999989,5.00470911 82.9999989,5.26658058 L82.9999989,13.4707473 C82.9999989,14.0230321 83.4477142,14.4707473 83.9999989,14.4707473 C84.2652154,14.4707473 84.5195693,14.3653905 84.7071057,14.1778541 Z" id="Path-2" transform="translate(86.070850, 9.368663) rotate(-270.000000) translate(-86.070850, -9.368663) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -2,6 +2,7 @@
   height: 100px
   background: $white
   position: relative
+  z-index: 11
   +tr
   +r($tablet)
     overflow: hidden
@@ -133,7 +134,7 @@
     top: 0
     right: 0
     transform: translateX(100%)
-    transition: all 1s cubic-bezier(0.72, 0, 0.13, 0.99)
+    transition: transform 1s cubic-bezier(0.72, 0, 0.13, 0.99)
     div
       display: flex
       align-items: center
@@ -184,6 +185,8 @@
   background-image: url('../img/top-banner.jpg')
   +cover
   color: $white
+  z-index: 11
+  position: relative
   .container
     position: relative
   p 
@@ -279,6 +282,7 @@
     border-bottom: 1px solid #646464
     height: 1px
     width: 18px
+    +tr
     &:before, &:after
       content: ''
       border-bottom: 1px solid #646464
@@ -286,7 +290,120 @@
       width: 25px
       display: block
       position: relative
+      +tr
     &:before
       top: -7px
     &:after
       top: 6px
+  &.is-open
+    div
+      border: none
+      &:before, &:after
+        border-color: $white
+      &:before
+        transform: rotate(45deg) translateY(10px)
+      &:after
+        transform: rotate(-45deg) translateY(-10px)
+
+
+.mobile-menu
+  width: 600px
+  height: 100vh
+  position: absolute
+  background: #ffffff
+  top: 100px
+  z-index: 10
+  padding: 30px
+  transform: translateX(-100%)
+  transition: transform 1s cubic-bezier(0.72, 0, 0.13, 0.99)
+  overflow: scroll
+  box-sizing: border-box
+  &.is-open
+    transform: translateX(0%)
+  +r($mobile)
+    width: 100%
+    top: 90px
+    padding: 20px
+  .header__info
+    margin-left: 0
+    +r($mobile)
+      flex-direction: column
+      align-items: flex-start
+      a
+        margin-bottom: 20px
+  ul
+    li
+      margin-bottom: 40px
+      +r($mobile)
+        margin-bottom: 33px
+      a
+        text-transform: uppercase
+        color: rgba($black-three, 0.7)
+        letter-spacing: 1px
+        font-weight: 500
+        text-decoration: none
+        display: inline-block
+        position: relative
+        &.is-sub
+          &:before
+            content: $icon-arrow-down-menu
+            @extend %icon
+            font-size: 8px
+            position: absolute
+            top: 5px
+            right: -25px
+            transform: rotate(-90deg)
+            +tr
+        &.is-open
+          &:before
+            transform: rotate(0deg)
+        div
+          position: absolute
+          font-size: 11px
+          letter-spacing: 0.6px
+          right: -68px
+          top: 2px
+          z-index: 10
+          +center
+          color: #ffffff
+          i
+            font-size: 19px
+            color: $red
+            position: absolute
+            z-index: -1
+          span
+            padding-left: 10px
+            padding-bottom: 1px
+      .mobile-sub
+        display: none
+        ul
+          padding-left: 10px
+          margin-top: 25px
+          li
+            margin-bottom: 20px
+            a
+              text-transform: none
+              color: rgba($black-three, 0.56)
+  .footer
+    +r($mobile)
+      &__contact
+        flex-direction: column
+        &__block
+          &:first-child
+            justify-content: flex-start
+            margin-right: 0
+            margin-bottom: 20px
+            margin-top: 10px
+    &__social
+      +r($mobile)
+        margin-top: 60px
+    &__view
+      height: 20px
+      display: block
+      +r($mobile)
+        height: 30px
+      p
+        text-align: left
+    &__copy
+      height: 100px
+      margin-bottom: 20px

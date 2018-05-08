@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
         <path id="a" d="M1 0h20v25H1z"/>
-    </defs><symbol id="icon-arrow-right" viewBox="0 0 22 10">
+    </defs><symbol id="icon-arrow-down-menu" viewBox="0 0 11 7">
+    <title>
+        Path 2
+    </title>
+    <path d="M.262 2.005l4.141 4.142a1 1 0 0 0 1.421-.007l4.063-4.142a1 1 0 0 0-.714-1.7H.969a1 1 0 0 0-.707 1.707z" fill-rule="evenodd"/>
+</symbol><symbol id="icon-arrow-right" viewBox="0 0 22 10">
     <path fill-rule="evenodd" d="M19.8 4.312l-3.24-3.216a.637.637 0 0 1 0-.907.645.645 0 0 1 .912 0l4.278 4.246c.151.117.25.307.25.52a.65.65 0 0 1-.285.541l-4.243 4.217a.65.65 0 0 1-.912 0 .639.639 0 0 1 0-.909l3.23-3.21H1.008c-.335 0-.608-.288-.608-.64 0-.354.273-.642.608-.642h18.793z"/>
 </symbol><symbol id="icon-cart" viewBox="0 0 26 23">
     <title>

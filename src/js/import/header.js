@@ -79,3 +79,28 @@ $(window).scroll(function() {
     $('.top__banner').removeClass('fixed');
   }
 });
+
+
+//Mobile Menu
+let mobileMenu = $('.mobile-menu');
+
+$('.open-menu').on('click', function() {
+  $('.mobile-menu').toggleClass('is-open');
+  $('body').toggleClass('menu-is-open');
+  $('.open-menu').toggleClass('is-open');
+});
+
+mobileMenu.find('li').each(function() {
+  if ($(this).find('.mobile-sub').length !== 0) {
+    $(this).children(':first').addClass('is-sub');
+  }
+});
+
+if (mobileMenu.find('li').has('.mobile-sub')) {
+  mobileMenu.find('a').on('click', function() {
+    $(this).siblings('.mobile-sub').slideToggle();
+    $(this).toggleClass('is-open');
+  });
+  
+}
+
