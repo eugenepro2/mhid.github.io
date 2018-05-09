@@ -8,6 +8,13 @@ let introSLider = new Swiper('.intro-slider', {
     type: 'bullets',
     clickable: true
   },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  autoplay: {
+    delay: 5000,
+  },
 });
 
 
@@ -18,11 +25,16 @@ let aboutSLider = new Swiper('.about-slider', {
     type: 'bullets',
     clickable: true
   },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 });
 
 let hitsSLider = new Swiper('.hits-slider', {
   speed: 400,
   slidesPerView: 4,
+  slidesPerGroup: 4,
   breakpoints: {
     // when window width is <= 640px
     768: {

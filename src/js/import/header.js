@@ -3,6 +3,7 @@ import device from 'current-device';
 //Top Banner
 $('.top__banner .close').on('click', function() {
   $('.top__banner').fadeOut();
+  $('.header').addClass('banner-closed');
 });
 
 
@@ -64,9 +65,12 @@ function searchInput() {
 
 //Menu
 
-let triangle = $('nav ul li:first-child').offset().left;
+let offsetLeftLogo = $('.logo').offset().left;
+$('.sub').css('padding-left', offsetLeftLogo);
 
-$('.sub__triangle').offset({left: triangle + 20});
+let triangle = $('nav ul li:first-child').offset().left;
+let widthLi = $('nav ul li:first-child').width() / 2;
+$('.sub__triangle').offset({left: triangle + widthLi - 9});
 
 //Fixed Header
 $(window).scroll(function() {

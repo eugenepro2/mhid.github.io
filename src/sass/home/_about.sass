@@ -16,7 +16,7 @@
       padding: 0 20px
     +r($mobile)
       padding: 0
-  a
+  .btn
     left: 50%
     transform: translateX(-50%)
     +r($tablet)
@@ -55,13 +55,20 @@
         i
           font-size: 10px
           margin-left: 60px
-        +r($mobile)
-          left: 0
-          transform: translateX(0)
   .swiper-container
     .swiper-pagination
-      bottom: 170px
+      bottom: 20px
       display: flex
       justify-content: center
       +r($mobile)
         bottom: 20px
+    .swiper
+      &-button
+        &-prev, &-next
+          opacity: 1
+        &-disabled
+          opacity: 0.5
+        &-prev
+          left: 20px
+        &-next
+          right: 20px

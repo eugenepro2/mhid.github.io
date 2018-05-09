@@ -7,11 +7,14 @@
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.17)
     border-radius: 2px
     margin-left: 10px
+    +tr
     +r($tablet)
       width: 220px
       margin-left: 0
     +r($mobile)
       width: 100%
+    &:hover
+      transform: translateY(-5px)
     &__header
       padding: 15px 20px
       position: relative
