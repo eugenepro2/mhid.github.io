@@ -71,9 +71,9 @@ function createConfig(env) {
         {
           enforce: 'pre',
           test: /\.js$/,
-          exclude: [
-            path.resolve(__dirname, 'node_modules'),
-          ],
+          // exclude: [
+          //   path.resolve(__dirname, 'node_modules'),
+          // ],
           loader: 'eslint-loader',
           options: {
             fix: true,
@@ -83,9 +83,9 @@ function createConfig(env) {
         }, {
           test: /\.js$/,
           loader: 'babel-loader',
-          exclude: [
-            path.resolve(__dirname, 'node_modules'),
-          ],
+          // exclude: [
+          //   path.resolve(__dirname, 'node_modules'),
+          // ],
         }],
     },
   };
