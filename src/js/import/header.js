@@ -1,9 +1,18 @@
 import device from 'current-device';
 
+let windowWidth = $(window).width();
+
+$(window).on('resize', function() {
+  searchInput();
+  offsetLeft();
+  windowWidth = $(window).width();
+});
+
 //Top Banner
 $('.top__banner .close').on('click', function() {
   $('.top__banner').fadeOut();
   $('.header').addClass('banner-closed');
+  $('.mobile-menu').addClass('banner-closed');
 });
 
 
@@ -26,9 +35,6 @@ music.on('click', function() {
 
 
 //Search
-$(window).on('resize', function() {
-  searchInput();
-});
 
 searchInput();
 
@@ -36,11 +42,11 @@ function searchInput() {
   let seacrh = $('.search');
   let offsetLeft;
 
-  if(device.mobile()) {
+  if(windowWidth < 768) {
     getOfssetLeft($('.header__info'), 0);
-  } else if(device.tablet()) {
+  } else if(windowWidth > 767 && windowWidth < 1024) {
     getOfssetLeft($('.logo'), 20);
-  } else if(device.desktop()) {
+  } else if(windowWidth > 1024) {
     getOfssetLeft($('.header__info'), 10);
   }
 
@@ -48,14 +54,17 @@ function searchInput() {
     offsetLeft = ($(window).width() - (param.offset().left + param.outerWidth())) - px;
   }
 
+  seacrh.width(offsetLeft);
+
   
 
-  $('.open-seacrh').on('click', function() {
-    seacrh.width(offsetLeft);
+  $('.open-seacrh').on('click', function(event) {
+    event.preventDefault();
     seacrh.css('transform', 'translateX(0)');
   });
 
   $('.search .close').on('click', function() {
+    event.preventDefault();
     seacrh.css('transform', 'translateX(100%)');
   });
 
@@ -64,13 +73,16 @@ function searchInput() {
 
 
 //Menu
+function offsetLeft() {
+  let offsetLeftLogo = $('.logo').offset().left;
+  $('.sub').css('padding-left', offsetLeftLogo);
+  
+  let triangle = $('nav ul li:first-child').offset().left;
+  let widthLi = $('nav ul li:first-child').width() / 2;
+  $('.sub__triangle').offset({left: triangle + widthLi - 9});
+}
+offsetLeft();
 
-let offsetLeftLogo = $('.logo').offset().left;
-$('.sub').css('padding-left', offsetLeftLogo);
-
-let triangle = $('nav ul li:first-child').offset().left;
-let widthLi = $('nav ul li:first-child').width() / 2;
-$('.sub__triangle').offset({left: triangle + widthLi - 9});
 
 //Fixed Header
 $(window).scroll(function() {

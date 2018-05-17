@@ -38,11 +38,11 @@
         font-size: 11px
         letter-spacing: 1px
         padding-bottom: 2px
-        border-bottom: 3px solid transparent
+        border-bottom: 2px solid transparent
         +tr
       &:hover
         p
-          border-bottom: 3px solid $primary
+          border-bottom: 2px solid $primary
     .music
       cursor: pointer
   nav
@@ -59,6 +59,11 @@
         display: flex
         align-items: center
         letter-spacing: 1px
+        span
+          border-bottom: 2px solid transparent
+          +tr
+          &:hover
+            border-bottom: 2px solid $primary
         div
           position: relative
           font-size: 11px
@@ -110,6 +115,11 @@
       i
         font-size: 20px
         color: #646464
+        display: inline-block
+        +tr
+      &:hover
+        i
+          color: #000000
     .cart
       position: relative
       i
@@ -135,6 +145,10 @@
     right: 0
     transform: translateX(100%)
     transition: transform 1s cubic-bezier(0.72, 0, 0.13, 0.99)
+    +r($tablet)
+      height: 66px
+    +r($mobile)
+      height: 56px
     div
       display: flex
       align-items: center
@@ -172,12 +186,15 @@
     width: 100%
     top: 35px
     height: 60px
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.08)
     .logo
       width: 70px
     .header__info
       display: none
     .sub
       top: 60px
+    .search
+      height: 60px
   &.banner-closed
     top: 0
 
@@ -319,8 +336,14 @@
   transition: transform 1s cubic-bezier(0.72, 0, 0.13, 0.99)
   overflow: scroll
   box-sizing: border-box
+  +tr
   &.is-open
     transform: translateX(0%)
+  &.banner-closed
+    +r($tablet)
+      top: initial
+    +r($mobile)
+      top: initial
   +r($mobile)
     width: 100%
     top: 90px

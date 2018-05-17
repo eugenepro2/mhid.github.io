@@ -33,6 +33,18 @@
           color: #ffffff
           right: 7px
           top: 1px
+    &:hover
+      +rmin(1200)
+        .overlay
+          opacity: 1
+        span
+          opacity: 0
+    +r($tablet)
+      &.hover
+        .overlay
+          opacity: 1
+        span
+          opacity: 0
   &__image
     height: 400px
     position: relative
@@ -80,8 +92,3 @@
         display: inline-block
         text-transform: uppercase
         padding: 20px 30px
-    &:hover
-      .overlay
-        opacity: 1
-      span
-        opacity: 0

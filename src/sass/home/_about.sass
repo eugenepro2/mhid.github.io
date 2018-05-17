@@ -19,10 +19,16 @@
   .btn
     left: 50%
     transform: translateX(-50%)
-    +r($tablet)
-      transform: translateX(0)
-    +r($mobile)
-      transform: translateX(-50%)
+  iframe
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+  video
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
   .swiper
     &-container
       height: 600px
@@ -34,6 +40,7 @@
       align-items: center
       justify-content: flex-end
       flex-direction: column
+      position: relative
       p
         font-size: 15px
         letter-spacing: 0.4px
@@ -44,17 +51,24 @@
         font-weight: 500
       a
         background: $primary
+        text-decoration: none
         color: $white
         font-size: 13px
+        width: 230px
+        height: 30px
+        +center
+        border-radius: 3px
+        position: absolute
+        bottom: 50px
+        left: 50%
+        transform: translateX(-50%)
         text-transform: uppercase
-        text-decoration: none
-        padding: 7px 17px
-        border-radius: 120px
-        margin-bottom: 50px
-        display: inline-block
+        +tr
+        +r($mobile)
+          bottom: 15px
         i
-          font-size: 10px
-          margin-left: 60px
+          margin-left: 30px
+          font-size: 9px
   .swiper-container
     .swiper-pagination
       bottom: 20px

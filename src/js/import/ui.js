@@ -8,3 +8,11 @@ import device from 'current-device';
 // } else if(device.desktop()) {
 //   $('#viewport').attr('content', 'width=1200, minimum-scale=0.3, maximum-scale=3, user-scalable=yes, target-densitydpi=device-dpi');
 // }
+
+$('.card__block').on('touchstart', function(e) {
+  $(this).toggleClass('hover');
+});
+ 
+$('.card__block').on('touchend', function(e) {
+  $(this).toggleClass('hover');
+});

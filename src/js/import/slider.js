@@ -39,9 +39,11 @@ let hitsSLider = new Swiper('.hits-slider', {
     // when window width is <= 640px
     768: {
       slidesPerView: 3,
+      slidesPerGroup: 3
     },
     320: {
       slidesPerView: 1,
+      slidesPerGroup: 1,
       spaceBetween: 10
     }
     
