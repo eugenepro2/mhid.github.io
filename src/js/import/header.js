@@ -74,7 +74,7 @@ function searchInput() {
 
 //Menu
 function offsetLeft() {
-  let offsetLeftLogo = $('.logo').offset().left;
+  let offsetLeftLogo = $('.sub-open').offset().left - 25;
   $('.sub').css('padding-left', offsetLeftLogo);
   
   let triangle = $('nav ul li:first-child').offset().left;

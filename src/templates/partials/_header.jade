@@ -5,7 +5,7 @@
       .col-md-8.col-sm-7.col-xs7
         p Скидка 50% на весь ассортимент Hooker
       .col-md-4.col-sm-5.col-sm-5.hidden-xs
-        a(href="#")
+        a(href="#sale" rel="modal:open")
           i.icon.icon-top-banner
           span Перейти в каталог бренда
     .close
@@ -17,14 +17,14 @@ header.header
         .open-menu
           div
       .col-md-1.col-sm-2.col-xs-4
-        .logo
+        a(href="/").logo
           img(src="img/logo.svg", alt="")
       .col-md-6.hidden-sm.hidden-xs
         .header__info
-          a(href="#")
+          a(href="#sign" rel="modal:open")
             i.icon.icon-delivery
             p Доставка по всей России
-          a(href="#")
+          a(href="#login" rel="modal:open")
             i.icon.icon-dealer
             p Вход для дилеров
           a(href="#").music
@@ -126,19 +126,19 @@ header.header
                     li
                       a(href="#") Подсвечник
             li
-              a(href="#")
+              a(href="#") 
                 span Наличие
                 div
                   i.icon.icon-sale
                   span %Sale
             li
-              a(href="#")
+              a(href="#") 
                 span Бренды
             li
-              a(href="#")
+              a(href="#") 
                 span Дилерам
             li
-              a(href="#")
+              a(href="#") 
                 span О компании     
       .col-md-3.col-sm-5.hidden-xs
         .header__phone
@@ -146,15 +146,16 @@ header.header
           p Бесплатно по всей России
       .col-md-2.col-sm-3.col-sm-offset-1.col-md-offset-0.col-xs-6
         .header__toolbar
-          a(href="#").open-seacrh
+          a.open-seacrh
             i.icon.icon-search
           a(href="#")
             i.icon.icon-phone
-          a(href="#")
+          a(href="#").wishlist__btn
             i.icon.icon-heart
-          a(href="#").cart
+            span 74
+          a(href="#").cart__btn
             i.icon.icon-cart
-            span.cart__count 4
+            span 4
   .search
     div
       i.icon.icon-search
@@ -163,16 +164,6 @@ header.header
 //END header
 
 .mobile-menu
-  .header__info
-    a(href="#")
-      i.icon.icon-delivery
-      p Доставка по всей России
-    a(href="#")
-      i.icon.icon-dealer
-      p Вход для дилеров
-    a(href="#").music
-      i.icon.icon-music-on
-      p Музыка вкл.
   ul
     li
       a(href="#") Каталог
@@ -223,6 +214,13 @@ header.header
             a(href="#") Текстиль
           li
             a(href="#") Мебель
+  .header__info
+    a(href="#")
+      i.icon.icon-delivery
+      p Доставка по всей России
+    a(href="#")
+      i.icon.icon-dealer
+      p Вход для дилеров
   .footer__contact
     .footer__contact__block
       a(href="mailto:info@mhid.ru") info@mhid.ru

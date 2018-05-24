@@ -1,0 +1,106 @@
+#login.modal
+  h2 Вход в личный кабинет
+  form.form
+    .form-group
+      label.form-label(for='login-email') E-mail
+      input#login-email.form-input(type='text')
+    .form-group
+      label.form-label(for='login-pass') Пароль
+      input#login-pass.form-input(type='password')
+    .form-lost-password
+      a(href="#") Забыли пароль?
+    .form-group
+      button.btn.btn-primary(type="submit") Войти
+    .form-group
+      button.btn.btn-secondary(type="submit") Регистрация
+    .form-info
+      p Если у Вас возникли трудности в работе с личным кабинетом, Вы можете направить письмо с вопросом на 
+        a(href="#") info@mhid.ru 
+        | или воспользоваться 
+        a(href="#") формой обратной связи.
+
+
+#price.modal
+  h2 Узнать цену в один клик
+  form.form
+    .form-group
+      label.form-label(for='price-name') Как вас зовут?*
+      input#price-name.form-input(type='text')
+    .form-group
+      label.form-label(for='price-phone') Ваш телефон*
+      input#price-phone.form-input(type='tel')
+    .form-group
+      label.form-label(for='price-email') Ваш e-mail
+      input#price-email.form-input(type='email')
+    .form-group.form-textarea
+      label.form-label(for='price-ask') Ваш вопрос
+      input#price-ask.form-input(type='text')
+    .form-require * - обязательно для заполнения
+    .form-checkbox
+      input#checkbox-1(type="checkbox", name="")
+      label.label(for="checkbox-1")
+      label.label-for(for="checkbox-1") Я принимаю 
+        a(href="$") условия использования сайта и положения о конфеденциальности
+    .form-group 
+      button.btn.btn-primary(type="submit") Отправить
+    .form-info.form-info-price
+      p По всем вопросам вы также можете обратиться по телефону:
+      .form-info-phone
+        a(href="tel:8 800 2000 779") 8 800 2000 779
+      span Звонок бесплатный
+      .form-info-email
+        a(href="mailto:info@mhid.ru") info@mhid.ru
+
+
+#sign.modal.sign
+  .sign-flex
+    h2 Регистрация на сайте
+    p После регистрации на нашем сайте, Вы получите доступ к дополнительным справочным материалам, полным каталогам фабрик, и сможете сохранять и распечатывать Ваши подборки. 
+    form.form.form-sign
+      h3 Пожалуйста, заполните форму
+      .form-row
+        .form-col
+          .form-group
+            label.form-label(for='sign-email') E-mail (необходим для входа на сайт)*
+            input#sign-email.form-input(type='email')
+          .form-group
+            label.form-label(for='sign-name') ФИО*
+            input#sign-name.form-input(type='tel')
+          .form-group
+            label.form-label(for='sign-pass') Пароль*
+            input#sign-pass.form-input(type='password')
+          .form-group
+            label.form-label(for='sign-pass-2') Повторите пароль*
+            input#sign-pass-2.form-input(type='password')
+          .form-checkbox
+            input#checkbox-2(type="checkbox", name="")
+            label.label(for="checkbox-2")
+            label.label-for(for="checkbox-2") Я принимаю 
+              a(href="#") условия использования сайта и положения о конфеденциальности
+        .form-col
+          .form-group
+            label.form-label(for='sign-phone') Контактный телефон*
+            input#sign-phone.form-input(type='tel')
+          .form-group
+            label.form-label(for='sign-city') Город*
+            input#sign-city.form-input(type='text')
+          .form-group
+            label.form-label(for='sign-company') Название компании
+            input#sign-company.form-input(type='text')
+          .form-group
+            label.form-label(for='sign-site') Сайт компании
+            input#sign-site.form-input(type='text')
+          .form-require * - обязательно для заполнения
+      .form-group.form-center
+        button.btn.btn-primary(type="submit") Отправить
+      .form-info.form-info-price
+        p Если у Вас возникли трудности в работе с личным кабинетом, Вы можете направить письмо с вопросом на 
+          a(href="#") info@mhid.ru 
+          | или воспользоваться 
+          a(href="#") формой обратной связи.
+
+#sale.modal.sale
+  h2 Специальное предложение
+  .sale-block
+    .sale-block-text Скидка 50% на<br> все аксессуары
+    a(href="#").btn.btn-primary Подробнее

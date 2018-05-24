@@ -3,14 +3,15 @@
   background: $white
   position: relative
   z-index: 11
-  +tr
+  transition: height 0.5s
   +r($tablet)
     overflow: hidden
     height: 66px
   +r($mobile)
     height: 56px
   .logo
-    width: 125px
+    width: 135px
+    display: block
     +r($tablet)
       width: 85px
     +r($mobile)
@@ -70,6 +71,7 @@
           letter-spacing: 0.6px
           margin-left: 20px
           z-index: 10
+          width: 65px
           +center
           color: #ffffff
           i
@@ -79,7 +81,7 @@
             z-index: -1
           span
             padding-left: 10px
-            padding-bottom: 1px
+            padding-bottom: 2px
       li
         &:hover
           .sub
@@ -112,19 +114,21 @@
     justify-content: space-between
     align-items: center
     a
+      cursor: pointer
       i
-        font-size: 20px
+        font-size: 25px
         color: #646464
         display: inline-block
         +tr
       &:hover
         i
           color: #000000
-    .cart
+          transform: translateY(-2px)
+    .cart__btn, .wishlist__btn
       position: relative
       i
         font-size: 25px
-      &__count
+      span
         width: 18px
         height: 18px
         border-radius: 50%
@@ -350,6 +354,9 @@
     padding: 20px
   .header__info
     margin-left: 0
+    justify-content: flex-start
+    a
+      margin-right: 20px
     +r($mobile)
       flex-direction: column
       align-items: flex-start

@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="20px" height="25px" viewBox="0 0 20 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="19px" height="23px" viewBox="0 0 19 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
-    <title>dealer</title>
+    <title>Combined Shape</title>
     <desc>Created with Sketch.</desc>
-    <defs>
-        <rect x="1" y="0" width="20" height="25" id="rect-1"></rect>
-    </defs>
+    <defs></defs>
     <g id="desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="main-1280-search-music-off" transform="translate(-432.000000, -49.000000)">
+        <g id="main-1280-search-music-off" transform="translate(-433.000000, -50.000000)" fill="#C59850">
             <g id="header">
                 <g id="top-bar" transform="translate(0.000000, 33.000000)">
-                    <g id="dealer" transform="translate(431.000000, 16.000000)">
-                        <g>
-                            <image x="1" y="0" width="20" height="25" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAbCAYAAAB4Kn/lAAAABGdBTUEAALGOGCHvlwAAAutJREFUSA2tVc1rE1EQnzdv029sPNQeipiLl3owIJ6CErzpyUtjqbVGQTwUNBfP1r/AIvQgfhBaLLW5xIMVFHQVWw8i9NKec2lBUjD9wKTp7jzf7HbpsruNifYddt5785sfs7+Z2QU44jX/dKiXKcVR8X55OTQY6+mZIqIKgZg1gsQfZ0bPtrcZ71HIE66PTAYLsM0aiWWjVitfvF1Y9eIcfEzmEI0s3yGCCcoeDGW8NDd6X2D7pBfYuuVEsIzBQM4qeNfKmZQaZHyI+NLIzGdBtNIKWQC7HknMl/XfOxkCuxIIaOqIQjhxoYw52imOov/Q2TYjiZk8dW360b9k7bYbhIvHpN4iG155++YsmRLwNGMPzdhxEn1ojtBFKbKWFeKZC8P5QkPi1PXpN1HErkRkApCpbKt0gFElTz5n8tzpMVK7ZK9wux0AwztSexOVbSsf74lNIGJCSCwpqhcVtA0IEAkEdw6MxddjD5UNJUQ51YkSFuezFdZ2z7KedcQg7ae2rb3s1kZ5Id7fzyOf9HwC29LCyR7Pk7LzfG9oQLoK1kTnPgpBxjX/uCHl+P6VYzhTJj3W1/9Dx5z0+9w9pnX2ULPqJp8djTtQJYmg4ALCTyIrv1apTvbqTKWMInVjWF9PSuRKgpK51PCLjH6N5SAtZ7q2+Ts3EO82/a8fxPFZkCsD7/HXjj0ppJH4Nn/rU2W7fpWz42qzre7uJkFheeB4d+lvpEzGXGx5OZ/Npbkbj3UBck6rkCqCUCVQIgko0qy5C238tMjOcP96KId44cnlPi5KI/28gCjL9WEp/T6neFfuvStvlX+e069f9Dub2XNd1ja37gSxoT/I19mxmwbKBzyaQbD/7Mimv4DcLZm7hU2/j/chYg/w9vnIqd4uQ/cmJFhvPWVxAt2WeniEou/r29ViFKEX35Llzmk2oOFHqFmSKNyhUjCY5ejskgmeTK1aQqHMgtZVS1Hhn25tY2OVC8/YI13cpocR/gGkDlILCVmgFQAAAABJRU5ErkJggg=="></image>
-                            <use fill="#C59850" fill-rule="evenodd" xlink:href="#rect-1"></use>
-                        </g>
+                    <g id="Group-11" transform="translate(431.000000, 17.000000)">
+                        <path d="M10.8983621,21.7778617 L10.8983621,19.5340622 C8.61114424,19.54937 6.28942123,18.9952373 4.75562688,17.9210962 C2.71690992,16.4933495 1.80943288,14.3825389 2.03319576,11.5886643 C3.57790357,14.6829843 5.60813313,15.7774976 8.12388442,14.8722044 C11.8975114,13.5142646 12.5862137,10.994382 14.2685134,10.3639109 C15.0203614,10.0821428 16.4958542,10.3369937 17.5601153,10.0080988 C18.4120488,9.74482074 19.2622315,8.95684653 20.1106634,7.64417616 C19.1220714,13.9336645 17.590188,17.5787024 15.5150133,18.5792899 C14.4688332,19.0837268 13.2096917,19.3842588 11.8983621,19.490549 L11.8983621,21.7778617 L15.8983621,21.7778617 L15.8983621,22.7778617 L6.8983621,22.7778617 L6.8983621,21.7778617 L10.8983621,21.7778617 Z M5.39679666,1.4574872 C7.00563805,-0.486295276 11.2027826,1.78609693 13.4999879,1.75095089 C16.8576036,1.69958112 19.1563174,-0.423475285 20.0802859,0.0760400638 C20.8699662,0.502956589 20.8148148,1.8793014 20.5287917,3.84873875 C20.0320351,7.26920044 19.8825332,8.28626785 20.0802859,6.89994097 C19.3230462,8.23744131 18.5601789,9.03992804 17.7916839,9.30740115 C16.4112085,9.7878728 14.0772374,9.44520074 13.4999879,9.9040367 C12.1275143,10.994969 9.70263977,13.6347454 7.61474331,14.2778617 C5.52684684,14.9209779 2.37373719,13.1629005 2.37373719,10.7236019 C2.37373719,9.67299788 5.55795583,11.2902696 7.02716332,11.2902696 C8.49637081,11.2902696 8.8066882,8.27739546 7.97861166,6.89994097 C7.15053512,5.52248648 4.25691706,2.83467579 5.39679666,1.4574872 Z" id="Combined-Shape"></path>
                     </g>
                 </g>
             </g>

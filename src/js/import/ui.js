@@ -1,13 +1,17 @@
 import device from 'current-device';
+import modal from 'jquery-modal';
+import scrollbar from 'jquery.scrollbar';
 
-// //Viewport
-// if(device.mobile()) {
-//   $('#viewport').attr('content', 'width=320, minimum-scale=0.3, maximum-scale=3, user-scalable=yes, target-densitydpi=device-dpi');
-// } else if(device.tablet()) {
-//   $('#viewport').attr('content', 'width=768, minimum-scale=0.3, maximum-scale=3, user-scalable=yes, target-densitydpi=device-dpi');
-// } else if(device.desktop()) {
-//   $('#viewport').attr('content', 'width=1200, minimum-scale=0.3, maximum-scale=3, user-scalable=yes, target-densitydpi=device-dpi');
-// }
+$('.scrollbar').scrollbar();
+
+$('a[rel]').click(function(event) {
+  $(this).modal({
+    fadeDuration: 250,
+    closeClass: 'icon icon-close',
+    closeText: ' ',
+  });
+  return false;
+});
 
 $('.card__block').on('touchstart', function(e) {
   $(this).toggleClass('hover');
@@ -16,3 +20,18 @@ $('.card__block').on('touchstart', function(e) {
 $('.card__block').on('touchend', function(e) {
   $(this).toggleClass('hover');
 });
+
+
+$('input').focus(function() {
+  $(this).parents('.form-group').addClass('focused');
+});
+
+$('input').blur(function() {
+  var inputValue = $(this).val();
+  if ( inputValue === '' ) {
+    $(this).removeClass('filled');
+    $(this).parents('.form-group').removeClass('focused');  
+  } else {
+    $(this).addClass('filled');
+  }
+});  

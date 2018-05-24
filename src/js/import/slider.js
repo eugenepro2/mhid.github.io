@@ -21,13 +21,13 @@ let introSLider = new Swiper('.intro-slider', {
 let aboutSLider = new Swiper('.about-slider', {
   speed: 400,
   pagination: {
-    el: '.swiper-pagination',
+    el: '.about-pagination',
     type: 'bullets',
     clickable: true
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.about-next',
+    prevEl: '.about-prev',
   },
 });
 
@@ -37,11 +37,11 @@ let hitsSLider = new Swiper('.hits-slider', {
   slidesPerGroup: 4,
   breakpoints: {
     // when window width is <= 640px
-    768: {
+    1170: {
       slidesPerView: 3,
       slidesPerGroup: 3
     },
-    320: {
+    767: {
       slidesPerView: 1,
       slidesPerGroup: 1,
       spaceBetween: 10
@@ -49,14 +49,26 @@ let hitsSLider = new Swiper('.hits-slider', {
     
   },
   pagination: {
-    el: '.swiper-pagination',
+    el: '.hits-pagination',
     type: 'bullets',
     clickable: true
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.hits-next',
+    prevEl: '.hits-prev',
   },
+});
+
+aboutSLider.on('slideChange', function() {
+  let slide = $('.swiper-slide');
+  slide.each(function() {
+    let linkVideo = $(this).find('iframe').attr('src');
+    console.log(linkVideo);
+    let video = $('video').get(0);
+    $(this).find('iframe').attr('src', '');
+    $(this).find('iframe').attr('src', linkVideo);
+    video.pause();
+  });
 });
 
 $(window).on('load', function() {

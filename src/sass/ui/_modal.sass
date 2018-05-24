@@ -1,0 +1,58 @@
+
+.blocker
+  z-index: 1000  
+.modal
+  max-width: 350px
+  padding: 30px
+  border-radius: 3px
+  display: none
+  h2
+    font-size: 16px
+    line-height: 1.5
+  p
+    text-align: center
+    font-size: 14px
+    font-weight: 300
+    color: $black-three
+    margin-bottom: 25px
+  a.close-modal
+    background: none
+    text-indent: 0
+    width: 20px
+    height: 20px
+    color: $white
+    text-decoration: none
+    font-size: 20px
+    right: -30px
+    top: 0
+  &.sign
+    max-width: 875px
+  &.sale
+    max-width: 875px
+
+.sign-flex
+  display: flex
+  +center
+  flex-direction: column
+
+.sale
+  &-block
+    background-image: url('../img/modal/sale.jpg')
+    background-size: cover
+    height: 490px
+    position: relative
+    &-text
+      position: relative
+      top: 60px
+      padding: 20px
+      background: $primary
+      color: $white
+      font-size: 42px
+      font-weight: 600
+      line-height: 1.4
+      display: inline-block
+      text-transform: uppercase
+    .btn
+      position: absolute
+      bottom: 45px
+      left: 45px
