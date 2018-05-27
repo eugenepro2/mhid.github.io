@@ -1,0 +1,54 @@
+.brand__card
+  background: $white
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.17)
+  border-radius: 4px
+  margin-bottom: 20px
+  height: 210px
+  position: relative
+  +center
+  flex-direction: column
+  text-decoration: none
+  +tr
+  +r($mobile)
+    height: 144px
+    margin-bottom: 4px
+  &__image
+    img
+      height: 70px
+  h4
+    font-size: 14px
+    letter-spacing: 1px
+    text-align: center
+    color: $black-three
+    position: absolute
+    bottom: 15px
+    +r($mobile)
+      bottom: 10px
+  span
+    opacity: 0
+    visibility: hidden
+    text-decoration: none
+    color: $white
+    border: 1px solid $white
+    border-radius: 3px
+    padding: 8px 9px
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    font-size: 13px
+    text-transform: uppercase
+    white-space: nowrap
+    +tr
+    +r($mobile)
+      font-size: 10px
+  &:hover
+    background: $primary
+    h4
+      color: $white
+    span
+      opacity: 1
+      visibility: visible
+    img
+      opacity: 0
+      visibility: hidden

@@ -9,11 +9,14 @@ mixin icon(name, modClass)
     use(xlink:href= svgSprite + '#' + name)
 
 //Product Style 1
-mixin product(hits, sale, in_stock)
+mixin product(hits, sale, in_stock, in_cart)
   .product__card
     .product__card__header
       a(href="#").product__card__header__image
-        img(src="img/catalog/product/1.jpg", alt="")
+        if in_stock
+          img(src="img/catalog/product/1.jpg", alt="")
+        else
+          img(src="img/catalog/product/2.jpg", alt="")
         if !in_stock
           .product__card__header__image--no-stock Продано
       if hits
@@ -34,7 +37,10 @@ mixin product(hits, sale, in_stock)
             if sale
               s 445 256 руб.
           h4 356 000 руб.
-        a(href="#").btn.btn-secondary Купить
+        if !in_cart
+          a(href="#").btn.btn-secondary Купить
+        else
+          a(href="#").btn.btn-secondary В корзине
     else
       .product__card__content.no-stock
         a(href="#") 
@@ -49,4 +55,33 @@ mixin product(hits, sale, in_stock)
           h4 Цена по запросу
         a(href="#price" rel="modal:open").btn.btn-secondary Запросить цену
 
-    
+//Brand
+mixin brand(heading, img)
+  a(href="#").brand__card
+    .brand__card__image
+      img(src=`${img}`, alt="")
+    h4= heading
+    span Перейти к товарам
+
+//Collection
+mixin collection(img, heading, category, count)
+  a(href="#").collection__card
+    .collection__card__image
+      img(src=`${img}`, alt="")
+    .collection__card__content
+      .collection__card__heading
+        h4= heading
+      .collection__card__category
+        p= category
+      .collection__card__count
+        p= count
+      span.btn.btn-secondary.hidden-xs Смотреть коллекцию
+      span.btn.btn-secondary.hidden-md.hidden-sm Смотреть
+
+mixin breadcrumb(items)
+  .breadcrumb
+    .container
+      .row
+        .col-xs-12
+          each item in items
+            a(href="#")= item

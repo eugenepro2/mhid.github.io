@@ -1,0 +1,34 @@
+.pagination
+  +center
+  a
+    width: 48px
+    height: 48px
+    margin-right: 10px
+    border-radius: 3px
+    border: solid 1px $primary
+    text-decoration: none
+    color: $primary
+    font-size: 19px
+    letter-spacing: 1px
+    +center
+    +tr
+    &.is-active, &:hover
+      background: $primary
+      color: $white
+  span
+    height: 48px
+    font-size: 50px
+    margin: 0 15px 0 5px
+    +center
+    i
+      width: 7px
+      height: 7px
+      background: #dac39f
+      border-radius: 50%
+      display: block
+      &:not(:last-child)
+        margin-right: 8px
+  .prev, .next
+    border: none
+    i
+      font-size: 25px

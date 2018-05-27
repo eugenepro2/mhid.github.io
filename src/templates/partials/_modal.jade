@@ -72,7 +72,7 @@
           .form-group
             label.form-label(for='sign-pass-2') Повторите пароль*
             input#sign-pass-2.form-input(type='password')
-          .form-checkbox
+          .form-checkbox.hidden-xs
             input#checkbox-2(type="checkbox", name="")
             label.label(for="checkbox-2")
             label.label-for(for="checkbox-2") Я принимаю 
@@ -91,6 +91,11 @@
             label.form-label(for='sign-site') Сайт компании
             input#sign-site.form-input(type='text')
           .form-require * - обязательно для заполнения
+          .form-checkbox.hidden-md.hidden-sm
+            input#checkbox-4(type="checkbox", name="")
+            label.label(for="checkbox-4")
+            label.label-for(for="checkbox-4") Я принимаю 
+              a(href="#") условия использования сайта и положения о конфеденциальности
       .form-group.form-center
         button.btn.btn-primary(type="submit") Отправить
       .form-info.form-info-price

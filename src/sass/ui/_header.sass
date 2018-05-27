@@ -191,6 +191,7 @@
     top: 35px
     height: 60px
     box-shadow: 0 5px 5px 0 rgba(0,0,0,0.08)
+    animation: smoothScroll 1s forwards
     .logo
       width: 70px
     .header__info
@@ -253,6 +254,7 @@
     width: 100%
     height: 35px
     top: 0
+    animation: smoothScroll 1s forwards
 
 
 .sub
@@ -438,3 +440,11 @@
     &__copy
       height: 100px
       margin-bottom: 20px
+
+
+@keyframes smoothScroll
+  0%
+    transform: translateY(-150px)
+  100%
+    transform: translateY(0px)
+    

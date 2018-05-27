@@ -1,6 +1,7 @@
 .filter
   background-color: #313131
   padding: 25px 40px
+  height: 100%
   &__form
     &__checkbox
       display: flex
@@ -43,6 +44,22 @@
   &__block
     padding: 25px 0
     border-bottom: 1px solid #434343
+    position: relative
+    &__more
+      width: 30px
+      height: 26px
+      background: #414141
+      border-radius: 3px
+      text-decoration: none
+      color: $white
+      font-size: 10px
+      position: absolute
+      right: 0
+      +center
+      &:before
+        content: $icon-filter-arrow
+        @extend %icon
+      
     h3
       font-size: 14px
       font-weight: bold

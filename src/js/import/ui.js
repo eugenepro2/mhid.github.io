@@ -35,3 +35,18 @@ $('input').blur(function() {
     $(this).addClass('filled');
   }
 });  
+
+$('.brand__card').hover(
+  function() {
+    $(this).find('img').hide();
+  },
+  function() {
+    $(this).find('img').delay(100).fadeIn();
+  }
+);
+
+$('.up').on('click', function() {
+  $('body, html').animate({
+    scrollTop: 0
+  }, 1500);
+});

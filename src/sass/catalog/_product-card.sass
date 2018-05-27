@@ -16,14 +16,18 @@
     &:hover
       box-shadow: 0 10px 20px rgba(0,0,0,.2)
     &__header
-      padding: 15px 20px
       position: relative
       &__image
         width: 100%
-        height: 100%
+        height: 220px
         overflow: hidden
+        display: block
         img
-          width: 100%
+          height: 100%
+          display: block
+          left: 50%
+          position: absolute
+          transform: translateX(-50%)
         &--no-stock
           position: absolute
           height: 40px
@@ -37,7 +41,6 @@
           font-weight: 500
           letter-spacing: 1.1px
           text-transform: uppercase
-          margin: 0 -20px
       .top
         position: absolute
         top: 15px
@@ -149,11 +152,78 @@
 
 
 .catalog .product__card
-  width: 215px
+  width: 211px
   margin-left: 0
   height: initial
+  margin-bottom: 20px
+  +r($tablet)
+    width: 100%
+    margin-bottom: 4px
+  &__header
+    &__image
+      height: 200px
+      +r($mobile)
+        height: 125px
+    .top
+      top: 12px
+      width: 40px
+      height: 20px
+      font-size: 11px
+      +r($mobile)
+        top: 9px
+        width: 35px
+        height: 18px
+        font-size: 10px
+    &__hits
+      left: 12px
+      +r($mobile)
+        left: 10px
+    &__sale
+      left: 60px
+      +r($mobile)
+        left: 50px
+    &__wishlist
+      top: 12px
+      right: 12px
+      i
+        font-size: 20px
+      +r($mobile)
+        top: 9px
+        right: 10px
   &__content
+    +r($mobile)
+      padding: 15px
+    h3
+      +r($mobile)
+        font-size: 10px
+    span
+      +r($mobile)
+        margin-bottom: 0
     &__price
+      div
+        height: 30px
+        +r($mobile)
+          flex-direction: row
+          p
+            margin-bottom: 0
+            margin-right: 5px
+            font-size: 9px
+          s
+            font-size: 9px
       h4
         font-size: 18px
+        +r($mobile)
+          font-size: 14px
+          margin: 0
+  .no-stock
+    h4
+      font-size: 15px !important
+      +r($mobile)
+        font-size: 13px !important
+  .btn
+    font-size: 11px
+    height: 35px
+    +r($mobile)
+      height: 30px
+      font-size: 10px
 

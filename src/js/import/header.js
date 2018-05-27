@@ -87,10 +87,10 @@ offsetLeft();
 //Fixed Header
 $(window).scroll(function() {
   if ($(window).scrollTop() >= 300) {
+    $('.header').css('transform', 'translateY(0%)');
     $('.header').addClass('fixed');
     $('.top__banner').addClass('fixed');
-  }
-  else {
+  } else {
     $('.header').removeClass('fixed');
     $('.top__banner').removeClass('fixed');
   }

@@ -16,25 +16,30 @@ $icon-close: "\EA04";
 $icon-dealer: "\EA05";
 $icon-delivery: "\EA06";
 $icon-facebook: "\EA07";
-$icon-heart: "\EA08";
-$icon-info-1: "\EA09";
-$icon-info-2: "\EA0A";
-$icon-info-3: "\EA0B";
-$icon-info-4: "\EA0C";
-$icon-instagram: "\EA0D";
-$icon-linkedin: "\EA0E";
-$icon-music-off: "\EA0F";
-$icon-music-on: "\EA10";
-$icon-od: "\EA11";
-$icon-phone: "\EA12";
-$icon-pinterest: "\EA13";
-$icon-sale: "\EA14";
-$icon-search: "\EA15";
-$icon-slider-left: "\EA16";
-$icon-slider-right: "\EA17";
-$icon-top-banner: "\EA18";
-$icon-twitter: "\EA19";
-$icon-vk: "\EA1A";
+$icon-filter-arrow: "\EA08";
+$icon-filter: "\EA09";
+$icon-heart: "\EA0A";
+$icon-info-1: "\EA0B";
+$icon-info-2: "\EA0C";
+$icon-info-3: "\EA0D";
+$icon-info-4: "\EA0E";
+$icon-info: "\EA0F";
+$icon-instagram: "\EA10";
+$icon-linkedin: "\EA11";
+$icon-music-off: "\EA12";
+$icon-music-on: "\EA13";
+$icon-od: "\EA14";
+$icon-pdf: "\EA15";
+$icon-phone: "\EA16";
+$icon-pinterest: "\EA17";
+$icon-sale: "\EA18";
+$icon-search: "\EA19";
+$icon-slider-left: "\EA1A";
+$icon-slider-right: "\EA1B";
+$icon-top-banner: "\EA1C";
+$icon-twitter: "\EA1D";
+$icon-up-arrow: "\EA1E";
+$icon-vk: "\EA1F";
 
 
 %icon {
@@ -60,16 +65,20 @@ $icon-vk: "\EA1A";
 .icon-dealer:before { content: $icon-dealer; }
 .icon-delivery:before { content: $icon-delivery; }
 .icon-facebook:before { content: $icon-facebook; }
+.icon-filter-arrow:before { content: $icon-filter-arrow; }
+.icon-filter:before { content: $icon-filter; }
 .icon-heart:before { content: $icon-heart; }
 .icon-info-1:before { content: $icon-info-1; }
 .icon-info-2:before { content: $icon-info-2; }
 .icon-info-3:before { content: $icon-info-3; }
 .icon-info-4:before { content: $icon-info-4; }
+.icon-info:before { content: $icon-info; }
 .icon-instagram:before { content: $icon-instagram; }
 .icon-linkedin:before { content: $icon-linkedin; }
 .icon-music-off:before { content: $icon-music-off; }
 .icon-music-on:before { content: $icon-music-on; }
 .icon-od:before { content: $icon-od; }
+.icon-pdf:before { content: $icon-pdf; }
 .icon-phone:before { content: $icon-phone; }
 .icon-pinterest:before { content: $icon-pinterest; }
 .icon-sale:before { content: $icon-sale; }
@@ -78,4 +87,5 @@ $icon-vk: "\EA1A";
 .icon-slider-right:before { content: $icon-slider-right; }
 .icon-top-banner:before { content: $icon-top-banner; }
 .icon-twitter:before { content: $icon-twitter; }
+.icon-up-arrow:before { content: $icon-up-arrow; }
 .icon-vk:before { content: $icon-vk; }

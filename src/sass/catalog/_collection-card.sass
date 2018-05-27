@@ -1,0 +1,78 @@
+.collection__card
+	border-radius: 1.5px
+	background-color: $white
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.17)
+	display: block
+	text-decoration: none
+	height: 320px
+	margin-bottom: 20px
+	+tr
+	+r($mobile)
+		height: 230px
+		margin-bottom: 4px
+	&:hover
+		box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.17)
+		span.btn
+			color: $white
+			&:before
+				transform: scale(1)
+				background: $primary
+	&__image
+		width: 100%
+		height: 120px
+		overflow: hidden
+		+r($mobile)
+			height: 90px
+		img
+			width: 100%
+	&__content
+		padding: 25px
+		+r($mobile)
+			padding: 13px
+	&__heading
+		height: 35px
+		margin-bottom: 12px
+		+r($mobile)
+			margin-bottom: 7px
+			height: 25px
+		+center
+		h4
+			font-size: 13px
+			line-height: 1.35
+			letter-spacing: 0.7px
+			text-align: center
+			color: rgba($black-three, 0.9)
+			text-transform: uppercase
+			+r($mobile)
+				font-size: 12px
+	&__category
+		margin-bottom: 15px
+		+r($mobile)
+			margin-bottom: 9px
+		p
+			font-size: 9.5px
+			text-align: center
+			color: rgba($black-three, 0.8)
+			text-transform: uppercase
+	&__count
+		margin-bottom: 20px
+		+r($mobile)
+			margin-bottom: 15px
+		p
+			font-size: 15px
+			font-weight: 500
+			letter-spacing: 0.3px
+			text-align: center
+			color: rgba(#393939, 0.5)
+			+r($mobile)
+				font-size: 11px
+	span.btn
+		width: 165px
+		height: 35px
+		font-size: 11px
+		+r($mobile)
+			width: 100%
+			height: 30px
+			text-align: center
+
+

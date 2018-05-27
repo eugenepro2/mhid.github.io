@@ -76,3 +76,29 @@ p
 +rmin(1200)
 	.hidden-md
 		display: none !important
+
+
+//Кнопка вверх в каталоге
+.up
+	width: 42px
+	height: 42px
+	border: solid 1.3px #d4d4d4
+	+center
+	flex-direction: column
+	margin-bottom: 40px
+	cursor: pointer
+	float: right
+	&:before, &:after
+		content: $icon-up-arrow
+		@extend %icon
+		color: #484848	
+		font-size: 6px
+		display: block
+	
+
+input[type=number]
+  &::-webkit-inner-spin-button, &::-webkit-outer-spin-button
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    margin: 0

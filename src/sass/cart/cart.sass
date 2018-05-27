@@ -1,0 +1,287 @@
+.cart
+  h2
+    font-size: 24px
+    font-weight: 300
+    line-height: 1.08
+    letter-spacing: 7px
+    color: $black-three
+    text-transform: uppercase
+    margin-bottom: 25px
+    position: relative
+    margin-top: 30px
+    margin-bottom: 30px
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    +r($mobile)
+      flex-direction: column
+      align-items: flex-start
+  &__table
+    background: $white
+    border-radius: 4px
+    &__header
+      padding: 17px 30px
+      display: flex
+      flex-wrap: wrap
+      h3
+        font-size: 14px
+        color: rgba($black-three, 0.5)
+        font-weight: 500
+    &__block
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+      border-top: 1px solid #e1e1e1
+      padding: 20px 30px
+      margin-bottom: 20px
+    &__product
+      width: 30%
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+      &__image
+        margin-right: 15px
+        img
+          width: 100px
+      &__content
+        h4
+          font-size: 15px
+          line-height: 1.33
+          letter-spacing: 0.7px
+          color: rgba($black-three, 0.9)
+          text-transform: uppercase
+          font-weight: 500
+          margin-bottom: 5px
+        p
+          font-size: 11px
+          color: rgba($black-three, 0.8)
+        span
+          font-size: 10px
+          color: rgba($black-three, 0.5)
+    &__stock
+      width: 17%
+      p
+        color: $green
+        font-size: 16px
+        letter-spacing: 0.1px
+      .no-stock
+        p
+          font-size: 17px
+          color: rgba($black-three, 0.5)
+          line-height: 1
+        span
+          font-size: 11px
+          font-weight: 600
+          color: rgba($black-three, 0.5)
+      .order
+        p
+          color: $primary
+    &__price
+      width: 17%
+      position: relative
+      s
+        position: absolute
+        top: -15px
+        color: #8e8e8e
+        font-size: 14px
+        letter-spacing: 0.7px
+      p
+        font-size: 18px
+        letter-spacing: 1px
+        color: #393939
+    &__count
+      width: 17%
+      div
+        display: flex
+        align-items: center
+        .add, .minus
+          color: $primary
+          font-size: 30px
+          position: relative
+          top: -2px
+          cursor: pointer
+        .add
+          padding-left: 10px
+        .minus
+          padding-right: 10px
+        input
+          width: 44px
+          height: 44px
+          border: 1px solid #c8c8c8
+          border-radius: 2px
+          +center
+          font-size: 14px
+          font-weight: 600
+          letter-spacing: 1px
+          text-align: center
+          color: #262626
+    &__total
+      width: 19%
+      display: flex
+      align-items: center
+      justify-content: space-between
+      position: relative
+      s
+        position: absolute
+        top: -15px
+        color: #8e8e8e
+        font-size: 14px
+        letter-spacing: 0.7px
+      p
+        font-size: 18px
+        letter-spacing: 1px
+        color: #393939
+        font-weight: 600
+        margin-bottom: 0
+    &__remove
+      text-decoration: none
+      i
+        display: inline-block
+        transform: rotate(45deg)
+        font-style: normal
+        font-size: 32px
+        color: $red
+  &__conditions
+    background: $white
+    padding: 23px 30px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 20px
+    .form-checkbox
+      margin-bottom: 0
+      label
+        font-weight: 500
+    div
+      +center
+    p
+      flex: 1
+      font-size: 12px
+      color: #393939
+      line-height: 1.25
+      letter-spacing: 0.1px
+      margin-right: 20px
+    a
+      color: $primary
+      font-size: 27px
+  &__promo
+    height: 275px
+    background: $white
+    padding: 25px 30px
+    margin-bottom: 20px
+    h2
+      font-size: 16px
+      justify-content: flex-start
+      margin-bottom: 30px
+      margin-top: 0
+    p
+      font-size: 12px
+      line-height: 1.25
+      letter-spacing: 0.1px
+      color: rgba(#393939, 0.5)
+      margin-bottom: 13px
+    &__form
+      display: flex
+      margin-bottom: 45px
+      input
+        border: solid 1px #c8c8c8
+        border-radius: 2px
+        width: 245px
+        height: 48px
+        display: flex
+        align-items: center
+        padding-left: 15px
+        text-transform: uppercase
+        font-size: 12px
+        font-weight: 600
+        letter-spacing: 1px
+        color: $black-three
+        &::placeholder
+          color: #c8c8c8
+      button
+        width: 48px
+        height: 48px
+        background: $primary
+        +center
+        font-size: 12px
+        font-weight: 600
+        letter-spacing: 1px
+        text-transform: uppercase
+        color: $white
+        border-radius: 3px
+        position: relative
+        left: -10px
+    &__block
+      display: flex
+      a
+        font-size: 12px
+        font-weight: 600
+        letter-spacing: 1px
+        &:first-child
+          width: 280px
+          margin-right: 10px
+        &:last-child
+          width: 240px
+          i
+            margin-right: 10px
+  &__total
+    height: 275px
+    background: $white
+    padding: 25px 30px
+    margin-bottom: 20px
+    h2
+      font-size: 16px
+      justify-content: flex-start
+      margin-bottom: 30px
+      margin-top: 0
+    &__price
+      display: flex
+      justify-content: space-between
+      border-bottom: 1px solid #cbcbcb
+      padding-bottom: 7px
+      p
+        font-size: 14px
+        letter-spacing: 0.2px
+        color: rgba(#393939, 0.5)
+      h3
+        font-size: 16px
+        letter-spacing: 0.8px
+        color: rgba(#393939, 0.5)
+    &__sale
+      display: flex
+      justify-content: space-between
+      margin-top: 15px
+      p
+        font-size: 14px
+        letter-spacing: 0.2px
+        color: $red
+      h3
+        font-size: 16px
+        letter-spacing: 0.8px
+        color: $red
+    &__cost
+      display: flex
+      justify-content: space-between
+      margin-top: 5px
+      p
+        font-size: 17px
+        letter-spacing: 0.2px
+        color: #393939
+      h3
+        font-size: 16px
+        letter-spacing: 0.8px
+        color: #393939
+        font-weight: bold
+    a
+      width: 100%
+      height: 48px
+      background: $green
+      +center
+      text-transform: uppercase
+      font-size: 12px
+      font-weight: 600
+      border-radius: 3px
+      color: $white
+      text-decoration: none
+      margin-top: 25px
+      

@@ -3,11 +3,16 @@ title: Каталог 4 карточки
 ---
 extends layouts/_layout
 block content
-  include partials/_breadcrumb
+   +breadcrumb(['Главная', 'Каталог'])
   .catalog
     .container
       .row
-        .col-md-3
+        .col-md-3.hidden-sm.hidden-xs
           include partials/_aside
-        .col-md-9
+        .col-md-9.col-xs-12
           include catalog/catalog-4-card
+          .catalog__more
+            a(href="#").btn.btn-secondary Показать еще 80 предметов
+            span Показано 80 из 782
+          include partials/_pagination
+          .up

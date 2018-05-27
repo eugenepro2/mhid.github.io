@@ -12,13 +12,19 @@
     margin-bottom: 20px
   &-sign
     width: 580px
+    +r($mobile)
+      width: 280px
     .btn
       width: 250px
   &-row
     display: flex
     width: 100%
+    +r($mobile)
+      flex-direction: column
   &-col
     width: 50%
+    +r($mobile)
+      width: 100%
     &:first-child
       margin-right: 20px
   &-center
@@ -53,6 +59,8 @@
     &:focus
       box-shadow: 0 2px 0 0 $primary
       border: solid 1px $primary
+      +r($mobile)
+        box-shadow: 0 3px 0 0 $primary
     &.filled
       border: solid 1px $primary
       box-shadow: 0 2px 0 0 $primary

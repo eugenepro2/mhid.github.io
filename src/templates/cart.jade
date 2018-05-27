@@ -1,0 +1,252 @@
+---
+title: Корзина
+---
+extends layouts/_layout
+block content
+  +breadcrumb(['Главная', 'Корзина'])
+  .cart
+    .container
+      .row
+        .col-xs-12
+          h2 Корзина
+          .cart__table
+            .cart__table__header
+              .cart__table__product
+                h3 Товары
+              .cart__table__stock
+                h3 Наличие
+              .cart__table__price
+                h3 Цена
+              .cart__table__count
+                h3 Количество
+              .cart__table__total
+                h3 Стоимость
+            .cart__table__block
+              .cart__table__product
+                .cart__table__product__image
+                  img(src="img/catalog/product/1.jpg", alt="")
+                .cart__table__product__content
+                  h4 Кровать After Eight
+                  p AICO (Michael Amini)
+                  span Артикул: 19000EK3-88
+              .cart__table__stock
+                p В наличии
+              .cart__table__price
+                p 356 000 руб.
+              .cart__table__count
+                div
+                  .minus ‒
+                  input(type="number" value="1")
+                  .add +
+              .cart__table__total
+                p 356 000 руб.
+                a(href="#").cart__table__remove
+                  i +
+            .cart__table__block
+              .cart__table__product
+                .cart__table__product__image
+                  img(src="img/catalog/product/1.jpg", alt="")
+                .cart__table__product__content
+                  h4 Кровать After Eight
+                  p AICO (Michael Amini)
+                  span Артикул: 19000EK3-88
+              .cart__table__stock
+                p В наличии
+              .cart__table__price
+                p 356 000 руб.
+              .cart__table__count
+                div
+                  .minus ‒
+                  input(type="number" value="1")
+                  .add +
+              .cart__table__total
+                p 356 000 руб.
+                a(href="#").cart__table__remove
+                  i +
+            .cart__table__block
+              .cart__table__product
+                .cart__table__product__image
+                  img(src="img/catalog/product/1.jpg", alt="")
+                .cart__table__product__content
+                  h4 Кровать After Eight
+                  p AICO (Michael Amini)
+                  span Артикул: 19000EK3-88
+              .cart__table__stock
+                .no-stock
+                  p Поступление
+                  span 10.10.2018
+              .cart__table__price
+                s 445 256 руб.
+                p 356 000 руб.
+              .cart__table__count
+                div
+                  .minus ‒
+                  input(type="number" value="1")
+                  .add +
+              .cart__table__total
+                s 445 256 руб.
+                p 356 000 руб.
+                a(href="#").cart__table__remove
+                  i +
+            .cart__table__block
+              .cart__table__product
+                .cart__table__product__image
+                  img(src="img/catalog/product/1.jpg", alt="")
+                .cart__table__product__content
+                  h4 Кровать After Eight
+                  p AICO (Michael Amini)
+                  span Артикул: 19000EK3-88
+              .cart__table__stock
+                p В наличии
+              .cart__table__price
+                p 356 000 руб.
+              .cart__table__count
+                div
+                  .minus ‒
+                  input(type="number" value="1")
+                  .add +
+              .cart__table__total
+                p 356 000 руб.
+                a(href="#").cart__table__remove
+                  i +
+        .col-xs-12
+          .cart__conditions
+            .form-checkbox
+              input#checkbox-4(type="checkbox", name="")
+              label.label(for="checkbox-4")
+              label.label-for(for="checkbox-4") Я согласен с данными условиями
+            div
+              p Обратите внимание, что в заказе присутствует товар <b>находящийся на данный момент в пути</b>. Срок поставки<br>данного товара до транспортной компании составит 14 календарных дней с момента поступления товара на склад.
+              a(href="#")
+                i.icon.icon-info
+        .col-md-6
+          .cart__promo
+            h2 Ввести промокод
+            p Если вам известен промокод на скидку, введите его в это поле
+            .cart__promo__form
+              input(type="text" placeholder="skidka4000")
+              button(type="submit") Ок
+            .cart__promo__block
+              a(href="#").btn.btn-secondary Запросить информацию
+              a(href="#").btn.btn-secondary 
+                i.icon.icon-pdf
+                | Сохранить в pdf
+        .col-md-6
+          .cart__total
+            h2 Стоимость заказа
+            .cart__total__price
+              p Товаров на сумму
+              h3 712 000 руб.
+            .cart__total__sale
+              p Скидка
+              h3 -124 000 руб.
+            .cart__total__cost
+              p Итого
+              h3 589 000 руб.
+            a(href="#") Купить
+        .col-xs-12
+          h2 Товар под заказ
+          .cart__table
+            .cart__table__header
+              .cart__table__product
+                h3 Товары
+              .cart__table__stock
+                h3 Наличие
+              .cart__table__price
+                h3 Цена
+              .cart__table__count
+                h3 Количество
+              .cart__table__total
+                h3 Стоимость
+            .cart__table__block
+              .cart__table__product
+                .cart__table__product__image
+                  img(src="img/catalog/product/1.jpg", alt="")
+                .cart__table__product__content
+                  h4 Кровать After Eight
+                  p AICO (Michael Amini)
+                  span Артикул: 19000EK3-88
+              .cart__table__stock
+                .order
+                  p Под заказ
+              .cart__table__price
+                p 356 000 руб.
+              .cart__table__count
+                div
+                  .minus ‒
+                  input(type="number" value="1")
+                  .add +
+              .cart__table__total
+                p 356 000 руб.
+                a(href="#").cart__table__remove
+                  i +
+            .cart__table__block
+              .cart__table__product
+                .cart__table__product__image
+                  img(src="img/catalog/product/1.jpg", alt="")
+                .cart__table__product__content
+                  h4 Кровать After Eight
+                  p AICO (Michael Amini)
+                  span Артикул: 19000EK3-88
+              .cart__table__stock
+                .order
+                  p Под заказ
+              .cart__table__price
+                p 356 000 руб.
+              .cart__table__count
+                div
+                  .minus ‒
+                  input(type="number" value="1")
+                  .add +
+              .cart__table__total
+                p 356 000 руб.
+                a(href="#").cart__table__remove
+                  i +
+            .cart__table__block
+              .cart__table__product
+                .cart__table__product__image
+                  img(src="img/catalog/product/1.jpg", alt="")
+                .cart__table__product__content
+                  h4 Кровать After Eight
+                  p AICO (Michael Amini)
+                  span Артикул: 19000EK3-88
+              .cart__table__stock
+                .order
+                  p Под заказ
+              .cart__table__price
+                s 445 256 руб.
+                p 356 000 руб.
+              .cart__table__count
+                div
+                  .minus ‒
+                  input(type="number" value="1")
+                  .add +
+              .cart__table__total
+                s 445 256 руб.
+                p 356 000 руб.
+                a(href="#").cart__table__remove
+                  i +
+            .cart__table__block
+              .cart__table__product
+                .cart__table__product__image
+                  img(src="img/catalog/product/1.jpg", alt="")
+                .cart__table__product__content
+                  h4 Кровать After Eight
+                  p AICO (Michael Amini)
+                  span Артикул: 19000EK3-88
+              .cart__table__stock
+                .order
+                  p Под заказ
+              .cart__table__price
+                s 445 256 руб.
+                p 356 000 руб.
+              .cart__table__count
+                div
+                  .minus ‒
+                  input(type="number" value="1")
+                  .add +
+              .cart__table__total
+                s 445 256 руб.
+                p 356 000 руб.
+                a(href="#").cart__table__remove
+                  i +
