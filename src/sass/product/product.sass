@@ -173,6 +173,14 @@
         text-transform: uppercase
         margin-bottom: 20px
         padding-right: 55px
+        a
+          position: relative
+          right: 0
+          top: 0
+          color: $black-three
+          i
+            opacity: 0.5
+            color: $black-three
         +r($tablet)
           br
             display: none
@@ -227,6 +235,9 @@
           background: #f0f0f0
           border-radius: 3px
           margin-left: 10px
+      &-secondary
+        margin-bottom: 14px
+        margin-top: 15px
     .btn
       margin-left: 30px
       margin-bottom: 30px
@@ -291,9 +302,11 @@
       color: $black-three
       margin-bottom: 15px
     .btn
-      widows: 250px
+      width: 250px
       height: 30px
       margin: 0 auto
+      font-size: 13px
+      font-weight: 600
   &__swiper
     position: relative
     overflow: hidden

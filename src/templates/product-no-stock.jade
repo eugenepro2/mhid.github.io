@@ -3,7 +3,7 @@ title: Продукт
 ---
 extends layouts/_layout
 block content
-  +breadcrumb(['Главная', 'Контент', 'AICO (MICHAEL AMINI)б', 'AFTER EIGHT', 'Кровать After Eight'])
+  +breadcrumb(['Главная', 'Контент', 'AICO (MICHAEL AMINI)б', 'AFTER EIGHT', 'Кровать After Eight'], true)
   .product
     .container
       .row
@@ -64,8 +64,9 @@ block content
                       i.icon.icon-heart
                       .product__block__favorites Товар добавлен в избранное
                     h1 Кровать After<br> Eight collection 
-                      i.icon.icon-pencil
-                  .product__block__sum
+                      a(href="#")
+                        i.icon.icon-pencil
+                  .product__block__sum.product__block__sum-secondary
                     span Цена по запросу
                     p.order Под заказ
                   a(href="#").btn.btn-secondary Запросить цену

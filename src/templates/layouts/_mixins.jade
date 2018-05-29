@@ -78,10 +78,16 @@ mixin collection(img, heading, category, count)
       span.btn.btn-secondary.hidden-xs Смотреть коллекцию
       span.btn.btn-secondary.hidden-md.hidden-sm Смотреть
 
-mixin breadcrumb(items)
+mixin breadcrumb(items, close)
   .breadcrumb
     .container
       .row
         .col-xs-12
           each item in items
             a(href="#")= item
+        .col-xs-12.hidden-sm.hidden-xs
+          .close
+            if close
+              a(href="#").close Закрыть
+                i.icon.icon-close
+            else
