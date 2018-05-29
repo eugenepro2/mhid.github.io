@@ -1,5 +1,8 @@
 .product
   position: relative
+  .container
+    +r($tablet)
+      padding: 0 8px
   &__content
     background: $white
     margin-top: 40px
@@ -169,12 +172,12 @@
         color: $black-three
         text-transform: uppercase
         margin-bottom: 20px
-        padding-right: 35px
+        padding-right: 55px
         +r($tablet)
           br
             display: none
         +r($mobile)
-          font-size: 18px
+          font-size: 19px
       s
         font-size: 18px
         font-weight: normal

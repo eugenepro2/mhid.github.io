@@ -15,6 +15,9 @@
     &.is-active, &:hover
       background: $primary
       color: $white
+    &.mobile-none
+      +r($mobile)
+        display: none
   span
     height: 48px
     font-size: 50px
