@@ -27,6 +27,8 @@
         font-size: 14px
         color: rgba($black-three, 0.5)
         font-weight: 500
+        &:last-child
+          margin-right: 30px
     &__block
       display: flex
       flex-wrap: wrap
@@ -90,7 +92,7 @@
         letter-spacing: 1px
         color: #393939
     &__count
-      width: 17%
+      width: 15%
       div
         display: flex
         align-items: center
@@ -116,7 +118,7 @@
           text-align: center
           color: #262626
     &__total
-      width: 19%
+      width: 21%
       display: flex
       align-items: center
       justify-content: space-between
@@ -133,6 +135,13 @@
         color: #393939
         font-weight: 600
         margin-bottom: 0
+    &__basket
+      padding: 12px
+      border-radius: 3px
+      background: $primary
+      i
+        color: $white
+        font-size: 22px
     &__remove
       text-decoration: none
       i
@@ -229,6 +238,9 @@
     background: $white
     padding: 25px 30px
     margin-bottom: 20px
+    display: flex
+    flex-direction: column
+    justify-content: space-around
     h2
       font-size: 16px
       justify-content: flex-start
@@ -284,4 +296,26 @@
       color: $white
       text-decoration: none
       margin-top: 25px
-      
+  &__conservation
+    width: 100%
+    background: $white
+    border-radius: 3px
+    margin-bottom: 70px
+    display: flex
+    padding: 30px
+    +r($mobile)
+      flex-direction: column
+    a
+      font-size: 12px
+      font-weight: 600
+      letter-spacing: 1px
+      +r($mobile)
+        width: 100% !important
+        margin-bottom: 15px
+      &:first-child
+        width: 280px
+        margin-right: 10px
+      &:last-child
+        width: 240px
+        i
+          margin-right: 10px

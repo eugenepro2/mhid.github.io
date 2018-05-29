@@ -1,4 +1,6 @@
 import Swiper from 'swiper';
+import owlCarousel from 'owl.carousel';
+import ovl from 'owl.carousel2.thumbs';
 
 
 let introSLider = new Swiper('.intro-slider', {
@@ -76,3 +78,29 @@ $(window).on('load', function() {
 });
 
 
+$('.content__slider1').owlCarousel({
+  margin:10,
+  nav:true,
+  items:1,
+  thumbs: true,
+  thumbsPrerendered: true
+});
+$('.content__slider2').owlCarousel({
+  margin:10,
+  nav:true,
+});
+
+let contentSlider = new Swiper('.swiper__content', {
+  slidesPerView: 4,
+  spaceBetween: 15,
+  breakpoints: {
+    767: {
+      slidesPerView: 3,
+      spaceBetween: 10
+    }
+  },
+  navigation: {
+    nextEl: '.content-next',
+    prevEl: '.content-prev',
+  },
+});

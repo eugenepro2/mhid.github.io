@@ -73,6 +73,8 @@
     "current-device": "^0.7.8",
     "jquery-modal": "^0.9.1",
     "jquery.scrollbar": "^0.2.11",
+    "owl.carousel": "^2.3.4",
+    "owl.carousel2.thumbs": "^0.1.8",
     "swiper": "^4.2.2"
   }
 }

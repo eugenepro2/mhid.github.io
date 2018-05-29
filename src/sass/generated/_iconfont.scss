@@ -11,35 +11,49 @@
 
 $icon-arrow-down-menu: "\EA01";
 $icon-arrow-right: "\EA02";
-$icon-cart: "\EA03";
-$icon-close: "\EA04";
-$icon-dealer: "\EA05";
-$icon-delivery: "\EA06";
-$icon-facebook: "\EA07";
-$icon-filter-arrow: "\EA08";
-$icon-filter: "\EA09";
-$icon-heart: "\EA0A";
-$icon-info-1: "\EA0B";
-$icon-info-2: "\EA0C";
-$icon-info-3: "\EA0D";
-$icon-info-4: "\EA0E";
-$icon-info: "\EA0F";
-$icon-instagram: "\EA10";
-$icon-linkedin: "\EA11";
-$icon-music-off: "\EA12";
-$icon-music-on: "\EA13";
-$icon-od: "\EA14";
-$icon-pdf: "\EA15";
-$icon-phone: "\EA16";
-$icon-pinterest: "\EA17";
-$icon-sale: "\EA18";
-$icon-search: "\EA19";
-$icon-slider-left: "\EA1A";
-$icon-slider-right: "\EA1B";
-$icon-top-banner: "\EA1C";
-$icon-twitter: "\EA1D";
-$icon-up-arrow: "\EA1E";
-$icon-vk: "\EA1F";
+$icon-basket: "\EA03";
+$icon-cart: "\EA04";
+$icon-catalog: "\EA05";
+$icon-close: "\EA06";
+$icon-dealer: "\EA07";
+$icon-delivery: "\EA08";
+$icon-doc: "\EA09";
+$icon-double-arrow-left: "\EA0A";
+$icon-double-arrow-right: "\EA0B";
+$icon-facebook: "\EA0C";
+$icon-filter-arrow: "\EA0D";
+$icon-filter: "\EA0E";
+$icon-folder: "\EA0F";
+$icon-heart-red: "\EA10";
+$icon-heart: "\EA11";
+$icon-info-1: "\EA12";
+$icon-info-2: "\EA13";
+$icon-info-3: "\EA14";
+$icon-info-4: "\EA15";
+$icon-info: "\EA16";
+$icon-instagram: "\EA17";
+$icon-jpeg: "\EA18";
+$icon-linkedin: "\EA19";
+$icon-music-off: "\EA1A";
+$icon-music-on: "\EA1B";
+$icon-notebook: "\EA1C";
+$icon-od: "\EA1D";
+$icon-pdf: "\EA1E";
+$icon-pdf__content: "\EA1F";
+$icon-pencil: "\EA20";
+$icon-phone: "\EA21";
+$icon-pinterest: "\EA22";
+$icon-price-list: "\EA23";
+$icon-sale: "\EA24";
+$icon-search: "\EA25";
+$icon-slider-left: "\EA26";
+$icon-slider-right: "\EA27";
+$icon-stock: "\EA28";
+$icon-top-banner: "\EA29";
+$icon-twitter: "\EA2A";
+$icon-up-arrow: "\EA2B";
+$icon-vk: "\EA2C";
+$icon-xls: "\EA2D";
 
 
 %icon {
@@ -60,13 +74,20 @@ $icon-vk: "\EA1F";
 
 .icon-arrow-down-menu:before { content: $icon-arrow-down-menu; }
 .icon-arrow-right:before { content: $icon-arrow-right; }
+.icon-basket:before { content: $icon-basket; }
 .icon-cart:before { content: $icon-cart; }
+.icon-catalog:before { content: $icon-catalog; }
 .icon-close:before { content: $icon-close; }
 .icon-dealer:before { content: $icon-dealer; }
 .icon-delivery:before { content: $icon-delivery; }
+.icon-doc:before { content: $icon-doc; }
+.icon-double-arrow-left:before { content: $icon-double-arrow-left; }
+.icon-double-arrow-right:before { content: $icon-double-arrow-right; }
 .icon-facebook:before { content: $icon-facebook; }
 .icon-filter-arrow:before { content: $icon-filter-arrow; }
 .icon-filter:before { content: $icon-filter; }
+.icon-folder:before { content: $icon-folder; }
+.icon-heart-red:before { content: $icon-heart-red; }
 .icon-heart:before { content: $icon-heart; }
 .icon-info-1:before { content: $icon-info-1; }
 .icon-info-2:before { content: $icon-info-2; }
@@ -74,18 +95,25 @@ $icon-vk: "\EA1F";
 .icon-info-4:before { content: $icon-info-4; }
 .icon-info:before { content: $icon-info; }
 .icon-instagram:before { content: $icon-instagram; }
+.icon-jpeg:before { content: $icon-jpeg; }
 .icon-linkedin:before { content: $icon-linkedin; }
 .icon-music-off:before { content: $icon-music-off; }
 .icon-music-on:before { content: $icon-music-on; }
+.icon-notebook:before { content: $icon-notebook; }
 .icon-od:before { content: $icon-od; }
 .icon-pdf:before { content: $icon-pdf; }
+.icon-pdf__content:before { content: $icon-pdf__content; }
+.icon-pencil:before { content: $icon-pencil; }
 .icon-phone:before { content: $icon-phone; }
 .icon-pinterest:before { content: $icon-pinterest; }
+.icon-price-list:before { content: $icon-price-list; }
 .icon-sale:before { content: $icon-sale; }
 .icon-search:before { content: $icon-search; }
 .icon-slider-left:before { content: $icon-slider-left; }
 .icon-slider-right:before { content: $icon-slider-right; }
+.icon-stock:before { content: $icon-stock; }
 .icon-top-banner:before { content: $icon-top-banner; }
 .icon-twitter:before { content: $icon-twitter; }
 .icon-up-arrow:before { content: $icon-up-arrow; }
 .icon-vk:before { content: $icon-vk; }
+.icon-xls:before { content: $icon-xls; }

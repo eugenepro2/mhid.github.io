@@ -1,0 +1,126 @@
+---
+title: Корзина
+---
+extends layouts/_layout
+block content
+  +breadcrumb(['Главная', 'Корзина'])
+  .cart
+    .container
+      .row
+        .col-xs-12
+          h2 Избранное
+          .cart__table
+            .cart__table__header
+              .cart__table__product
+                h3 Товары
+              .cart__table__stock
+                h3 Наличие
+              .cart__table__price
+                h3 Цена
+              .cart__table__count
+                h3 Количество
+              .cart__table__total
+                h3 Стоимость
+                h3 В карзину
+            .cart__table__block
+              .cart__table__product
+                .cart__table__product__image
+                  img(src="img/catalog/product/1.jpg", alt="")
+                .cart__table__product__content
+                  h4 Кровать After Eight
+                  p AICO (Michael Amini)
+                  span Артикул: 19000EK3-88
+              .cart__table__stock
+                p В наличии
+              .cart__table__price
+                p 356 000 руб.
+              .cart__table__count
+                div
+                  .minus ‒
+                  input(type="number" value="1")
+                  .add +
+              .cart__table__total
+                p 356 000 руб.
+                a(href="#").cart__table__basket
+                  i.icon.icon-basket
+                a(href="#").cart__table__remove
+                  i +
+            .cart__table__block
+              .cart__table__product
+                .cart__table__product__image
+                  img(src="img/catalog/product/1.jpg", alt="")
+                .cart__table__product__content
+                  h4 Кровать After Eight
+                  p AICO (Michael Amini)
+                  span Артикул: 19000EK3-88
+              .cart__table__stock
+                p В наличии
+              .cart__table__price
+                p 356 000 руб.
+              .cart__table__count
+                div
+                  .minus ‒
+                  input(type="number" value="1")
+                  .add +
+              .cart__table__total
+                p 356 000 руб.
+                a(href="#").cart__table__basket
+                  i.icon.icon-basket
+                a(href="#").cart__table__remove
+                  i +
+            .cart__table__block
+              .cart__table__product
+                .cart__table__product__image
+                  img(src="img/catalog/product/1.jpg", alt="")
+                .cart__table__product__content
+                  h4 Кровать After Eight
+                  p AICO (Michael Amini)
+                  span Артикул: 19000EK3-88
+              .cart__table__stock
+                .no-stock
+                  p Поступление
+                  span 10.10.2018
+              .cart__table__price
+                s 445 256 руб.
+                p 356 000 руб.
+              .cart__table__count
+                div
+                  .minus ‒
+                  input(type="number" value="1")
+                  .add +
+              .cart__table__total
+                s 445 256 руб.
+                p 356 000 руб.
+                a(href="#").cart__table__basket
+                  i.icon.icon-basket
+                a(href="#").cart__table__remove
+                  i +
+            .cart__table__block
+              .cart__table__product
+                .cart__table__product__image
+                  img(src="img/catalog/product/1.jpg", alt="")
+                .cart__table__product__content
+                  h4 Кровать After Eight
+                  p AICO (Michael Amini)
+                  span Артикул: 19000EK3-88
+              .cart__table__stock
+                p В наличии
+              .cart__table__price
+                p 356 000 руб.
+              .cart__table__count
+                div
+                  .minus ‒
+                  input(type="number" value="1")
+                  .add +
+              .cart__table__total
+                p 356 000 руб.
+                a(href="#").cart__table__basket
+                  i.icon.icon-basket
+                a(href="#").cart__table__remove
+                  i +
+        .col-xs-12
+          .cart__conservation
+            a(href="#").btn.btn-secondary Запросить информацию
+            a(href="#").btn.btn-secondary 
+              i.icon.icon-pdf
+              | Сохранить в pdf

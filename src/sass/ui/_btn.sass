@@ -12,6 +12,15 @@
 	transition-duration: 0.3s
 	position: relative
 	+center
+	&-gren
+		background: $green
+		width: 170px
+		height: 52px
+		border: none
+		&:hover
+			&:before
+				transform: scale(1)
+				background: #D9A866
 	&-primary
 		background: $primary
 		box-shadow: 0 12px 23px 0 rgba(0, 0, 0, 0.2)

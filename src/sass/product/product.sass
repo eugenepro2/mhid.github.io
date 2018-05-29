@@ -1,0 +1,343 @@
+.product
+  position: relative
+  &__content
+    background: $white
+    margin-top: 40px
+    .content__slider1
+      width: 100% !important
+      left: 50%
+      transform: translate(-50%)
+      position: relative
+      height: 450px
+      +r($mobile)
+        width: 100%
+      .owl-stage-outer, .owl-stage, .owl-item
+        height: 100%
+      .item
+        overflow: hidden
+        height: 100%
+        position: relative
+        +center
+        img
+          height: 100%
+          width: auto
+          +r($mobile)
+            width: 100%
+            height: auto
+        .swiper__sale
+          position: absolute
+          left: 110px
+          top: 30px
+          font-size: 18px
+          font-weight: normal
+          letter-spacing: 1.4px
+          text-align: center
+          color: $white
+          padding: 7px 13px
+          background: $red
+          text-transform: uppercase
+        .swiper__hits
+          position: absolute
+          left: 30px
+          top: 30px
+          font-size: 18px
+          font-weight: normal
+          letter-spacing: 1.4px
+          text-align: center
+          color: $white
+          padding: 7px 13px
+          background: $green
+          text-transform: uppercase
+      .owl-dots
+        display: none
+      .owl-prev
+        position: absolute
+        left: 30px
+        top: 50%
+        transform: translate(0, -50%)
+        +r($mobile)
+          display: none
+        span
+          visibility: hidden
+          &:before
+            content: '\EA26'
+            font-family: "iconfont"
+            visibility: visible
+            color: $primary
+            font-size: 38px
+            opacity: 0.9
+      .owl-next
+        position: absolute
+        right: 30px
+        top: 50%
+        transform: translate(0, -50%)
+        +r($mobile)
+          display: none
+        span
+          visibility: hidden
+          &:before
+            content: '\EA27'
+            font-family: "iconfont"
+            visibility: visible
+            color: $primary
+            font-size: 38px
+            opacity: 0.9
+    .swiper
+      position: relative
+      border-top: 1px solid #e1e1e1
+      padding: 20px 0
+      width: 102.3%
+      +r($tablet)
+        width: 100%
+        border-bottom: 1px solid #e1e1e1
+      .swiper__content
+        height: 70px
+        position: relative
+        max-width: 320px
+        width: 100%
+        padding: 0
+        +r($mobile)
+          height: 60px
+        .swiper-slide
+          overflow: hidden
+          box-sizing: border-box
+          background: none
+          img
+            width: auto
+            height: 100%
+        .owl-thumb-item.swiper-slide.active
+          border: solid 2.9px $primary
+      .content-prev
+        left: 30px
+        +r($tablet)
+          display: block
+        +r($mobile)
+          display: none
+      .content-next
+        right: 30px
+        +r($tablet)
+          display: block
+        +r($mobile)
+          display: none
+  &__block
+    border-left: 1px solid #e1e1e1
+    height: 100%
+    position: relative
+    +r($tablet)
+      border: none
+    &__name
+      padding: 20px 30px
+      padding-bottom: 5px
+      +r($mobile)
+        padding: 20px 15px
+        padding-bottom: 5px
+      a
+        position: absolute
+        right: 30px
+        top: 30px
+        .product__block__favorites
+          position: absolute
+          bottom: -45px
+          min-width: 230px
+          left: -160px
+          border-radius: 3px
+          padding: 10px 14px
+          background-color: #f8dfb1
+          display: block
+          font-size: 15px
+          color: $black-three
+          display: none
+          &.active
+            display: block
+          &:before
+            content: ''
+            border-left: 8px solid transparent
+            border-right: 8px solid transparent
+            border-bottom: 8px solid #f8dfb1
+            position: absolute
+            right: 48px
+            top: -7px
+        i
+          color: #bc1b1b
+          font-size: 25px
+      h1
+        font-size: 24px
+        font-weight: normal
+        line-height: 1.5
+        letter-spacing: 7px
+        text-align: left
+        color: $black-three
+        text-transform: uppercase
+        margin-bottom: 20px
+        padding-right: 35px
+        +r($tablet)
+          br
+            display: none
+        +r($mobile)
+          font-size: 18px
+      s
+        font-size: 18px
+        font-weight: normal
+        line-height: 1.44
+        letter-spacing: 0.7px
+        text-align: left
+        color: #8e8e8e
+    &__sum
+      padding: 20px 30px
+      padding-top: 0
+      display: flex
+      align-items: center
+      +r($mobile)
+        flex-direction: column
+        align-items: flex-start
+      +r($mobile)
+        padding: 20px 15px
+        padding-top: 0
+      span
+        font-size: 26px
+        font-weight: 900
+        line-height: 1
+        letter-spacing: 1px
+        text-align: left
+        color: $black-three
+      p
+        font-size: 17px
+        font-weight: 600
+        text-align: left
+        color: $green
+        margin-left: 30px
+        display: flex
+        align-items: center
+        &.order
+          font-size: 17px
+          font-weight: 600
+          color: $primary
+        &.date
+          color: $black-three
+        +r($mobile)
+          margin-left: 0
+          margin-top: 20px
+        b
+          font-size: 17px
+          font-weight: 600
+          padding: 5px 10px
+          background: #f0f0f0
+          border-radius: 3px
+          margin-left: 10px
+    .btn
+      margin-left: 30px
+      margin-bottom: 30px
+      +r($mobile)
+        margin-left: 15px
+    &__info
+      border-top: 1px solid #e1e1e1
+      padding: 20px 30px
+      padding-bottom: 0
+      +r($mobile)
+        padding: 20px 15px
+        padding-bottom: 0
+      p
+        font-size: 16px
+        font-weight: 300
+        color: $black-three
+        margin-bottom: 30px
+      a
+        font-size: 16px
+        font-weight: normal
+        color: $black-three
+        border-bottom: 1px dashed $black-three
+        text-decoration: none
+  &__description
+    width: 100%
+    border-top: 1px solid #e1e1e1
+    padding: 25px 30px
+    +r($mobile)
+      padding: 25px 15px
+    h2
+      font-size: 15px
+      line-height: 1.6
+      letter-spacing: 5px
+      font-weight: normal
+      text-align: left
+      color: $black-three
+      display: inline-block
+      margin-bottom: 15px
+    p
+      font-size: 15px
+      font-weight: 300
+      line-height: 1.33
+      text-align: left
+      color: $black-three
+  h4.collection
+    font-size: 24px
+    font-weight: 300
+    line-height: 1.08
+    letter-spacing: 7px
+    text-align: center
+    color: $black-three
+    text-transform: uppercase
+    padding: 45px 0
+  &__collection
+    background: $white
+    padding: 15px 0
+    margin-bottom: 15px
+    h3
+      font-size: 17px
+      letter-spacing: 1.2px
+      text-transform: uppercase
+      color: $black-three
+      margin-bottom: 15px
+    .btn
+      widows: 250px
+      height: 30px
+      margin: 0 auto
+  &__swiper
+    position: relative
+    overflow: hidden
+    .swiper-container
+      width: calc(100% - 70px)
+      padding-top: 20px
+      padding-left: 5px
+      +r($tablet)
+        width: 100%
+        overflow: visible
+      .swiper
+        &-slide
+          .product__card-other
+            background-color: $primary
+            &__header
+              +center
+              flex-direction: column
+              h3
+                font-size: 18px
+                font-weight: 500
+                letter-spacing: 1.2px
+                text-align: center
+                color: $white
+                text-transform: uppercase
+                padding: 45px 0
+                padding-bottom: 55px
+              img
+                margin-bottom: 70px
+            &__content
+              h3
+                font-size: 18px
+                font-weight: 500
+                letter-spacing: 1.5px
+                text-align: center
+                color: $white
+                margin-bottom: 100px
+                +r($tablet)
+                  font-size: 14px
+              .btn-primary
+                box-shadow: none
+                border: 1px solid $white
+        &-pagination
+          margin-top: 40px
+          transform: translateX(0)
+          position: static
+          margin-bottom: 35px
+          +center
+        &-button-prev
+        &-button-next
+          
