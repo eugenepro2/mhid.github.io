@@ -1,4 +1,40 @@
 .content
+  &__mobile-menu
+    display: none
+    border-radius: 3px
+    border: solid 1px $primary
+    padding: 15px 20px
+    justify-content: space-between
+    margin-top: 20px
+    font-size: 12px
+    font-weight: 600
+    letter-spacing: 1px
+    color: $primary
+    text-decoration: none
+    text-transform: uppercase
+    +r($tablet)
+      display: flex
+    i
+      position: relative
+      span
+        display: block
+        width: 20px
+        height: 1.5px
+        background: $primary
+        &:before
+          content: ''
+          width: 20px
+          position: absolute
+          top: 6px
+          height: 1.5px
+          background: $primary
+        &:after
+          content: ''
+          width: 20px
+          position: absolute
+          top: 12px
+          height: 1.5px
+          background: $primary
   &__description
     padding: 0 20px
     margin-bottom: 110px
@@ -88,7 +124,7 @@
           line-height: 1.53
           letter-spacing: 4.3px
         &:before
-          content: '\EA09'
+          content: '\EA0A'
           position: absolute
           left: -30px
           font-family: "iconfont"
@@ -96,7 +132,7 @@
             top: -30px
             left: 10px
         &:after
-          content: '\EA0A'
+          content: '\EA0B'
           position: absolute
           right: -30px
           font-family: "iconfont"
