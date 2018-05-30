@@ -1,37 +1,50 @@
 .error
-  h1
-    font-size: 24px
-    font-weight: 300
-    font-style: normal
-    font-stretch: normal
-    line-height: 1.08
-    letter-spacing: 7px
-    text-align: left
-    color: $black-three
-    text-transform: uppercase
-    margin-top: 30px
-    +r($mobile)
-      font-size: 20px
-  p
-    line-height: 1.47
-    letter-spacing: 0.3px
-    color: #0b0b0b
-    font-weight: normal
-    font-style: normal
-    margin: 20px 0
-  span
-    font-size: 18px
-    font-weight: 300
-    line-height: 1.22
-    letter-spacing: 0.3px
-    text-align: left
-    color: #0b0b0b
-    margin-top: 15px
-    display: inline-block
-    margin-bottom: 40px
-    a
+  &__breadcrumb
+    position: relative
+    .breadcrumb
+      position: absolute
+      left: -15px
+      width: calc(100% + 67px)
+      padding-left: 30px
+      +r($tablet)
+        left: -30px
+        padding-left: 0
+        width: calc(100% + 60px)
+  &__container
+    padding-top: 60px
+    h1
+      font-size: 24px
+      font-weight: 300
+      font-style: normal
+      font-stretch: normal
+      line-height: 1.08
+      letter-spacing: 7px
+      text-align: left
+      color: $black-three
+      text-transform: uppercase
+      margin-top: 30px
+      +r($mobile)
+        font-size: 20px
+    p
+      line-height: 1.47
+      letter-spacing: 0.3px
+      color: #0b0b0b
+      font-weight: normal
+      font-style: normal
+      margin: 20px 0
+    span
+      font-size: 18px
+      font-weight: 300
       line-height: 1.22
       letter-spacing: 0.3px
       text-align: left
-      color: #d2a452
-      text-decoration: none
+      color: #0b0b0b
+      margin-top: 15px
+      display: inline-block
+      margin-bottom: 40px
+      a
+        line-height: 1.22
+        letter-spacing: 0.3px
+        text-align: left
+        color: #d2a452
+        text-decoration: none

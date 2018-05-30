@@ -3,16 +3,18 @@ title: 404 Страница не найдена
 ---
 extends layouts/_layout
 block content
-  +breadcrumb(['Главная', '404'])
   .error
     .container
       .row
         .col-md-3.hidden-sm.hidden-xs
-          include partials/_aside
+          include partials/_aside-content
         .col-md-9.col-xs-12
-          h1 404 — страница не найдена
-          p Возможно вы ввели не тот адрес или этой страницы больше не существует.
-          span Предлагаем вам 
-            a(href="#") перейти на главную 
-            | или 
-            a(href="#") посмотреть наш каталог 
+          .error__breadcrumb
+            +breadcrumb(['Главная', '404'])
+          .error__container
+            h1 404 — страница не найдена
+            p Возможно вы ввели не тот адрес или этой страницы больше не существует.
+            span Предлагаем вам 
+              a(href="#") перейти на главную 
+              | или 
+              a(href="#") посмотреть наш каталог 

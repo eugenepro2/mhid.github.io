@@ -1,4 +1,15 @@
 .content
+  &__breadcrumb
+    position: relative
+    .breadcrumb
+      position: absolute
+      left: -15px
+      width: calc(100% + 67px)
+      padding-left: 30px
+      +r($tablet)
+        left: -30px
+        padding-left: 0
+        width: calc(100% + 60px)
   &__mobile-menu
     display: none
     border-radius: 3px
@@ -35,6 +46,8 @@
           top: 12px
           height: 1.5px
           background: $primary
+  &__container
+    padding-top: 60px
   &__description
     padding: 0 20px
     margin-bottom: 110px
