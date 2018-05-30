@@ -33,15 +33,15 @@ block content
                   b В наличии
               .cart__table__stock
                 p В наличии
-              .cart__table__block--mobile
+              .cart__table__block--secondary
                 .cart__table__block__sum
-                  .cart__table__price--mobile
+                  .cart__table__price--secondary
                     span Цена
                     p 356 000 руб.
-                  .cart__table__total--mobile
+                  .cart__table__total--secondary
                     span Стоимость
                     p 356 000 руб.
-                .cart__table__count--mobile.cart__table__count
+                .cart__table__count--secondary.cart__table__count
                   div
                     .minus ‒
                     input(type="number" value="1")
@@ -70,15 +70,15 @@ block content
                   b В наличии
               .cart__table__stock
                 p В наличии
-              .cart__table__block--mobile
+              .cart__table__block--secondary
                 .cart__table__block__sum
-                  .cart__table__price--mobile
+                  .cart__table__price--secondary
                     span Цена
                     p 356 000 руб.
-                  .cart__table__total--mobile
+                  .cart__table__total--secondary
                     span Стоимость
                     p 356 000 руб.
-                .cart__table__count--mobile.cart__table__count
+                .cart__table__count--secondary.cart__table__count
                   div
                     .minus ‒
                     input(type="number" value="1")
@@ -110,17 +110,17 @@ block content
                 .no-stock
                   p Поступление
                   span 10.10.2018
-              .cart__table__block--mobile
+              .cart__table__block--secondary
                 .cart__table__block__sum
-                  .cart__table__price--mobile
+                  .cart__table__price--secondary
                     span Цена
                     s 445 256 руб.
                     p 356 000 руб.
-                  .cart__table__total--mobile
+                  .cart__table__total--secondary
                     span Стоимость
                     s 445 256 руб.
                     p 356 000 руб.
-                .cart__table__count--mobile.cart__table__count
+                .cart__table__count--secondary.cart__table__count
                   div
                     .minus ‒
                     input(type="number" value="1")
@@ -148,23 +148,29 @@ block content
                   h4 Кровать After Eight
                   p AICO (Michael Amini)
                   span Артикул: 19000EK3-88
-                  b В наличии
+                  b.no-stock Поступление 
+                    span 10.10.2018
               .cart__table__stock
-                p В наличии
-              .cart__table__block--mobile
+                .no-stock
+                  p Поступление
+                  span 10.10.2018
+              .cart__table__block--secondary
                 .cart__table__block__sum
-                  .cart__table__price--mobile
+                  .cart__table__price--secondary
                     span Цена
+                    s 445 256 руб.
                     p 356 000 руб.
-                  .cart__table__total--mobile
+                  .cart__table__total--secondary
                     span Стоимость
+                    s 445 256 руб.
                     p 356 000 руб.
-                .cart__table__count--mobile.cart__table__count
+                .cart__table__count--secondary.cart__table__count
                   div
                     .minus ‒
                     input(type="number" value="1")
                     .add +
               .cart__table__price
+                s 445 256 руб.
                 p 356 000 руб.
               .cart__table__count
                 div
@@ -172,6 +178,7 @@ block content
                   input(type="number" value="1")
                   .add +
               .cart__table__total
+                s 445 256 руб.
                 p 356 000 руб.
               a(href="#").cart__table__basket
                 i.icon.icon-basket

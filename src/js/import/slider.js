@@ -104,3 +104,13 @@ let contentSlider = new Swiper('.swiper__content', {
     prevEl: '.content-prev',
   },
 });
+
+
+let productSlider = new Swiper('.swiper__product', {
+  slidesPerView: 4,
+  spaceBetween: 15,
+  navigation: {
+    nextEl: '.product-next',
+    prevEl: '.product-prev',
+  },
+});
