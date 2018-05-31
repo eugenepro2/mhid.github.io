@@ -50,3 +50,12 @@ $('.up').on('click', function() {
     scrollTop: 0
   }, 1500);
 });
+
+
+//filter
+
+$('[data-filter]').on('click', function() {
+  let id = $(this).attr('href');
+  $(id).fadeToggle();
+  $('.filter-bg').fadeToggle();
+});
