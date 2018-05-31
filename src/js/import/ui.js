@@ -55,11 +55,38 @@ $('.up').on('click', function() {
 //filter
 
 $('[data-filter]').on('click', function() {
-  let id = $(this).attr('href');
-  $(id).fadeToggle();
-  $('.filter-bg').fadeToggle();
+  event.preventDefault();
+  if ($(window).width() <= '767') {
+    let id = $(this).attr('href');
+    $(id).fadeToggle();
+    $('.filter-bg').fadeIn();
+    $('#aside').addClass('active');
+  } else {
+    let id = $(this).attr('href');
+    $(id).fadeToggle();
+    $('.filter-bg').fadeIn();
+  }
 });
 $('.filter-bg, .cancel').on('click', function() {
+  event.preventDefault();
   $('.filter__modal').fadeOut();
   $('.filter-bg').fadeOut();
+  $('#aside').removeClass('active');
 });
+
+//aside tablet
+if ($(window).width() <= '1200') {
+  $('[data-aside]').on('click', function() {
+    event.preventDefault();
+    let id = $(this).attr('href');
+    $(id).fadeToggle();
+    $('.filter-bg').fadeToggle();
+  });
+  $('.filter-bg, .cancel, .close').on('click', function() {
+    event.preventDefault();
+    $('#aside').fadeOut();
+    $('.filter-bg').fadeOut();
+    $('#aside').removeClass('active');
+    $('.filter__modal').fadeOut();
+  });
+}

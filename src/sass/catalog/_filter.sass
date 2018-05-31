@@ -4,6 +4,23 @@
   height: 100%
   position: relative
   z-index: 32
+  &.active
+    background: transparent
+  +r($tablet)
+    display: none
+    position: absolute
+    left: 0
+  +r($mobile)
+    width: 95%
+  a.close
+    position: absolute
+    top: -30px
+    right: 0
+    display: none
+    +r($tablet)
+      display: block
+    i
+      color: rgba(250, 250, 250, 0.8)
   &__form
     &__checkbox
       display: flex
@@ -101,6 +118,17 @@
     padding: 30px 25px
     padding-right: 40px
     display: none
+    +r($tablet)
+      max-width: 900px
+      width: auto
+      top: 0
+      overflow: scroll
+      padding: 30px 15px
+    +r(900)
+      width: 500px
+    +r($mobile)
+      width: 100vw
+      left: 0
     h2
       font-size: 24px
       font-weight: 300
@@ -179,6 +207,8 @@
         align-items: center
         margin-bottom: 13px
         width: 25%
+        +r($tablet)
+          width: 50%
         input
           display: none
         .label
@@ -220,13 +250,18 @@
       box-shadow: 0 -10px 35px 15px #313131
       position: relative
       z-index: 3
+      flex-wrap: wrap
       .btn
         font-size: 13px
         width: 160px
         margin-right: 30px
+        +r($mobile)
+          margin-right: 10px
       &__left
         display: flex
         align-items: center
+        +r($mobile)
+          flex-wrap: wrap
       .input__btn
         font-size: 13px
         font-weight: normal
@@ -237,9 +272,18 @@
         padding-bottom: 3px
         margin: 0 15px
         cursor: pointer
+        +r($mobile)
+          margin: 0 8px
+        +r(423)
+          &:last-child
+            margin-top: 20px
         &.cancel
           color: rgba(250, 250, 250, 0.5)
           border-bottom: 1px dashed rgba(250, 250, 250, 0.5)
+          +r($tablet)
+            margin-top: 30px
+          +r($mobile)
+            display: none
   &-bg
     position: fixed
     z-index: 30

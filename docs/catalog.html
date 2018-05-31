@@ -198,8 +198,8 @@
       <div class="catalog">
         <div class="container">
           <div class="row">
-            <div class="col-md-3 hidden-sm hidden-xs">
-              <aside class="aside filter">
+            <div class="col-md-3">
+              <aside id="aside" class="aside filter"><a href="#" class="close"><i class="icon icon-close"></i></a>
                 <div class="filter__form"><button type="submit" class="btn btn-filter">Сбросить фильтр</button>
                   <div class="filter__form__checkbox"><input id="stock" type="checkbox" name=""><label for="stock" class="label"></label><label for="stock" class="label-for">Товары в наличии</label></div>
                   <div class="filter__block"><a href="#" data-filter class="filter__block__more"></a>
@@ -312,7 +312,7 @@
               <div class="row">
                 <div class="col-xs-12">
                   <div class="row middle-xs hidden-md catalog__filter__mobile">
-                    <div class="col-sm-6 col-xs-12"><a href="#" class="btn btn-secondary"> Фильтр<div class="icon icon-filter"></div></a></div>
+                    <div class="col-sm-6 col-xs-12"><a href="#aside" data-aside class="btn btn-secondary"> Фильтр<div class="icon icon-filter"></div></a></div>
                     <div class="col-sm-6 col-xs-12">
                       <div class="catalog__sort">
                         <p>Сортировать:</p><select><option>По названию (А-Я)</option><option>От дорогих к дешевым</option></select></div>
