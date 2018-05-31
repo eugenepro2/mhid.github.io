@@ -59,3 +59,7 @@ $('[data-filter]').on('click', function() {
   $(id).fadeToggle();
   $('.filter-bg').fadeToggle();
 });
+$('.filter-bg, .cancel').on('click', function() {
+  $('.filter__modal').fadeOut();
+  $('.filter-bg').fadeOut();
+});
