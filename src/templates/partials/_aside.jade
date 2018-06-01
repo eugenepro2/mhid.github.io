@@ -15,6 +15,7 @@ aside.aside.filter#aside
       a(href="#filter-modal" data-filter).filter__block__more
       h3 Бренды
       h4 Ничего не выбрано
+      ul.scrollbar
       //- h4 Выбрано:
       //- ul.scrollbar
       //-   li
@@ -37,6 +38,7 @@ aside.aside.filter#aside
       a(href="#" data-filter).filter__block__more
       h3 Бренды
       h4 Ничего не выбрано
+      ul.scrollbar
       //- h4 Выбрано:
       //- ul.scrollbar
       //-   li
@@ -224,6 +226,6 @@ aside.aside.filter#aside
       .filter__modal__btn__left
         input(type="submit" value="Применить").btn.btn-filter
         input(type="reset" value="Очистить все").input__btn
-        input(type="submit" value="Выбрать все").input__btn
+        a.input__btn.all Выбрать все
       input(type="submit" value="Отменить").input__btn.cancel
 .filter-bg

@@ -53,9 +53,10 @@ $('.up').on('click', function() {
 
 
 //filter
-
+let filterLink;
 $('[data-filter]').on('click', function() {
   event.preventDefault();
+  filterLink = $(this);
   if ($(window).width() <= '767') {
     let id = $(this).attr('href');
     $(id).fadeToggle();
@@ -90,3 +91,23 @@ if ($(window).width() <= '1200') {
     $('.filter__modal').fadeOut();
   });
 }
+
+//filter checked
+$('.input__btn.all').on('click', function() {
+  $('.filter__modal__block input').prop('checked', true);
+});
+
+$('.btn.btn-filter').on('click', function() {
+  event.preventDefault();
+  $('ul.scrollbar').empty();
+  $('.filter__modal__block input:checked').each(function() {
+    let checkedText = $(this).siblings('.label-for').text();
+    $('ul.scrollbar').append("<li><a href='#'>" + checkedText + '</a></li>');
+    // filterLink.siblings('.scroll-content.scrollbar').append("<li><a href='#'>" + checkedText + '</a></li>');
+  });
+  if($('.filter__modal__block input').is(':checked')) {
+    filterLink.siblings('h4').text('Выбрано:');
+  } else{
+    filterLink.siblings('h4').text('Ничего не выбрано');
+  }
+});

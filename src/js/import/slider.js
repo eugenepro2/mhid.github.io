@@ -158,7 +158,7 @@ if ($(window).width() >= '1200') {
   $('.breadcrumb .close').on('click', function() {
     $('.page__hidden').fadeIn();
     $('.product__page').fadeOut();
-    $('body').scrollTop(scrollTop);
+    $(window).scrollTop(scrollTop);
     console.log(scrollTop);
   });
 }
