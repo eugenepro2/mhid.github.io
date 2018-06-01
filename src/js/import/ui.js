@@ -90,16 +90,3 @@ if ($(window).width() <= '1200') {
     $('.filter__modal').fadeOut();
   });
 }
-
-// //product page
-// $('[data-product]').on('click', function() {
-//   event.preventDefault();
-//   $('.catalog__page').fadeOut();
-//   $('.product__page').fadeIn();
-//   hitsSLider.update();
-//   productSlider.update();
-// });
-// $('.breadcrumb .close').on('click', function() {
-//   $('.catalog__page').fadeIn();
-//   $('.product__page').fadeOut();
-// });

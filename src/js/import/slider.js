@@ -116,18 +116,51 @@ let productSlider = new Swiper('.swiper__product', {
 });
 
 
+let productSLider = new Swiper('.product-slider', {
+  speed: 400,
+  slidesPerView: 4,
+  slidesPerGroup: 4,
+  breakpoints: {
+    // when window width is <= 640px
+    1170: {
+      slidesPerView: 3,
+      slidesPerGroup: 3
+    },
+    767: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 10
+    }
+    
+  },
+  pagination: {
+    el: '.product-pagination',
+    type: 'bullets',
+    clickable: true
+  },
+  navigation: {
+    nextEl: '.product-next',
+    prevEl: '.product-prev',
+  },
+});
 
 
 //product page
 if ($(window).width() >= '1200') {
   $('[data-product]').on('click', function() {
+    event.preventDefault();
     $('.page__hidden').fadeOut();
     $('.product__page').fadeIn();
-    hitsSLider.update();
-    productSlider.update();
+    setTimeout(function() {
+      productSLider.update();
+      productSlider.update();
+    }, 1000);
+    
   });
   $('.breadcrumb .close').on('click', function() {
     $('.page__hidden').fadeIn();
     $('.product__page').fadeOut();
   });
 }
+
+
