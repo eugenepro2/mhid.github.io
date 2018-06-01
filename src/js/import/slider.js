@@ -116,7 +116,7 @@ let productSlider = new Swiper('.swiper__product', {
 });
 
 
-let productSLider = new Swiper('.product-slider', {
+let productSLider1 = new Swiper('.product-slider', {
   speed: 400,
   slidesPerView: 4,
   slidesPerGroup: 4,
@@ -145,21 +145,21 @@ let productSLider = new Swiper('.product-slider', {
 });
 
 
+var scrollTop;
 //product page
 if ($(window).width() >= '1200') {
   $('[data-product]').on('click', function() {
-    event.preventDefault();
+    scrollTop = $(window).scrollTop();
     $('.page__hidden').fadeOut();
     $('.product__page').fadeIn();
-    setTimeout(function() {
-      productSLider.update();
-      productSlider.update();
-    }, 1000);
-    
+    productSLider.update();
+    productSlider1.update();
   });
   $('.breadcrumb .close').on('click', function() {
     $('.page__hidden').fadeIn();
     $('.product__page').fadeOut();
+    $('body').scrollTop(scrollTop);
+    console.log(scrollTop);
   });
 }
 
