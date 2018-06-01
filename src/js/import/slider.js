@@ -106,7 +106,7 @@ let contentSlider = new Swiper('.swiper__content', {
 });
 
 
-let productSlider = new Swiper('.swiper__product', {
+let product = new Swiper('.swiper__product', {
   slidesPerView: 4,
   spaceBetween: 15,
   navigation: {
@@ -116,7 +116,7 @@ let productSlider = new Swiper('.swiper__product', {
 });
 
 
-let productSLider1 = new Swiper('.product-slider', {
+var sLiderProduct = new Swiper('.product-slider', {
   speed: 400,
   slidesPerView: 4,
   slidesPerGroup: 4,
@@ -152,8 +152,8 @@ if ($(window).width() >= '1200') {
     scrollTop = $(window).scrollTop();
     $('.page__hidden').fadeOut();
     $('.product__page').fadeIn();
-    productSLider.update();
-    productSlider1.update();
+    product.update();
+    sLiderProduct.update();
   });
   $('.breadcrumb .close').on('click', function() {
     $('.page__hidden').fadeIn();
