@@ -1,0 +1,136 @@
+.product__page
+  +breadcrumb(['Главная', 'Контент', 'AICO (MICHAEL AMINI)б', 'AFTER EIGHT', 'Кровать After Eight'], true)
+  .product
+    .container
+      .row
+        .col-xs-12
+          .product__content
+            .row
+              .col-md-7.col-xs-12
+                .content__slider1.owl-carousel.owl-theme(data-slider-id="1")
+                  .item
+                    .swiper__sale.top -60%
+                    .swiper__hits.top Хит
+                    img(src="img/catalog/product/1.jpg", alt="")
+                  .item
+                    .swiper__sale.top -60%
+                    .swiper__hits.top Хит
+                    img(src="img/catalog/product/1.jpg", alt="")
+                  .item
+                    .swiper__sale.top -60%
+                    .swiper__hits.top Хит
+                    img(src="img/catalog/product/1.jpg", alt="")
+                  .item
+                    .swiper__sale.top -60%
+                    .swiper__hits.top Хит
+                    img(src="img/catalog/product/1.jpg", alt="")
+                  .item
+                    .swiper__sale.top -60%
+                    .swiper__hits.top Хит
+                    img(src="img/catalog/product/1.jpg", alt="")
+                  .item
+                    .swiper__sale.top -60%
+                    .swiper__hits.top Хит
+                    img(src="img/catalog/product/1.jpg", alt="")
+                  .item
+                    .swiper__sale.top -60%
+                    .swiper__hits.top Хит
+                    img(src="img/catalog/product/1.jpg", alt="")
+                .swiper
+                  .swiper-container.swiper__product
+                    .swiper-wrapper.owl-thumbs(data-slider-id="1")
+                      button.owl-thumb-item.swiper-slide
+                        img(src="img/catalog/product/1.jpg", alt="")
+                      button.owl-thumb-item.swiper-slide
+                        img(src="img/catalog/product/1.jpg", alt="")
+                      button.owl-thumb-item.swiper-slide
+                        img(src="img/catalog/product/1.jpg", alt="")
+                      button.owl-thumb-item.swiper-slide
+                        img(src="img/catalog/product/1.jpg", alt="")
+                      button.owl-thumb-item.swiper-slide
+                        img(src="img/catalog/product/1.jpg", alt="")
+                  .swiper-button-prev.product-prev
+                    i.icon.icon-slider-left
+                  .swiper-button-next.product-next
+                    i.icon.icon-slider-right
+              .col-md-5.col-xs-12
+                .product__block
+                  .product__block__name
+                    a(href="#")
+                      i.icon.icon-heart
+                      .product__block__favorites Товар добавлен в избранное
+                    h1 Кровать After<br> Eight collection 
+                      a(href="#")
+                        i.icon.icon-pencil
+                    s 445 256 руб.
+                  .product__block__sum
+                    span 345 688 руб.
+                    p В наличии
+                      b 5 шт
+                  a(href="#").btn.btn-secondary Купить
+                  .product__block__info
+                    .row
+                      .col-xs-5
+                        p Страна:
+                      .col-xs-7
+                        a(href="#") США
+                      .col-xs-5
+                        p Бренд:
+                      .col-xs-7
+                        a(href="#") AICO (Michael Amini)
+                      .col-xs-5
+                        p Коллекция:
+                      .col-xs-7
+                        a(href="#") After Eight
+                      .col-xs-5
+                        p Артикул:
+                      .col-xs-7
+                        a(href="#") 19000EK3-88
+                      .col-xs-5
+                        p Ш x Г x В, см: 
+                      .col-xs-7
+                        a(href="#") 1110 x 313 x 441
+              .col-xs-12
+                .product__description
+                  h2 Описание товара
+                  p Кровать After Eight от американского бренда AICO (Michael Amini). Мягкий текстиль
+          h4.collection Товары из коллекции
+    .product__collection
+      .container
+        .row
+          .col-xs-12.center-xs
+            h3 After Eight
+            a(href="#").btn.btn-secondary Открыть коллекцию
+    .container
+      .row
+        .col-xs-12
+          .product__swiper
+            .swiper-container.hits-slider
+              .swiper-wrapper
+                .swiper-slide
+                  +product(true, true, true)
+                .swiper-slide
+                  +product(true, false, true)
+                .swiper-slide
+                  +product(false, false, true)
+                .swiper-slide
+                  +product(false, false, false)
+                .swiper-slide
+                  +product(true, true, true)
+                .swiper-slide
+                  +product(true, false, true)
+                .swiper-slide
+                  +product(false, false, true)
+                .swiper-slide
+                  .product__card.product__card-other
+                    .product__card-other__header.product__card__header
+                      h3 After Eight
+                      img(src="img/card/logo-card.png", alt="")
+                    .product__card-other__content.product__card__content
+                      h3 Другие<br> предметы из этой коллекции
+                      a(href="#").btn.btn-primary Перейти
+              .swiper-pagination.hits-pagination
+            .swiper-button-prev.hits-prev
+              i.icon.icon-slider-left
+            .swiper-button-next.hits-next
+              i.icon.icon-slider-right

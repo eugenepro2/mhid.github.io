@@ -27,7 +27,7 @@ mixin product(hits, sale, in_stock, in_cart)
         i.icon.icon-heart
     if in_stock
       .product__card__content
-        a(href="#") 
+        a(href="#" data-product) 
           h3 Кровать After Eight
         a(href="#") 
           span AICO (Michael Amini)
@@ -43,7 +43,7 @@ mixin product(hits, sale, in_stock, in_cart)
           a(href="#").btn.btn-secondary В корзине
     else
       .product__card__content.no-stock
-        a(href="#") 
+        a(href="#" data-product) 
           h3 Кровать After Eight
         a(href="#") 
           span AICO (Michael Amini)

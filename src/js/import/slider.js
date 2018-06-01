@@ -114,3 +114,20 @@ let productSlider = new Swiper('.swiper__product', {
     prevEl: '.product-prev',
   },
 });
+
+
+
+
+//product page
+if ($(window).width() >= '1200') {
+  $('[data-product]').on('click', function() {
+    $('.page__hidden').fadeOut();
+    $('.product__page').fadeIn();
+    hitsSLider.update();
+    productSlider.update();
+  });
+  $('.breadcrumb .close').on('click', function() {
+    $('.page__hidden').fadeIn();
+    $('.product__page').fadeOut();
+  });
+}

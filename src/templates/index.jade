@@ -3,14 +3,15 @@ title: Главная страница
 ---
 extends layouts/_layout
 block content
+  .page__hidden
+    include home/intro
 
-  include home/intro
+    include home/info
 
-  include home/info
+    include home/card
+    
+    include home/about
+    
+    include home/hits
 
-  include home/card
-  
-  include home/about
-  
-  include home/hits
-
+  include ./product/product
