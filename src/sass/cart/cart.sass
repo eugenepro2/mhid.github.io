@@ -251,10 +251,23 @@
       top: 50%
       transform: translate(0, -50%)
       right: 85px
+      text-decoration: none
+      display: flex
       +r($tablet)
-        right: 20px
-        top: 55px
+        position: relative
         transform: none
+        width: 160px
+        right: -55px
+        +center
+      +r($mobile)
+        width: 100%
+        right: 0
+        margin-top: 20px
+      p
+        text-transform: uppercase
+        color: $white
+        font-size: 14px
+        padding-right: 5px
       i
         color: $white
         font-size: 22px
@@ -265,8 +278,8 @@
       transform: translate(0, -50%)
       right: 30px
       +r($tablet)
-        top: 30px
-        right: 20px
+        top: 25px
+        right: 25px
       i
         display: inline-block
         transform: rotate(45deg)
@@ -488,5 +501,9 @@
       width: 15%
     .cart__table__count
       width: 13%
+      +r($tablet)
+        width: 100%
+      +r($mobile)
+        flex-direction: column
     .cart__table__total
       width: 22%
