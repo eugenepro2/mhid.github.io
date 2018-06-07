@@ -52,6 +52,8 @@
     ul
       display: flex
       justify-content: space-between
+      &.nav
+        margin-bottom: -22px
       a
         text-decoration: none
         color: rgba($black-three, 0.7)
@@ -85,7 +87,8 @@
             padding-bottom: 2px
             &:hover
               border-bottom: 2px solid transparent
-      li
+      li.sub-open
+        padding-bottom: 20px
         &:hover
           .sub
             height: 450px
