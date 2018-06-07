@@ -5,6 +5,8 @@
   +r($tablet)
     margin-top: 20px
     background: #f9f9f9
+  +r($mobile)
+    padding-bottom: 0
   &__block
     a
       display: flex
@@ -16,7 +18,7 @@
         justify-content: flex-start
     &-secondary
       margin-left: 20px
-      +r($mobile)
+      +r($tablet)
         margin-left: 0
         p
           width: 90%
@@ -42,7 +44,7 @@
         margin-bottom: 5px
         text-align: left
         +r($tablet)
-          font-size: 13px
+          font-size: 12px
       p 
         font-size: 13px
         letter-spacing: 0.3px

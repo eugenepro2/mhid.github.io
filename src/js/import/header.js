@@ -90,9 +90,11 @@ $(window).scroll(function() {
     $('.header').css('transform', 'translateY(0%)');
     $('.header').addClass('fixed');
     $('.top__banner').addClass('fixed');
+    $('.filter').css('top', '90px');
   } else {
     $('.header').removeClass('fixed');
     $('.top__banner').removeClass('fixed');
+    $('.filter').css('top', '0px');
   }
 });
 

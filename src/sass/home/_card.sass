@@ -11,10 +11,17 @@
     text-decoration: none
     &:nth-of-type(odd)
       margin-right: 20px
+    +r($tablet)
+      margin-bottom: 30px
     +r($mobile)
       width: 100%
       margin-right: 0 !important
     h2
+      +r($tablet)
+        font-size: 19px
+        letter-spacing: 5.5px
+      +r($mobile)
+        margin-bottom: 15px
       div
         +center
         margin-left: 25px
@@ -48,6 +55,8 @@
     height: 400px
     position: relative
     +cover
+    +r($tablet)
+      height: 230px
     +r($mobile)
       height: 200px
     span
@@ -65,6 +74,8 @@
       transform: translateX(-50%)
       text-transform: uppercase
       +tr
+      +r($tablet)
+        bottom: 27px
       +r($mobile)
         bottom: 15px
       i

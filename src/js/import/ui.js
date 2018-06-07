@@ -104,7 +104,6 @@ $('.btn.btn-filter').on('click', function() {
   $('.filter__modal__block input:checked').each(function() {
     let checkedText = $(this).siblings('.label-for').text();
     $('ul.scrollbar').append("<li><a href='#'>" + checkedText + '</a></li>');
-    // filterLink.siblings('.scroll-content.scrollbar').append("<li><a href='#'>" + checkedText + '</a></li>');
   });
   if($('.filter__modal__block input').is(':checked')) {
     filterLink.siblings('h4').text('Выбрано:');

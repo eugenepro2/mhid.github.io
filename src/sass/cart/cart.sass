@@ -16,9 +16,12 @@
     display: flex
     align-items: center
     justify-content: flex-start
+    +r($tablet)
+      margin-left: 20px
     +r($mobile)
       flex-direction: column
       align-items: flex-start
+      font-size: 17px
   &__table
     background: $white
     border-radius: 4px
@@ -41,7 +44,7 @@
       display: flex
       align-items: center
       border-top: 1px solid #e1e1e1
-      padding: 20px 30px
+      padding: 10px 30px
       position: relative
       +r($tablet)
         margin-bottom: 10px
@@ -63,7 +66,7 @@
           width: 100%
           padding: 20px
     &__product
-      width: 30%
+      width: 33%
       display: flex
       align-items: center
       +r($tablet)
@@ -132,7 +135,7 @@
         p
           color: $primary
     &__price
-      width: 17%
+      width: 16%
       position: relative
       +r($tablet)
         display: none
@@ -201,7 +204,7 @@
           text-align: center
           color: #262626
     &__total
-      width: 21%
+      width: 19%
       display: flex
       align-items: center
       justify-content: space-between
@@ -247,7 +250,7 @@
       position: absolute
       top: 50%
       transform: translate(0, -50%)
-      right: 65px
+      right: 85px
       +r($tablet)
         right: 20px
         top: 55px
@@ -284,7 +287,9 @@
     .form-checkbox
       margin-bottom: 0
       +r($tablet)
-        width: 70%
+        width: 90%
+        label
+          font-size: 15px
       +r($mobile)
         width: 100%
         margin-bottom: 30px
@@ -294,9 +299,10 @@
         font-weight: 500
     div
       +center
+      +r($tablet)
+        align-items: flex-start
       +r($mobile)
         flex-direction: column
-        align-items: flex-start
     p
       flex: 1
       font-size: 12px
@@ -319,11 +325,14 @@
     margin-bottom: 20px
     +r($mobile)
       height: auto
+      padding: 25px 10px
     h2
       font-size: 16px
       justify-content: flex-start
       margin-bottom: 30px
       margin-top: 0
+      +r($tablet)
+        margin-left: 0
     p
       font-size: 12px
       line-height: 1.25
@@ -472,3 +481,12 @@
         width: 240px
         i
           margin-right: 10px
+  &.wishlist
+    .cart__table__stock
+      width: 15%
+    .cart__table__price
+      width: 15%
+    .cart__table__count
+      width: 13%
+    .cart__table__total
+      width: 22%

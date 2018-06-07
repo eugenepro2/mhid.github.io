@@ -3,6 +3,8 @@
   h2
     background: $grey
     padding-bottom: 30px
+    +r($tablet)
+      font-size: 19px
   img
     width: 150px
   p
@@ -16,9 +18,12 @@
       padding: 0 20px
     +r($mobile)
       padding: 0
+      margin-bottom: 10px
   .btn
     left: 50%
     transform: translateX(-50%)
+    +r($mobile)
+      width: 100%
   iframe
     position: absolute
     top: 0
@@ -35,6 +40,8 @@
       margin-top: 50px
       +r($tablet)
         height: 460px
+      +r($mobile)
+        height: 420px
     &-slide
       display: flex
       align-items: center
@@ -47,8 +54,10 @@
         text-align: center
         color: $white
         padding: 0
-        margin-bottom: 35px
+        margin-bottom: 105px
         font-weight: 500
+        +r($mobile)
+          padding: 0 30px
       a
         background: $primary
         text-decoration: none
@@ -64,8 +73,6 @@
         transform: translateX(-50%)
         text-transform: uppercase
         +tr
-        +r($mobile)
-          bottom: 15px
         i
           margin-left: 30px
           font-size: 9px
@@ -74,6 +81,8 @@
       bottom: 20px
       display: flex
       justify-content: center
+      +r($tablet)
+        bottom: 32%
       +r($mobile)
         bottom: 20px
     .swiper

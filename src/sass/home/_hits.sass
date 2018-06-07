@@ -2,10 +2,16 @@
   padding-top: 60px
   padding-bottom: 70px
   overflow: hidden
+  +r($mobile)
+    padding-top: 30px
   .container
     position: relative
   h2
     margin-bottom: 22px
+    +r($tablet)
+      font-size: 19px
+    +r($mobile)
+      margin-bottom: 10px
   .swiper-container
     width: calc(100% - 70px)
     padding-top: 20px

@@ -146,21 +146,18 @@ var sLiderProduct = new Swiper('.product-slider', {
 
 
 var scrollTop;
-//product page
-if ($(window).width() >= '1200') {
-  $('[data-product]').on('click', function() {
-    scrollTop = $(window).scrollTop();
-    $('.page__hidden').fadeOut();
-    $('.product__page').fadeIn();
-    product.update();
-    sLiderProduct.update();
-  });
-  $('.breadcrumb .close').on('click', function() {
-    $('.page__hidden').fadeIn();
-    $('.product__page').fadeOut();
-    $(window).scrollTop(scrollTop);
-    console.log(scrollTop);
-  });
-}
+$('[data-product]').on('click', function() {
+  scrollTop = $(window).scrollTop();
+  $('.page__hidden').fadeOut();
+  $('.product__page').fadeIn();
+  product.update();
+  sLiderProduct.update();
+});
+$('.breadcrumb .close').on('click', function() {
+  $('.page__hidden').fadeIn();
+  $('.product__page').fadeOut();
+  $(window).scrollTop(scrollTop);
+  console.log(scrollTop);
+});
 
 

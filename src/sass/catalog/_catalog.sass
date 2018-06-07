@@ -1,4 +1,6 @@
 .catalog
+  +r($tablet)
+    padding-bottom: 60px
   .row
     height: inherit
   .col-xs-6
@@ -17,9 +19,14 @@
     display: flex
     align-items: center
     margin-left: -6px
+    +r($tablet)
+      margin-top: 20px
     +r($mobile)
       flex-direction: column
       align-items: flex-start
+      font-size: 19px
+      padding-left: 10px
+      margin-bottom: 10px
     span
       font-size: 15px
       font-weight: 500
@@ -95,6 +102,9 @@
         color: $black-three
         text-transform: uppercase
         margin: 20px 0
+        +r($mobile)
+          font-size: 13px
+          margin-top: 30px
         b
           font-weight: 500
   &__not
@@ -147,7 +157,9 @@
     align-items: center
     flex-direction: column
     margin-top: 20px
-    margin-bottom: 60px
+    margin-bottom: 55px
+    +r($mobile)
+      margin-bottom: 10px
     a
       width: 285px
       margin-bottom: 15px
