@@ -1,8 +1,9 @@
 .filter
   background-color: #313131
   padding: 25px 40px
-  height: 100%
-  position: relative
+  height: 100vh
+  position: sticky
+  top: 90px
   z-index: 32
   &.active
     background: transparent
@@ -10,6 +11,7 @@
     display: none
     position: absolute
     left: 0
+    top: 0
   +r($mobile)
     width: 95%
   a.close
@@ -26,7 +28,8 @@
       display: flex
       flex-wrap: wrap
       align-items: center
-      margin: 40px 0
+      margin-top: 40px
+      margin-bottom: 15px
       input
         display: none
       .label
@@ -64,6 +67,8 @@
     padding: 25px 0
     border-bottom: 1px solid #434343
     position: relative
+    .scroll-wrapper.scrollbar
+      display: none
     &__more
       width: 30px
       height: 26px

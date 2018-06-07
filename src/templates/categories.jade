@@ -1,0 +1,14 @@
+---
+title: Категории
+---
+extends layouts/_layout
+block content
+  +breadcrumb(['Главная', 'Бренды'])
+  .catalog.catalog__brands
+    .container
+      .row
+        .col-md-3.hidden-sm.hidden-xs
+          include partials/_aside
+        .col-md-9.col-xs-12
+          include categories/categories
+          .up

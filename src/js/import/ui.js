@@ -99,6 +99,7 @@ $('.input__btn.all').on('click', function() {
 
 $('.btn.btn-filter').on('click', function() {
   event.preventDefault();
+  $('.scroll-wrapper.scrollbar').fadeIn();
   $('ul.scrollbar').empty();
   $('.filter__modal__block input:checked').each(function() {
     let checkedText = $(this).siblings('.label-for').text();
@@ -109,5 +110,6 @@ $('.btn.btn-filter').on('click', function() {
     filterLink.siblings('h4').text('Выбрано:');
   } else{
     filterLink.siblings('h4').text('Ничего не выбрано');
+    $('.scroll-wrapper.scrollbar').fadeOut();
   }
 });
