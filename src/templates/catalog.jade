@@ -11,10 +11,11 @@ block content
           .col-md-3
             include partials/_aside
           .col-md-9.col-xs-12
-            include catalog/catalog-4-card
-            .catalog__more
-              a(href="#").btn.btn-secondary Показать еще 80 предметов
-              span Показано 80 из 782
-            include partials/_pagination
-            .up
+            .indent
+              include catalog/catalog-4-card
+              .catalog__more
+                a(href="#").btn.btn-secondary Показать еще 80 предметов
+                span Показано 80 из 782
+              include partials/_pagination
+              .up
   include ./product/product
