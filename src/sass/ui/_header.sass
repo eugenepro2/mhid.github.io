@@ -1,7 +1,21 @@
+.out
+  margin-top: 135px
+  +r($tablet)
+    margin-top: 100px
+  +r($mobile)
+    margin-top: 90px
+  &.top__baner
+    margin-top: 100px
+    +r($tablet)
+      margin-top: 65px
+    +r($mobile)
+      margin-top: 55px
 .header
   height: 100px
   background: $white
-  position: relative
+  position: absolute
+  top: 35px
+  width: 100%
   z-index: 99
   transition: height 0.5s
   +r($tablet)
@@ -216,7 +230,9 @@
   +cover
   color: $white
   z-index: 11
-  position: relative
+  position: absolute
+  width: 100%
+  top: 0
   .container
     position: relative
   p 

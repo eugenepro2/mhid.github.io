@@ -117,7 +117,6 @@ $('.btn.btn-filter').on('click', function() {
 });
 
 //сброс
-
 $('button.btn.btn-filter').on('click', function() {
   $('.filter__modal__block input').prop('checked', false);
   $('.scroll-wrapper.scrollbar ul').empty();

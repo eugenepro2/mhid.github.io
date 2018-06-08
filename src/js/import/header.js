@@ -13,6 +13,7 @@ $('.top__banner .close').on('click', function() {
   $('.top__banner').fadeOut();
   $('.header').addClass('banner-closed');
   $('.mobile-menu').addClass('banner-closed');
+  $('.out').addClass('top__baner');
 });
 
 
