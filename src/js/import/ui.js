@@ -122,4 +122,6 @@ $('button.btn.btn-filter').on('click', function() {
   $('.scroll-wrapper.scrollbar ul').empty();
   $('.scroll-wrapper.scrollbar').fadeOut();
   $('.filter__block h4').text('Ничего не выбрано');
+  $('.filter-bg').fadeOut();
+  $('.filter__modal').fadeOut();
 });
