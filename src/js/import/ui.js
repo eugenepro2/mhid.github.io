@@ -56,6 +56,7 @@ $('.up').on('click', function() {
 let filterLink;
 $('[data-filter]').on('click', function() {
   event.preventDefault();
+  $('.filter__modal').fadeOut();
   filterLink = $(this);
   if ($(window).width() <= '767') {
     let id = $(this).attr('href');
@@ -94,21 +95,32 @@ if ($(window).width() <= '1200') {
 
 //filter checked
 $('.input__btn.all').on('click', function() {
-  $('.filter__modal__block input').prop('checked', true);
+  let id = filterLink.attr('href');
+  $(id).find('.filter__modal__block input').prop('checked', true);
 });
 
 $('.btn.btn-filter').on('click', function() {
   event.preventDefault();
-  $('.scroll-wrapper.scrollbar').fadeIn();
-  $('ul.scrollbar').empty();
-  $('.filter__modal__block input:checked').each(function() {
+  let id = filterLink.attr('href');
+  $(filterLink).siblings('.scroll-wrapper.scrollbar').fadeIn();
+  $(filterLink).siblings('.scroll-wrapper.scrollbar').find('ul').empty();
+  $(id).find('input:checked').each(function() {
     let checkedText = $(this).siblings('.label-for').text();
-    $('ul.scrollbar').append("<li><a href='#'>" + checkedText + '</a></li>');
+    $(filterLink).siblings('.scroll-wrapper.scrollbar').find('ul').append("<li><a href='#'>" + checkedText + '</a></li>');
   });
-  if($('.filter__modal__block input').is(':checked')) {
+  if($(id).find('input').is(':checked')) {
     filterLink.siblings('h4').text('Выбрано:');
   } else{
     filterLink.siblings('h4').text('Ничего не выбрано');
-    $('.scroll-wrapper.scrollbar').fadeOut();
+    $(filterLink).siblings('.scroll-wrapper.scrollbar').fadeOut();
   }
+});
+
+//сброс
+
+$('button.btn.btn-filter').on('click', function() {
+  $('.filter__modal__block input').prop('checked', false);
+  $('.scroll-wrapper.scrollbar ul').empty();
+  $('.scroll-wrapper.scrollbar').fadeOut();
+  $('.filter__block h4').text('Ничего не выбрано');
 });

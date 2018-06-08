@@ -8,11 +8,12 @@ aside.aside.filter#aside
       label.label(for="stock")
       label.label-for(for="stock") Товары в наличии
     .filter__block
-      a(href="#" data-filter).filter__block__more
+      a(href="#filter-modal-categories" data-filter).filter__block__more
       h3 Категории
       h4 Ничего не выбрано
+      ul.scrollbar
     .filter__block
-      a(href="#filter-modal" data-filter).filter__block__more
+      a(href="#filter-modal-brands1" data-filter).filter__block__more
       h3 Бренды
       h4 Ничего не выбрано
       ul.scrollbar
@@ -35,7 +36,7 @@ aside.aside.filter#aside
       //-   li
       //-     a(href="#") De Baggis
     .filter__block
-      a(href="#" data-filter).filter__block__more
+      a(href="#filter-modal-brands2" data-filter).filter__block__more
       h3 Бренды
       h4 Ничего не выбрано
       ul.scrollbar
@@ -57,8 +58,8 @@ aside.aside.filter#aside
       //-     a(href="#") DV Home Collection
       //-   li
       //-     a(href="#") De Baggis
-  form.filter__modal#filter-modal
-    h2 Бренды
+  form.filter__modal#filter-modal-categories
+    h2 Категории
     .filter__modal__content
       .filter__modal__block
         .filter__modal__country
@@ -228,4 +229,347 @@ aside.aside.filter#aside
         input(type="reset" value="Очистить все").input__btn
         a.input__btn.all Выбрать все
       input(type="submit" value="Отменить").input__btn.cancel
+  form.filter__modal#filter-modal-brands1
+    h2 Бренды1
+    .filter__modal__content
+      .filter__modal__block
+        .filter__modal__country
+          input#usa-1(type="checkbox", name="")
+          label.label(for="usa-1")
+          label.label-for(for="usa-1") США
+        .filter__modal__brands
+          .row
+            .col-xs-12
+              .filter__modal__brands__content
+                .filter__modal__brands__checkbox
+                  input#usa-11(type="checkbox", name="")
+                  label.label(for="usa-11")
+                  label.label-for(for="usa-11") Piermaria
+                .filter__modal__brands__checkbox
+                  input#usa-12(type="checkbox", name="")
+                  label.label(for="usa-12")
+                  label.label-for(for="usa-12") Piermaria
+                .filter__modal__brands__checkbox
+                  input#usa-13(type="checkbox", name="")
+                  label.label(for="usa-13")
+                  label.label-for(for="usa-13") Piermaria
+                .filter__modal__brands__checkbox
+                  input#usa-14(type="checkbox", name="")
+                  label.label(for="usa-14")
+                  label.label-for(for="usa-14") Piermaria
+            .col-xs-12
+              .filter__modal__brands__content
+                .filter__modal__brands__checkbox
+                  input#usa-15(type="checkbox", name="")
+                  label.label(for="usa-15")
+                  label.label-for(for="usa-15") Piermaria
+                .filter__modal__brands__checkbox
+                  input#usa-16(type="checkbox", name="")
+                  label.label(for="usa-16")
+                  label.label-for(for="usa-16") Modenese Gastone
+                .filter__modal__brands__checkbox
+                  input#usa-17(type="checkbox", name="")
+                  label.label(for="usa-17")
+                  label.label-for(for="usa-17") Modenese Gastone
+                .filter__modal__brands__checkbox
+                  input#usa-18(type="checkbox", name="")
+                  label.label(for="usa-18")
+                  label.label-for(for="usa-18") Modenese Gastone
+            .col-xs-12
+              .filter__modal__brands__content
+                .filter__modal__brands__checkbox
+                  input#usa-19(type="checkbox", name="")
+                  label.label(for="usa-19")
+                  label.label-for(for="usa-19") Modenese Gastone
+                .filter__modal__brands__checkbox
+                  input#usa-110(type="checkbox", name="")
+                  label.label(for="usa-110")
+                  label.label-for(for="usa-110") Modenese Gastone
+                .filter__modal__brands__checkbox
+                  input#usa-111(type="checkbox", name="")
+                  label.label(for="usa-111")
+                  label.label-for(for="usa-111") Modenese Gastone
+      .filter__modal__block
+        .filter__modal__country
+          input#spain1-(type="checkbox", name="")
+          label.label(for="spain1-")
+          label.label-for(for="spain1-") Испания
+        .filter__modal__brands
+          .row
+            .col-xs-12
+              .filter__modal__brands__content
+                .filter__modal__brands__checkbox
+                  input#spain1-1(type="checkbox", name="")
+                  label.label(for="spain1-1")
+                  label.label-for(for="spain1-1") IL PARALUME
+                .filter__modal__brands__checkbox
+                  input#spain1-2(type="checkbox", name="")
+                  label.label(for="spain1-2")
+                  label.label-for(for="spain1-2") IL PARALUME
+                .filter__modal__brands__checkbox
+                  input#spain1-3(type="checkbox", name="")
+                  label.label(for="spain1-3")
+                  label.label-for(for="spain1-3") IL PARALUME
+                .filter__modal__brands__checkbox
+                  input#spain1-4(type="checkbox", name="")
+                  label.label(for="spain1-4")
+                  label.label-for(for="spain1-4") IL PARALUME
+      .filter__modal__block
+        .filter__modal__country
+          input#italy1-(type="checkbox", name="")
+          label.label(for="italy1-")
+          label.label-for(for="italy1-") Италия
+        .filter__modal__brands
+          .row
+            .col-xs-12
+              .filter__modal__brands__content
+                .filter__modal__brands__checkbox
+                  input#italy1-1(type="checkbox", name="")
+                  label.label(for="italy1-1")
+                  label.label-for(for="italy1-1") IL PARALUME
+                .filter__modal__brands__checkbox
+                  input#italy1-2(type="checkbox", name="")
+                  label.label(for="italy1-2")
+                  label.label-for(for="italy1-2") IL PARALUME
+                .filter__modal__brands__checkbox
+                  input#italy1-3(type="checkbox", name="")
+                  label.label(for="italy1-3")
+                  label.label-for(for="italy1-3") IL PARALUME
+                .filter__modal__brands__checkbox
+                  input#italy1-4(type="checkbox", name="")
+                  label.label(for="italy1-4")
+                  label.label-for(for="italy1-4") IL PARALUME
+            .col-xs-12
+              .filter__modal__brands__content
+                .filter__modal__brands__checkbox
+                  input#italy1-5(type="checkbox", name="")
+                  label.label(for="italy1-5")
+                  label.label-for(for="italy1-5") IL PARALUME
+                .filter__modal__brands__checkbox
+                  input#italy1-6(type="checkbox", name="")
+                  label.label(for="italy1-6")
+                  label.label-for(for="italy1-6") IL PARALUME
+                .filter__modal__brands__checkbox
+                  input#italy1-7(type="checkbox", name="")
+                  label.label(for="italy1-7")
+                  label.label-for(for="italy1-7") IL PARALUME
+                .filter__modal__brands__checkbox
+                  input#italy1-8(type="checkbox", name="")
+                  label.label(for="italy1-8")
+                  label.label-for(for="italy1-8") IL PARALUME
+              .col-xs-12
+              .filter__modal__brands__content
+                .filter__modal__brands__checkbox
+                  input#italy1-9(type="checkbox", name="")
+                  label.label(for="italy1-9")
+                  label.label-for(for="italy1-9") IL PARALUME
+                .filter__modal__brands__checkbox
+                  input#italy1-10(type="checkbox", name="")
+                  label.label(for="italy1-10")
+                  label.label-for(for="italy1-10") Decora Italia
+                .filter__modal__brands__checkbox
+                  input#italy1-11(type="checkbox", name="")
+                  label.label(for="italy1-11")
+                  label.label-for(for="italy1-11") Decora Italia
+                .filter__modal__brands__checkbox
+                  input#italy1-12(type="checkbox", name="")
+                  label.label(for="italy1-12")
+                  label.label-for(for="italy1-12") Decora Italia
+            .col-xs-12
+              .filter__modal__brands__content
+                .filter__modal__brands__checkbox
+                  input#italy1-13(type="checkbox", name="")
+                  label.label(for="italy1-13")
+                  label.label-for(for="italy1-13") Decora Italia
+                .filter__modal__brands__checkbox
+                  input#italy1-14(type="checkbox", name="")
+                  label.label(for="italy1-14")
+                  label.label-for(for="italy1-14") Decora Italia
+                .filter__modal__brands__checkbox
+                  input#italy1-15(type="checkbox", name="")
+                  label.label(for="italy1-15")
+                  label.label-for(for="italy1-15") Decora Italia
+                .filter__modal__brands__checkbox
+                  input#italy1-16(type="checkbox", name="")
+                  label.label(for="italy1-16")
+                  label.label-for(for="italy1-16") Decora Italia
+
+    .filter__modal__btn
+      .filter__modal__btn__left
+        input(type="submit" value="Применить").btn.btn-filter
+        input(type="reset" value="Очистить все").input__btn
+        a.input__btn.all Выбрать все
+      input(type="submit" value="Отменить").input__btn.cancel
+  form.filter__modal#filter-modal-brands2
+    h2 Бренды2
+    .filter__modal__content
+      .filter__modal__block
+        .filter__modal__country
+          input#usa2-(type="checkbox", name="")
+          label.label(for="usa2-")
+          label.label-for(for="usa2-") США
+        .filter__modal__brands
+          .row
+            .col-xs-12
+              .filter__modal__brands__content
+                .filter__modal__brands__checkbox
+                  input#usa2-1(type="checkbox", name="")
+                  label.label(for="usa2-1")
+                  label.label-for(for="usa2-1") Piermaria
+                .filter__modal__brands__checkbox
+                  input#usa2-2(type="checkbox", name="")
+                  label.label(for="usa2-2")
+                  label.label-for(for="usa2-2") Piermaria
+                .filter__modal__brands__checkbox
+                  input#usa2-3(type="checkbox", name="")
+                  label.label(for="usa2-3")
+                  label.label-for(for="usa2-3") Piermaria
+                .filter__modal__brands__checkbox
+                  input#usa2-4(type="checkbox", name="")
+                  label.label(for="usa2-4")
+                  label.label-for(for="usa2-4") Piermaria
+            .col-xs-12
+              .filter__modal__brands__content
+                .filter__modal__brands__checkbox
+                  input#usa2-5(type="checkbox", name="")
+                  label.label(for="usa2-5")
+                  label.label-for(for="usa2-5") Piermaria
+                .filter__modal__brands__checkbox
+                  input#usa2-6(type="checkbox", name="")
+                  label.label(for="usa2-6")
+                  label.label-for(for="usa2-6") Modenese Gastone
+                .filter__modal__brands__checkbox
+                  input#usa2-7(type="checkbox", name="")
+                  label.label(for="usa2-7")
+                  label.label-for(for="usa2-7") Modenese Gastone
+                .filter__modal__brands__checkbox
+                  input#usa2-8(type="checkbox", name="")
+                  label.label(for="usa2-8")
+                  label.label-for(for="usa2-8") Modenese Gastone
+            .col-xs-12
+              .filter__modal__brands__content
+                .filter__modal__brands__checkbox
+                  input#usa2-9(type="checkbox", name="")
+                  label.label(for="usa2-9")
+                  label.label-for(for="usa2-9") Modenese Gastone
+                .filter__modal__brands__checkbox
+                  input#usa2-10(type="checkbox", name="")
+                  label.label(for="usa2-10")
+                  label.label-for(for="usa2-10") Modenese Gastone
+                .filter__modal__brands__checkbox
+                  input#usa2-11(type="checkbox", name="")
+                  label.label(for="usa2-11")
+                  label.label-for(for="usa2-11") Modenese Gastone
+      .filter__modal__block
+        .filter__modal__country
+          input#spain2-(type="checkbox", name="")
+          label.label(for="spain2-")
+          label.label-for(for="spain2-") Испания
+        .filter__modal__brands
+          .row
+            .col-xs-12
+              .filter__modal__brands__content
+                .filter__modal__brands__checkbox
+                  input#spain2-1(type="checkbox", name="")
+                  label.label(for="spain2-1")
+                  label.label-for(for="spain2-1") IL PARALUME
+                .filter__modal__brands__checkbox
+                  input#spain2-2(type="checkbox", name="")
+                  label.label(for="spain2-2")
+                  label.label-for(for="spain2-2") IL PARALUME
+                .filter__modal__brands__checkbox
+                  input#spain2-3(type="checkbox", name="")
+                  label.label(for="spain2-3")
+                  label.label-for(for="spain2-3") IL PARALUME
+                .filter__modal__brands__checkbox
+                  input#spain2-4(type="checkbox", name="")
+                  label.label(for="spain2-4")
+                  label.label-for(for="spain2-4") IL PARALUME
+      .filter__modal__block
+        .filter__modal__country
+          input#italy2-(type="checkbox", name="")
+          label.label(for="italy2-")
+          label.label-for(for="italy2-") Италия
+        .filter__modal__brands
+          .row
+            .col-xs-12
+              .filter__modal__brands__content
+                .filter__modal__brands__checkbox
+                  input#italy2-1(type="checkbox", name="")
+                  label.label(for="italy2-1")
+                  label.label-for(for="italy2-1") IL PARALUME
+                .filter__modal__brands__checkbox
+                  input#italy2-2(type="checkbox", name="")
+                  label.label(for="italy2-2")
+                  label.label-for(for="italy2-2") IL PARALUME
+                .filter__modal__brands__checkbox
+                  input#italy2-3(type="checkbox", name="")
+                  label.label(for="italy2-3")
+                  label.label-for(for="italy2-3") IL PARALUME
+                .filter__modal__brands__checkbox
+                  input#italy2-4(type="checkbox", name="")
+                  label.label(for="italy2-4")
+                  label.label-for(for="italy2-4") IL PARALUME
+            .col-xs-12
+              .filter__modal__brands__content
+                .filter__modal__brands__checkbox
+                  input#italy2-5(type="checkbox", name="")
+                  label.label(for="italy2-5")
+                  label.label-for(for="italy2-5") IL PARALUME
+                .filter__modal__brands__checkbox
+                  input#italy2-6(type="checkbox", name="")
+                  label.label(for="italy2-6")
+                  label.label-for(for="italy2-6") IL PARALUME
+                .filter__modal__brands__checkbox
+                  input#italy2-7(type="checkbox", name="")
+                  label.label(for="italy2-7")
+                  label.label-for(for="italy2-7") IL PARALUME
+                .filter__modal__brands__checkbox
+                  input#italy2-8(type="checkbox", name="")
+                  label.label(for="italy2-8")
+                  label.label-for(for="italy2-8") IL PARALUME
+              .col-xs-12
+              .filter__modal__brands__content
+                .filter__modal__brands__checkbox
+                  input#italy2-9(type="checkbox", name="")
+                  label.label(for="italy2-9")
+                  label.label-for(for="italy2-9") IL PARALUME
+                .filter__modal__brands__checkbox
+                  input#italy2-10(type="checkbox", name="")
+                  label.label(for="italy2-10")
+                  label.label-for(for="italy2-10") Decora Italia
+                .filter__modal__brands__checkbox
+                  input#italy2-11(type="checkbox", name="")
+                  label.label(for="italy2-11")
+                  label.label-for(for="italy2-11") Decora Italia
+                .filter__modal__brands__checkbox
+                  input#italy2-12(type="checkbox", name="")
+                  label.label(for="italy2-12")
+                  label.label-for(for="italy2-12") Decora Italia
+            .col-xs-12
+              .filter__modal__brands__content
+                .filter__modal__brands__checkbox
+                  input#italy2-13(type="checkbox", name="")
+                  label.label(for="italy2-13")
+                  label.label-for(for="italy2-13") Decora Italia
+                .filter__modal__brands__checkbox
+                  input#italy2-14(type="checkbox", name="")
+                  label.label(for="italy2-14")
+                  label.label-for(for="italy2-14") Decora Italia
+                .filter__modal__brands__checkbox
+                  input#italy2-15(type="checkbox", name="")
+                  label.label(for="italy2-15")
+                  label.label-for(for="italy2-15") Decora Italia
+                .filter__modal__brands__checkbox
+                  input#italy2-16(type="checkbox", name="")
+                  label.label(for="italy2-16")
+                  label.label-for(for="italy2-16") Decora Italia
+
+    .filter__modal__btn
+      .filter__modal__btn__left
+        input(type="submit" value="Применить").btn.btn-filter
+        input(type="reset" value="Очистить все").input__btn
+        a.input__btn.all Выбрать все
+      input(type="submit" value="Отменить").input__btn.cancel
+
 .filter-bg
