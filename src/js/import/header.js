@@ -14,6 +14,7 @@ $('.top__banner .close').on('click', function() {
   $('.header').addClass('banner-closed');
   $('.mobile-menu').addClass('banner-closed');
   $('.out').addClass('top__baner');
+  $('.filter').css('top', '60px');
 });
 
 
