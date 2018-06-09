@@ -92,6 +92,9 @@ $(window).scroll(function() {
     $('.header').addClass('fixed');
     $('.top__banner').addClass('fixed');
     $('.filter').css('top', '90px');
+    if($('.header').hasClass('banner-closed')) {
+      $('.filter').css('top', '60px');
+    }
   } else {
     $('.header').removeClass('fixed');
     $('.top__banner').removeClass('fixed');
