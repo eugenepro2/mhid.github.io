@@ -114,6 +114,8 @@ $('.btn.btn-filter').on('click', function() {
     filterLink.siblings('h4').text('Ничего не выбрано');
     $(filterLink).siblings('.scroll-wrapper.scrollbar').fadeOut();
   }
+  $('.filter-bg').fadeOut();
+  $('.filter__modal').fadeOut();
 });
 
 //сброс

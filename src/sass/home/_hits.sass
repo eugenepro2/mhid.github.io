@@ -17,18 +17,25 @@
     padding-top: 20px
     padding-left: 5px
     +r($tablet)
-      width: 100%
+      width: 220px
       overflow: visible
-    .swiper
-      &-pagination
-        margin-top: 40px
-        transform: translateX(0)
-        position: static
-        margin-bottom: 35px
-        +center
+      padding-left: 0
+  .swiper-slide
+    +r($mobile)
+      width: 220px !important
+  .swiper-pagination
+    margin-top: 40px
+    transform: translateX(0) !important
+    position: static
+    margin-bottom: 35px
+    +center
+    flex-wrap: wrap
+    &-bullet
+      margin: 5px
   .btn
     position: relative
     left: 50%
     transform: translateX(-50%)
     width: 280px
+    font-size: 13px
 

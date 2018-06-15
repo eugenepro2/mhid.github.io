@@ -34,6 +34,7 @@
 			&:before
 				transform: scale(1)
 				background: #D9A866
+				+tr
 	&-secondary
 		color: $primary
 		height: 48px
@@ -45,7 +46,8 @@
 				background: $primary
 	&-filter
 		background: transparent
-		color: $primary
+		color: $white
+		font-size: 13px
 		width: 215px
 		height: 40px
 	&:before
@@ -58,7 +60,6 @@
 		bottom: 0
 		transform: scaleY(0)
 		transform-origin: 50% 100%
-		transition-property: transform
 		+tr
 	&:hover
 		text-decoration: none !important

@@ -44,9 +44,9 @@ let hitsSLider = new Swiper('.hits-slider', {
       slidesPerGroup: 3
     },
     767: {
-      slidesPerView: 1,
       slidesPerGroup: 1,
-      spaceBetween: 10
+      spaceBetween: 10,
+      slidesPerView: 'auto',
     }
     
   },

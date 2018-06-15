@@ -12,7 +12,7 @@ mixin icon(name, modClass)
 mixin product(hits, sale, in_stock, in_cart)
   .product__card
     .product__card__header
-      a(href="#").product__card__header__image
+      a(href="#" data-product).product__card__header__image
         if in_stock
           img(src="img/catalog/product/1.jpg", alt="")
         else

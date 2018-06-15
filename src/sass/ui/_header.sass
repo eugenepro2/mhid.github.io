@@ -37,7 +37,7 @@
     justify-content: space-between
     align-items: center
     margin-left: 50px
-    margin-bottom: 20px
+    margin-bottom: 22px
     a
       display: flex
       align-items: center
@@ -63,7 +63,9 @@
       cursor: pointer
       width: 130px
   nav
-    margin-left: 50px
+    margin-left: 48px
+    top: -6px
+    width: 89%
     ul
       display: flex
       justify-content: space-between
@@ -85,6 +87,8 @@
             border-bottom: 2px solid $primary
         div
           position: relative
+          top: -2px
+          left: -3px
           font-size: 11px
           letter-spacing: 0.6px
           margin-left: 4px
@@ -98,8 +102,8 @@
             position: absolute
             z-index: -1
           span
-            padding-left: 10px
-            padding-bottom: 2px
+            padding-left: 7px
+            padding-bottom: 0px
             &:hover
               border-bottom: 2px solid transparent
       li.sub-open
@@ -123,6 +127,7 @@
       border-bottom: 1px dashed $black-two
       position: relative
       top: -3.5px
+      left: 4px
     p
       text-transform: uppercase
       font-size: 10px
@@ -130,10 +135,13 @@
       color: rgba($black-three, 0.5)
       width: 32%
       line-height: 1.5
+      position: relative
+      left: 6px
   &__toolbar
     display: flex
     justify-content: space-between
     align-items: center
+    margin-left: 13px
     a
       cursor: pointer
       i
@@ -148,7 +156,7 @@
     .cart__btn, .wishlist__btn
       position: relative
       i
-        font-size: 25px
+        font-size: 22px
       span
         width: 18px
         height: 18px
@@ -221,6 +229,20 @@
       top: 60px
     .search
       height: 60px
+    nav
+      margin-left: 5px
+      margin-top: -8px
+      width: 92%
+    nav ul li.sub-open
+      padding-bottom: 0
+    .header__phone
+      a
+        font-size: 22px
+        left: -11px
+        top: -2.5px
+      p
+        font-size: 9px
+        left: -31px
   &.banner-closed
     top: 0
 
@@ -251,6 +273,10 @@
     text-transform: uppercase
     font-size: 10px
     letter-spacing: 1px
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    right: 120px
     i
       font-size: 21px
       color: $primary
@@ -260,6 +286,7 @@
       position: relative
       z-index: 2
       padding-left: 10px
+      top: -1px
   .close
     width: 35px
     height: 35px

@@ -7,7 +7,7 @@
     overflow: hidden
     display: flex
     flex-direction: column
-    margin-bottom: 50px
+    margin-bottom: 48px
     text-decoration: none
     &:nth-of-type(odd)
       margin-right: 20px
@@ -37,8 +37,9 @@
           position: relative
           z-index: 10
           color: #ffffff
-          right: 7px
-          top: 1px
+          right: 8px
+          top: 0px
+          font-weight: 400
     &:hover
       +rmin(1200)
         .overlay
@@ -52,7 +53,7 @@
         .card__image span
           opacity: 0
   &__image
-    height: 400px
+    height: 396px
     position: relative
     +cover
     +r($tablet)
@@ -73,6 +74,9 @@
       left: 50%
       transform: translateX(-50%)
       text-transform: uppercase
+      display: flex
+      justify-content: space-between
+      padding: 0 17px
       +tr
       +r($tablet)
         bottom: 27px
