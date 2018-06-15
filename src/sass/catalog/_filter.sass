@@ -5,7 +5,7 @@
   position: sticky
   transition: all 1.4s
   top: 0
-  z-index: 100
+  z-index: 32
   &.active
     background: transparent
   +r($tablet)
@@ -15,6 +15,7 @@
     left: 0
   +r($mobile)
     width: 95%
+    z-index: 100
   a.close
     position: absolute
     top: -30px
