@@ -4622,7 +4622,7 @@ jquery.scrollbar@^0.2.11:
   version "0.2.11"
   resolved "https://registry.yarnpkg.com/jquery.scrollbar/-/jquery.scrollbar-0.2.11.tgz#e91bd4a97d83859463024d26e730dc36676ab59d"
 
-jquery@^3.1.1:
+jquery@>=1.8.3, jquery@^3.1.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
 
@@ -6109,6 +6109,16 @@ osenv@0, osenv@^0.1.4:
   dependencies:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
+
+owl.carousel2.thumbs@^0.1.8:
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/owl.carousel2.thumbs/-/owl.carousel2.thumbs-0.1.8.tgz#97da803bd3359969591b73ad4c6b7facf01dcce8"
+
+owl.carousel@^2.3.4:
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/owl.carousel/-/owl.carousel-2.3.4.tgz#6c53dc8d24304b790e4f27a1dc4a655e973ccdc9"
+  dependencies:
+    jquery ">=1.8.3"
 
 p-finally@^1.0.0:
   version "1.0.0"
@@ -7739,6 +7749,16 @@ ternary-stream@^2.0.1:
     fork-stream "^0.0.4"
     merge-stream "^1.0.0"
     through2 "^2.0.1"
+
+tether-select@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/tether-select/-/tether-select-1.1.0.tgz#ed46b4eedb1b2746dfdc4bffbf4efc6035a85e15"
+  dependencies:
+    tether "~1.0.0"
+
+tether@~1.0.0:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/tether/-/tether-1.0.3.tgz#9c8713e644badf92464f6f9f28f816132434e123"
 
 text-table@~0.2.0:
   version "0.2.0"

@@ -9,20 +9,20 @@
           p Сортировать:
           select
             option По названию (А-Я)
-            option От дорогих к дешевым
+            option(data-img="123") От дорогих к дешевым1
     .row.middle-xs
       .col-md-6.col-xs-12
         h1 Каталог
       .col-md-6.hidden-sm.hidden-xs
         .catalog__sort
           p Сортировать:
-          select
+          select.select-target
             option По названию (А-Я)
             option От дорогих к дешевым
   .col-md-3.col-sm-4.col-xs-6
     +product(true, true, true)
   .col-md-3.col-sm-4.col-xs-6
-    +product(true, false, true)
+    +product(true, false, true, true)
   .col-md-3.col-sm-4.col-xs-6
     +product(false, false, true)
   .col-md-3.col-sm-4.col-xs-6

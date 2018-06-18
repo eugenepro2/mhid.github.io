@@ -1,10 +1,12 @@
 import device from 'current-device';
 import modal from 'jquery-modal';
 import scrollbar from 'jquery.scrollbar';
+import Select from 'tether-select';
+
 
 $('.scrollbar').scrollbar();
 
-$('a[rel]').click(function(event) {
+$('a[rel]').click(function() {
   $(this).modal({
     fadeDuration: 250,
     closeClass: 'icon icon-close',
@@ -121,6 +123,16 @@ $('.btn.btn-filter').on('click', function() {
   $('.filter').removeClass('active');
 });
 
+$('.filter__modal__country').on('click', function() {
+  if ($(this).find('input').prop('checked')) {
+    $(this).find('input').prop('checked', false);
+    $(this).siblings('.filter__modal__brands').find('input').prop('checked', false);
+  } else{
+    $(this).find('input').prop('checked', true);
+    $(this).siblings('.filter__modal__brands').find('input').prop('checked', true);
+  }
+});
+
 //сброс
 $('button.btn.btn-filter').on('click', function() {
   $('.filter__modal__block input').prop('checked', false);
@@ -130,3 +142,9 @@ $('button.btn.btn-filter').on('click', function() {
   $('.filter-bg').fadeOut();
   $('.filter__modal').fadeOut();
 });
+
+
+// let selectInstance = new Select({
+//   el: document.querySelector('select.select-target'),
+//   className: 'select-theme-default'
+// });

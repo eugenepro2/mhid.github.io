@@ -24,7 +24,7 @@
     font-size: 14px
     letter-spacing: 1px
     text-align: center
-    color: $black-three
+    color: #0e0e0e
     position: absolute
     bottom: 15px
     +r($mobile)
@@ -44,6 +44,7 @@
     font-size: 13px
     text-transform: uppercase
     white-space: nowrap
+    font-weight: 600
     +tr
     +r($mobile)
       font-size: 10px
@@ -57,3 +58,18 @@
     img
       opacity: 0
       visibility: hidden
+  &.category
+    h4
+      font-weight: normal
+      text-transform: uppercase
+.category__block
+  &:nth-of-type(1) .brand__card__image img
+    height: 46px
+  &:nth-of-type(2) .brand__card__image img
+    height: 70px
+  &:nth-of-type(3) .brand__card__image img
+    height: 62px
+  &:nth-of-type(4) .brand__card__image img
+    height: 70px
+  &:nth-of-type(5) .brand__card__image img
+    height: 62px

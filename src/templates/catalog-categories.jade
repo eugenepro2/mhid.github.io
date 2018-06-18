@@ -1,0 +1,15 @@
+---
+title: Каталог Категории
+---
+extends layouts/_layout
+block content
+  +breadcrumb(['Главная', 'Категории'])
+  .catalog.catalog__brands.catalog__categories
+    .container
+      .row
+        .col-md-3.hidden-sm.hidden-xs
+          include partials/_aside
+        .col-md-9.col-xs-12
+          .indent
+            include catalog/catalog-categories
+            .up

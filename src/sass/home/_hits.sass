@@ -16,6 +16,7 @@
     width: calc(100% - 70px)
     padding-top: 20px
     padding-left: 5px
+    padding-bottom: 25px
     +r($tablet)
       width: 220px
       overflow: visible
@@ -23,6 +24,13 @@
   .swiper-slide
     +r($mobile)
       width: 220px !important
+    &:nth-child(4n)
+      .wishlist__btn__tooltip
+        right: -10px
+        left: initial
+        &:before
+          right: 12px
+          left: initial
   .swiper-pagination
     margin-top: 40px
     transform: translateX(0) !important

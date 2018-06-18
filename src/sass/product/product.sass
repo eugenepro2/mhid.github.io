@@ -152,31 +152,27 @@
         position: absolute
         right: 30px
         top: 30px
-        .product__block__favorites
-          position: absolute
-          bottom: -45px
-          min-width: 230px
-          left: -160px
-          border-radius: 3px
-          padding: 10px 14px
-          background-color: #f8dfb1
-          display: block
-          font-size: 15px
-          color: $black-three
-          display: none
-          &.active
-            display: block
-          &:before
-            content: ''
-            border-left: 8px solid transparent
-            border-right: 8px solid transparent
-            border-bottom: 8px solid #f8dfb1
-            position: absolute
-            right: 48px
-            top: -7px
+        width: 25px
+        height: 25px
         i
-          color: #bc1b1b
-          font-size: 25px
+          font-size: 23px
+          color: $red
+          +r($tablet)
+            font-size: 18px
+            top: 2px
+            position: relative
+        .icon-heart-red
+          position: absolute
+          left: 0
+          top: 0
+          display: none
+        .wishlist__btn__tooltip
+          right: -42px
+          left: initial
+          &:before
+            right: 44px
+            left: initial
+           
       h1
         font-size: 23px
         font-weight: normal

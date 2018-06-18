@@ -40,7 +40,7 @@
 		height: 48px
 		width: 230px
 		&:hover
-			color: $white
+			color: $white !important
 			&:before
 				transform: scale(1)
 				background: $primary
@@ -63,3 +63,8 @@
 		+tr
 	&:hover
 		text-decoration: none !important
+	&-cart
+		color: $white
+		background: #55a246
+		border: 1px solid #55a246
+		pointer-events: none

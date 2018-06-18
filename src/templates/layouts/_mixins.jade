@@ -1,93 +1,93 @@
 - var svgSprite = 'img/sprite.svg'
 
-mixin icon(name, modClass)
-  if modClass == undefined
-    - var modClass = ''
-  else
-    - var modClass = ' ' + modClass
-  svg(class=name + modClass)
-    use(xlink:href= svgSprite + '#' + name)
+mixin icon(name,mod)
+	- mod = mod || ''
+	svg(class="icon icon-" + name + ' ' + mod)
+		use(xlink:href="img/sprite.svg#icon-" + name)
 
 //Product Style 1
 mixin product(hits, sale, in_stock, in_cart)
-  .product__card
-    .product__card__header
-      a(href="#" data-product).product__card__header__image
-        if in_stock
-          img(src="img/catalog/product/1.jpg", alt="")
-        else
-          img(src="img/catalog/product/2.jpg", alt="")
-        if !in_stock
-          .product__card__header__image--no-stock Продано
-      if hits
-        .product__card__header__hits.top Хит
-      if sale
-        .product__card__header__sale.top -60%
-      a(href="#").product__card__header__wishlist.wishlist__btn
-        i.icon.icon-heart
-    if in_stock
-      .product__card__content
-        a(href="#" data-product) 
-          h3 Кровать After Eight
-        a(href="#") 
-          span AICO (Michael Amini)
-        .product__card__content__price
-          div 
-            p В наличии
-            if sale
-              s 445 256 руб.
-          h4 356 000 руб.
-        if !in_cart
-          a(href="#").btn.btn-secondary Купить
-        else
-          a(href="#").btn.btn-secondary В корзине
-    else
-      .product__card__content.no-stock
-        a(href="#" data-product) 
-          h3 Кровать After Eight
-        a(href="#") 
-          span AICO (Michael Amini)
-        .product__card__content__price
-          div
-            if sale
-              s 445 256 руб.
-            p Под заказ
-          h4 Цена по запросу
-        a(href="#price" rel="modal:open").btn.btn-secondary Запросить цену
+	.product__card
+		.product__card__header
+			a(href="#" data-product).product__card__header__image
+				if in_stock
+					img(src="img/catalog/product/1.jpg", alt="")
+				else
+					img(src="img/catalog/product/2.jpg", alt="")
+				if !in_stock
+					.product__card__header__image--no-stock Продано
+			if hits
+				.product__card__header__hits.top Хит
+			if sale
+				.product__card__header__sale.top -60%
+			a.product__card__header__wishlist.wishlist__btn
+				i.icon.icon-heart
+				i.icon.icon-heart-red
+				.wishlist__btn__tooltip
+					p Товар добавлен в избранное
+		if in_stock
+			.product__card__content
+				a(href="#" data-product) 
+					h3 Кровать After Eight
+				a(href="#") 
+					span AICO (Michael Amini)
+				.product__card__content__price
+					div 
+						p В наличии
+						if sale
+							s 445 256 руб.
+					h4 356 000 руб.
+				if !in_cart
+					a(href="#").btn.btn-secondary Купить
+				else
+					a(href="#").btn.btn-cart В корзине
+		else
+			.product__card__content.no-stock
+				a(href="#" data-product) 
+					h3 Кровать After Eight
+				a(href="#") 
+					span AICO (Michael Amini)
+				.product__card__content__price
+					div
+						if sale
+							s 445 256 руб.
+						p Под заказ
+					h4 Цена по запросу
+				a(href="#price" rel="modal:open").btn.btn-secondary Запросить цену
 
 //Brand
-mixin brand(heading, img)
-  a(href="#").brand__card
-    .brand__card__image
-      img(src=`${img}`, alt="")
-    h4= heading
-    span Перейти к товарам
+mixin brand(heading, img, className)
+	a(href="#" class=className).brand__card
+		.brand__card__image
+			img(src=`${img}`, alt="")
+		h4= heading
+		span Перейти к товарам
 
 //Collection
 mixin collection(img, heading, category, count)
-  a(href="#").collection__card
-    .collection__card__image
-      img(src=`${img}`, alt="")
-    .collection__card__content
-      .collection__card__heading
-        h4= heading
-      .collection__card__category
-        p= category
-      .collection__card__count
-        p= count
-      span.btn.btn-secondary.hidden-xs Смотреть коллекцию
-      span.btn.btn-secondary.hidden-md.hidden-sm Смотреть
+	a(href="#").collection__card
+		.collection__card__image
+			img(src=`${img}`, alt="")
+		.collection__card__content
+			.collection__card__heading
+				h4= heading
+			.collection__card__category
+				p= category
+			.collection__card__count
+				p= count
+			span.btn.btn-secondary.hidden-xs Смотреть коллекцию
+			span.btn.btn-secondary.hidden-md.hidden-sm Смотреть
 
 mixin breadcrumb(items, close)
-  .breadcrumb
-    .container
-      .row
-        .col-xs-12
-          each item in items
-            a(href="#")= item
-        .col-xs-12
-          .close
-            if close
-              a(href="#").close Закрыть
-                i.icon.icon-close
-            else
+	.breadcrumb
+		.container
+			.row
+				.col-xs-12
+					each item in items
+						a(href="#")= item
+				.col-xs-12
+					.close
+						if close
+							a(href="#").close Закрыть
+								i.icon.icon-close
+						else

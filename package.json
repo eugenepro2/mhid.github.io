@@ -75,6 +75,7 @@
     "jquery.scrollbar": "^0.2.11",
     "owl.carousel": "^2.3.4",
     "owl.carousel2.thumbs": "^0.1.8",
-    "swiper": "^4.2.2"
+    "swiper": "^4.2.2",
+    "tether-select": "^1.1.0"
   }
 }

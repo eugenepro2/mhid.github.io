@@ -7,7 +7,6 @@
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.17)
     border-radius: 2px
     margin-left: 10px
-    overflow: hidden
     +tr
     +r($tablet)
       width: 220px
@@ -80,13 +79,22 @@
         position: absolute
         top: 15px
         right: 15px
+        width: 25px
+        height: 25px
+        cursor: pointer
         i
           font-size: 23px
           color: $red
+          +tr
           +r($tablet)
             font-size: 18px
             top: 2px
             position: relative
+        .icon-heart-red
+          position: absolute
+          left: 0
+          top: 0
+          opacity: 0
     &__content
       padding: 30px
       text-align: center
@@ -98,9 +106,9 @@
           text-decoration: underline
           color: rgba($black-three, 0.9)
       h3
-        font-size: 17px
+        font-size: 16px
         text-transform: uppercase
-        line-height: 1.33
+        line-height: 1.38
         letter-spacing: 1px
         color: rgba($black-three, 0.9)
         font-weight: 400
@@ -164,10 +172,11 @@
         p
           color: $primary
         h4
-          font-size: 16px
+          font-size: 21px
           color: #acacac
-          font-weight: 500
-
+          font-weight: 600
+          position: relative
+          top: -5px
 
 
 .catalog .product__card
@@ -190,6 +199,9 @@
       height: 170px
       +r($mobile)
         height: 125px
+      &--no-stock
+        font-size: 11px
+        letter-spacing: 0.8px
     .top
       top: 12px
       width: 40px
@@ -216,12 +228,16 @@
       +r($mobile)
         top: 9px
         right: 10px
+      .wishlist__btn__tooltip
+        left: -29px
   &__content
     padding-top: 33px
     +r($mobile)
       padding: 15px
     h3
       margin-bottom: 12px
+      line-height: 1.35
+      letter-spacing: 0.7px
       +r($mobile)
         font-size: 10px
     span
@@ -233,8 +249,11 @@
         height: 40px
         p
           font-size: 10.9px
+          font-weight: 600
         s
           font-size: 10.9px
+          letter-spacing: 0.4px
+          font-weight: 500
         +r($mobile)
           flex-direction: row
           p
@@ -244,14 +263,16 @@
           s
             font-size: 9px
       h4
-        font-size: 18px
-        margin-top: -1px
+        font-size: 17.5px
+        letter-spacing: 0.8px
         +r($mobile)
           font-size: 14px
           margin: 0
   .no-stock
     h4
-      font-size: 15px !important
+      font-size: 15.3px !important
+      font-weight: 500
+      letter-spacing: 0.8px
       +r($mobile)
         font-size: 13px !important
   .btn
@@ -265,3 +286,38 @@
       margin-bottom: 0
       width: 100%
 
+
+.wishlist__btn
+  &.active
+    .icon-heart
+      opacity: 0
+      +tr
+    .icon-heart-red
+      opacity: 1
+      +tr
+  &__tooltip
+    width: 193px
+    border-radius: 3px
+    background-color: #f8dfb1
+    position: absolute
+    padding: 10px
+    left: -27px
+    top: 40px
+    z-index: 10
+    white-space: nowrap
+    display: none
+    p
+      font-size: 13px
+      color: #0e0e0e
+      text-align: center
+    &:before
+      content: ''
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 0 10px 10px 10px
+      border-color: transparent transparent #f8dfb1 transparent
+      position: absolute
+      top: -10px
+      left: 30px
+    
