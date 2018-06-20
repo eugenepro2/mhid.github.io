@@ -85,6 +85,9 @@ if ($(window).width() <= '1200') {
     let id = $(this).attr('href');
     $(id).fadeToggle();
     $('.filter-bg').fadeToggle();
+    $('body').css('overflow', 'hidden');
+    let topFilter = $('.aside.filter').offset().top;
+    $('.filter__modal__content').height(screen.height - (topFilter + 230));
   });
   $('.filter-bg, .cancel, .close').on('click', function() {
     event.preventDefault();
@@ -119,6 +122,7 @@ $('.btn.btn-filter').on('click', function() {
   $('.filter__modal').fadeOut();
   if($(window).width() >= '768') {
     $('.filter-bg').fadeOut();
+    $('body').css('overflow', 'visible');
   }
   $('.filter').removeClass('active');
 });
@@ -148,3 +152,4 @@ $('button.btn.btn-filter').on('click', function() {
 //   el: document.querySelector('select.select-target'),
 //   className: 'select-theme-default'
 // });
+

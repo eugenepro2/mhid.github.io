@@ -84,7 +84,9 @@ mixin breadcrumb(items, close)
 			.row
 				.col-xs-12
 					each item in items
-						a(href="#")= item
+						.breadcrumb__item
+							a(href="#")= item
+							span /
 				.col-xs-12
 					.close
 						if close

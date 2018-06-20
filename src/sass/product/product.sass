@@ -336,49 +336,61 @@
       padding-top: 20px
       padding-left: 5px
       +r($tablet)
-        width: calc(100% - 30px)
+        width: 220px
         overflow: visible
-      .swiper
-        &-slide
-          .product__card-other
-            background-color: $primary
-            &__header
-              +center
-              flex-direction: column
-              h3
-                font-size: 18px
-                font-weight: 500
-                letter-spacing: 1.2px
-                text-align: center
-                color: $white
-                text-transform: uppercase
-                padding: 45px 0
-                padding-bottom: 45px
-              img
-                margin-bottom: 50px
-            &__content
-              h3
-                font-size: 18px
-                font-weight: 500
-                letter-spacing: 1.5px
-                text-align: center
-                color: $white
-                margin-bottom: 100px
-                +r($tablet)
-                  font-size: 14px
-              .btn-primary
-                box-shadow: none
-                border: 1px solid $white
-        &-pagination
-          margin-top: 40px
-          transform: translateX(0)
-          position: static
-          margin-bottom: 35px
-          +center
+        padding-left: 0
+      .swiper-slide
+        +r($mobile)
+          width: 220px !important
+        &:nth-child(4n)
+          .wishlist__btn__tooltip
+            right: -10px
+            left: initial
+            &:before
+              right: 12px
+              left: initial
+    .swiper
+      &-slide
+        .product__card-other
+          background-color: $primary
           +r($tablet)
-            margin: 0
-            position: relative
-            left: 0
-        &-button-prev
-        &-button-next
+            height: 396px
+          &__header
+            +center
+            flex-direction: column
+            h3
+              font-size: 18px
+              font-weight: 500
+              letter-spacing: 1.2px
+              text-align: center
+              color: $white
+              text-transform: uppercase
+              padding: 45px 0
+              padding-bottom: 45px
+            img
+              margin-bottom: 50px
+          &__content
+            h3
+              font-size: 18px
+              font-weight: 500
+              letter-spacing: 1.5px
+              text-align: center
+              color: $white
+              margin-bottom: 100px
+              +r($tablet)
+                font-size: 14px
+            .btn-primary
+              box-shadow: none
+              border: 1px solid $white
+      &-pagination
+        margin-top: 40px
+        transform: translateX(0) !important
+        position: static
+        margin-bottom: 35px
+        +center
+        flex-wrap: wrap
+        &-bullet
+          margin: 5px
+      &-button-prev
+      &-button-next
           

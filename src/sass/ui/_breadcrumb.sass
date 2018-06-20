@@ -4,6 +4,15 @@
   position: relative
   +r($mobile)
     padding: 15px 0
+  &__item
+    display: inline-block
+    position: relative
+    &:last-child
+      a
+        color: $primary
+        font-weight: 600
+      span
+        display: none
   a
     color: #8e8e8e
     font-size: 12px
@@ -13,29 +22,23 @@
     margin-right: 20px
     +r($tablet)
       margin-right: 10px
-    &:last-child
-      color: $primary
-      font-weight: 600
-      &:before
-        content: none
     &:hover
       text-decoration: underline
-    &:before
-      content: '/'
-      position: absolute
-      right: -13px
-      top: 49%
-      transform: translateY(-50%)
-      font-size: 12px
-      color: #8e8e8e
-      +r($tablet)
-        right: -8px
+  span
+    position: absolute
+    right: 0px
+    top: 55%
+    transform: translateY(-50%)
+    font-size: 12px
+    color: #8e8e8e
+    +r($tablet)
+      right: 0px
   .close
     position: relative
     a
       position: absolute
       right: 0
-      bottom: 0px
+      bottom: -2px
       margin-right: 0
       font-size: 20px
       font-weight: 300
@@ -43,14 +46,14 @@
       color: $black-three
       text-transform: none
       transition: all 0.3s
+      display: flex
+      align-items: center
+      flex-direction: row-reverse
       +r($mobile)
-        bottom: -40px
+        bottom: -46px
         font-size: 17px
       &:hover
         text-decoration: none
         color: $primary
       i
-        position: absolute
-        left: -35px
-        font-size: 17px
-        top: 5px
+        margin-right: 12px
