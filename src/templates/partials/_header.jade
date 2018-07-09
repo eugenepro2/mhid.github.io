@@ -144,7 +144,7 @@ header.header
         .header__phone
           a(href="tel:8 800 2000 779") 8 800 2000 779
           p Бесплатно по всей России
-      .col-md-2.col-sm-3.col-sm-offset-1.col-md-offset-0.col-xs-6
+      .col-md-2.col-sm-3.end-sm.col-sm-offset-1.col-md-offset-0.col-xs-6
         .header__toolbar
           a.open-seacrh
             i.icon.icon-search
@@ -157,8 +157,9 @@ header.header
             i.icon.icon-cart
             span 4
   .search
-    div
-      i.icon.icon-search
+    form
+      button(type="submit")
+        i.icon.icon-search
       input(type="text" placeholder="Поиск по сайту")
       i.icon.icon-close.close
 //END header
@@ -166,7 +167,7 @@ header.header
 .mobile-menu
   ul
     li
-      a(href="#") Каталог
+      a(href="catalog.html").always-open Каталог
       .mobile-sub
         ul
           li

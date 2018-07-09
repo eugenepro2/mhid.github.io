@@ -61,7 +61,7 @@
       .form-row
         .form-col
           .form-group
-            label.form-label(for='sign-email') E-mail (необходим для входа на сайт)*
+            label.form-label(for='sign-email') E-mail*
             input#sign-email.form-input(type='email')
           .form-group
             label.form-label(for='sign-name') ФИО*
@@ -90,7 +90,9 @@
           .form-group
             label.form-label(for='sign-site') Сайт компании
             input#sign-site.form-input(type='text')
-          .form-require * - обязательно для заполнения
+          .form-require 
+            span *
+            | Обязательно для заполнения
           .form-checkbox.hidden-md.hidden-sm
             input#checkbox-4(type="checkbox", name="")
             label.label(for="checkbox-4")

@@ -1,5 +1,6 @@
 .content
   overflow: hidden
+  position: relative
   &__breadcrumb
     position: relative
     .breadcrumb
@@ -311,6 +312,9 @@
         box-shadow: 0 2px 23px 0 rgba(0, 0, 0, 0.17)
         i, b, p, span
           color: $white
+        b
+          text-decoration: underline
+        
       .content__files__description
         display: flex
         flex-direction: column

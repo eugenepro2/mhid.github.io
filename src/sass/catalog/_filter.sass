@@ -3,19 +3,26 @@
   padding: 25px 40px
   height: 100vh
   position: sticky
-  transition: all 1.4s
+  transition: all 0.7s
   top: 0
-  z-index: 32
+  z-index: 98
   &.active
-    background: transparent
+    z-index: 101
   +r($tablet)
     display: none
     position: absolute
     top: 0
     left: 0
+    transform: translateX(-100%)
+    display: block
+    z-index: 101
+    &.active
+      transform: translateX(0%)
   +r($mobile)
     width: 95%
     z-index: 100
+    height: inherit
+    padding-bottom: 400px
   a.close
     position: absolute
     top: -30px
@@ -23,6 +30,10 @@
     display: none
     +r($tablet)
       display: block
+    +r($mobile)
+      top: 33px
+      right: 15px
+      z-index: 10
     i
       color: rgba(250, 250, 250, 0.8)
       +r($mobile)
@@ -120,13 +131,14 @@
     position: absolute
     z-index: 32
     left: 300px
-    top: 60px
+    top: 0px
     width: 900px
     border-radius: 3px
     background-color: #313131
     padding: 30px 25px
     padding-right: 40px
     display: none
+    -webkit-overflow-scrolling: touch
     +r($tablet)
       max-width: 900px
       width: auto
@@ -312,7 +324,7 @@
             display: none
   &-bg
     position: fixed
-    z-index: 31
+    z-index: 100
     top: 0
     left: 0
     width: 100%

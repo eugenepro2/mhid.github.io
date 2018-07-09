@@ -1,5 +1,5 @@
 aside.aside.filter#aside
-  a(href="#").close
+  a(href="#").close.close-filter
     i.icon.icon-close
   .filter__form
     button.btn.btn-filter(type="submit") Сбросить фильтр
@@ -23,6 +23,8 @@ aside.aside.filter#aside
       h4 Ничего не выбрано
       ul.scrollbar
   form.filter__modal#filter-modal-categories
+    a(href="#").close.close-filter-modal
+      i.icon.icon-close
     h2 Категории
     a.input__btn.input__btn-secondary.all Выбрать все
     .filter__modal__content
@@ -195,6 +197,8 @@ aside.aside.filter#aside
       input(type="submit" value="Отменить").input__btn.cancel
   form.filter__modal#filter-modal-brands1
     h2 Бренды1
+    a(href="#").close.close-filter-modal
+      i.icon.icon-close
     a.input__btn.input__btn-secondary.all Выбрать все
     .filter__modal__content
       .filter__modal__block
@@ -367,6 +371,8 @@ aside.aside.filter#aside
       input(type="submit" value="Отменить").input__btn.cancel
   form.filter__modal#filter-modal-brands2
     h2 Бренды2
+    a(href="#").close.close-filter-modal
+      i.icon.icon-close
     a.input__btn.input__btn-secondary.all Выбрать все
     .filter__modal__content
       .filter__modal__block

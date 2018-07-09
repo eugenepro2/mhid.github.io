@@ -54,102 +54,22 @@ $('.up').on('click', function() {
 });
 
 
-//filter
-let filterLink;
-$('[data-filter]').on('click', function() {
-  event.preventDefault();
-  $('.filter__modal').fadeOut();
-  filterLink = $(this);
-  if ($(window).width() <= '767') {
-    let id = $(this).attr('href');
-    $(id).fadeToggle();
-    $('.filter-bg').fadeIn();
-    $('#aside').addClass('active');
-  } else {
-    let id = $(this).attr('href');
-    $(id).fadeToggle();
-    $('.filter-bg').fadeIn();
+$(window).on('scroll', function() {
+  let scroll = $(window).scrollTop();
+  let up = $('.up');
+  
+  if ($(window).width() > 1024) {
+    if (scroll >= 1000) {
+      up.addClass('active');
+    } else{
+      up.removeClass('active');
+    }    
+  } else if($(window).width() <= 1023) {
+    if (scroll >= 500) {
+      up.addClass('active');
+    } else{
+      up.removeClass('active');
+    }   
   }
+
 });
-$('.filter-bg, .cancel').on('click', function() {
-  event.preventDefault();
-  $('.filter__modal').fadeOut();
-  $('.filter-bg').fadeOut();
-  $('#aside').removeClass('active');
-});
-
-//aside tablet
-if ($(window).width() <= '1200') {
-  $('[data-aside]').on('click', function() {
-    event.preventDefault();
-    let id = $(this).attr('href');
-    $(id).fadeToggle();
-    $('.filter-bg').fadeToggle();
-    $('body').css('overflow', 'hidden');
-    let topFilter = $('.aside.filter').offset().top;
-    $('.filter__modal__content').height(screen.height - (topFilter + 230));
-  });
-  $('.filter-bg, .cancel, .close').on('click', function() {
-    event.preventDefault();
-    $('#aside').fadeOut();
-    $('.filter-bg').fadeOut();
-    $('#aside').removeClass('active');
-    $('.filter__modal').fadeOut();
-  });
-}
-
-//filter checked
-$('.input__btn.all').on('click', function() {
-  let id = filterLink.attr('href');
-  $(id).find('.filter__modal__block input').prop('checked', true);
-});
-
-$('.btn.btn-filter').on('click', function() {
-  event.preventDefault();
-  let id = filterLink.attr('href');
-  $(filterLink).siblings('.scroll-wrapper.scrollbar').fadeIn();
-  $(filterLink).siblings('.scroll-wrapper.scrollbar').find('ul').empty();
-  $(id).find('input:checked').each(function() {
-    let checkedText = $(this).siblings('.label-for').text();
-    $(filterLink).siblings('.scroll-wrapper.scrollbar').find('ul').append("<li><a href='#'>" + checkedText + '</a></li>');
-  });
-  if($(id).find('input').is(':checked')) {
-    filterLink.siblings('h4').text('Выбрано:');
-  } else{
-    filterLink.siblings('h4').text('Ничего не выбрано');
-    $(filterLink).siblings('.scroll-wrapper.scrollbar').fadeOut();
-  }
-  $('.filter__modal').fadeOut();
-  if($(window).width() >= '768') {
-    $('.filter-bg').fadeOut();
-    $('body').css('overflow', 'visible');
-  }
-  $('.filter').removeClass('active');
-});
-
-$('.filter__modal__country').on('click', function() {
-  if ($(this).find('input').prop('checked')) {
-    $(this).find('input').prop('checked', false);
-    $(this).siblings('.filter__modal__brands').find('input').prop('checked', false);
-  } else{
-    $(this).find('input').prop('checked', true);
-    $(this).siblings('.filter__modal__brands').find('input').prop('checked', true);
-  }
-});
-
-//сброс
-$('button.btn.btn-filter').on('click', function() {
-  $('.filter__modal__block input').prop('checked', false);
-  $('.scroll-wrapper.scrollbar ul').empty();
-  $('.scroll-wrapper.scrollbar').fadeOut();
-  $('.filter__block h4').text('Ничего не выбрано');
-  $('.filter-bg').fadeOut();
-  $('.filter__modal').fadeOut();
-});
-
-
-// let selectInstance = new Select({
-//   el: document.querySelector('select.select-target'),
-//   className: 'select-theme-default'
-// });
-

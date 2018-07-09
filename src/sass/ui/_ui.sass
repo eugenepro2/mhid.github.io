@@ -10,6 +10,9 @@ body
 	text-rendering: optimizelegibility
 	-moz-osx-font-smoothing: grayscale
 	box-sizing: border-box
+	&.active
+		position: fixed
+		overflow: hidden
 	&.menu-is-open
 		position: fixed
 		top: 0
@@ -69,12 +72,17 @@ p
 +r($mobile)
 	.hidden-xs
 		display: none !important
-@media only screen and (min-width: 768px) and (max-width: 1200px)
+@media only screen and (min-width: 768px) and (max-width: 1279px)
 	.hidden-sm
 		display: none !important
-+rmin(1200)
++rmin(1280)
 	.hidden-md
 		display: none !important
+@media only screen and (min-width: 1024px) and (max-width: 1280px)
+	.col-sm-4
+		flex-basis: 25%
+    max-width: 25%
+
 
 
 //Кнопка вверх в каталоге
@@ -84,16 +92,23 @@ p
 	border: solid 1.3px #d4d4d4
 	+center
 	flex-direction: column
-	margin-bottom: 40px
-	margin-top: 40px
 	cursor: pointer
 	float: right
+	position: fixed
+	bottom: 40px
+	right: 40px
+	opacity: 0
+	+tr
+	&.active
+		opacity: 1
 	&:before, &:after
 		content: $icon-up-arrow
 		@extend %icon
 		color: #484848	
 		font-size: 6px
 		display: block
+	+r($tablet)
+		right: 10px
 	
 
 input[type=number]
@@ -108,3 +123,5 @@ input[type=number]
 	margin-left: 6px
 	+r($tablet)
 		margin-left: 0
+.scroll-content
+	-webkit-overflow-scrolling: touch

@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <title>Продукт</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" media="all" href="css/app.css">
@@ -119,19 +119,19 @@
                 <p>Бесплатно по всей России</p>
               </div>
             </div>
-            <div class="col-md-2 col-sm-3 col-sm-offset-1 col-md-offset-0 col-xs-6">
+            <div class="col-md-2 col-sm-3 end-sm col-sm-offset-1 col-md-offset-0 col-xs-6">
               <div class="header__toolbar"><a class="open-seacrh"><i class="icon icon-search"></i></a><a href="#"><i class="icon icon-phone"></i></a><a href="#" class="wishlist__btn__header"><i class="icon icon-heart"></i><span>74</span></a><a href="#" class="cart__btn"><i class="icon icon-cart"></i><span>4</span></a></div>
             </div>
           </div>
         </div>
         <div class="search">
-          <div><i class="icon icon-search"></i><input type="text" placeholder="Поиск по сайту"><i class="icon icon-close close"></i></div>
+          <form><button type="submit"><i class="icon icon-search"></i></button><input type="text" placeholder="Поиск по сайту"><i class="icon icon-close close"></i></form>
         </div>
       </header>
       <!--END header-->
       <div class="mobile-menu">
         <ul>
-          <li><a href="#">Каталог</a>
+          <li><a href="catalog.html" class="always-open">Каталог</a>
             <div class="mobile-sub">
               <ul>
                 <li><a href="#">Аксессуары</a></li>
@@ -208,28 +208,16 @@
               <div class="product__content">
                 <div class="row">
                   <div class="col-md-7 col-xs-12">
+                    <div class="swiper__sale top">-60%</div>
+                    <div class="swiper__hits top">Хит</div>
                     <div data-slider-id="1" class="content__slider1 owl-carousel owl-theme">
-                      <div class="item">
-                        <div class="swiper__sale top">-60%</div>
-                        <div class="swiper__hits top">Хит</div><img src="img/catalog/product/1.jpg" alt=""></div>
-                      <div class="item">
-                        <div class="swiper__sale top">-60%</div>
-                        <div class="swiper__hits top">Хит</div><img src="img/catalog/product/1.jpg" alt=""></div>
-                      <div class="item">
-                        <div class="swiper__sale top">-60%</div>
-                        <div class="swiper__hits top">Хит</div><img src="img/catalog/product/1.jpg" alt=""></div>
-                      <div class="item">
-                        <div class="swiper__sale top">-60%</div>
-                        <div class="swiper__hits top">Хит</div><img src="img/catalog/product/1.jpg" alt=""></div>
-                      <div class="item">
-                        <div class="swiper__sale top">-60%</div>
-                        <div class="swiper__hits top">Хит</div><img src="img/catalog/product/1.jpg" alt=""></div>
-                      <div class="item">
-                        <div class="swiper__sale top">-60%</div>
-                        <div class="swiper__hits top">Хит</div><img src="img/catalog/product/1.jpg" alt=""></div>
-                      <div class="item">
-                        <div class="swiper__sale top">-60%</div>
-                        <div class="swiper__hits top">Хит</div><img src="img/catalog/product/1.jpg" alt=""></div>
+                      <div class="item"><img src="img/catalog/product/1.jpg" alt=""></div>
+                      <div class="item"><img src="img/catalog/product/1.jpg" alt=""></div>
+                      <div class="item"><img src="img/catalog/product/1.jpg" alt=""></div>
+                      <div class="item"><img src="img/catalog/product/1.jpg" alt=""></div>
+                      <div class="item"><img src="img/catalog/product/1.jpg" alt=""></div>
+                      <div class="item"><img src="img/catalog/product/1.jpg" alt=""></div>
+                      <div class="item"><img src="img/catalog/product/1.jpg" alt=""></div>
                     </div>
                     <div class="swiper">
                       <div class="swiper-container swiper__product">
@@ -430,6 +418,7 @@
     </div>
     </div>
     </div>
+    <div class="up"></div>
     <footer class="footer">
       <div class="container">
         <div class="row">
@@ -529,7 +518,7 @@
           <h3>Пожалуйста, заполните форму</h3>
           <div class="form-row">
             <div class="form-col">
-              <div class="form-group"><label for="sign-email" class="form-label">E-mail (необходим для входа на сайт)*</label><input id="sign-email" type="email" class="form-input"></div>
+              <div class="form-group"><label for="sign-email" class="form-label">E-mail*</label><input id="sign-email" type="email" class="form-input"></div>
               <div class="form-group"><label for="sign-name" class="form-label">ФИО*</label><input id="sign-name" type="tel" class="form-input"></div>
               <div class="form-group"><label for="sign-pass" class="form-label">Пароль*</label><input id="sign-pass" type="password" class="form-input"></div>
               <div class="form-group"><label for="sign-pass-2" class="form-label">Повторите пароль*</label><input id="sign-pass-2" type="password" class="form-input"></div>
@@ -540,7 +529,7 @@
               <div class="form-group"><label for="sign-city" class="form-label">Город*</label><input id="sign-city" type="text" class="form-input"></div>
               <div class="form-group"><label for="sign-company" class="form-label">Название компании</label><input id="sign-company" type="text" class="form-input"></div>
               <div class="form-group"><label for="sign-site" class="form-label">Сайт компании</label><input id="sign-site" type="text" class="form-input"></div>
-              <div class="form-require">* - обязательно для заполнения</div>
+              <div class="form-require"> <span>*</span>Обязательно для заполнения</div>
               <div class="form-checkbox hidden-md hidden-sm"><input id="checkbox-4" type="checkbox" name=""><label for="checkbox-4" class="label"></label><label for="checkbox-4" class="label-for">Я принимаю <a href="#">условия использования сайта и положения о конфеденциальности</a></label></div>
             </div>
           </div>

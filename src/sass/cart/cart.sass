@@ -124,7 +124,7 @@
         letter-spacing: 0.1px
       .no-stock
         p
-          font-size: 17px
+          font-size: 16px
           color: rgba($black-three, 0.5)
           line-height: 1
         span
@@ -185,6 +185,7 @@
           position: relative
           top: -2px
           cursor: pointer
+          user-select: none 
         .add
           padding-left: 10px
           +r($mobile)
@@ -253,6 +254,7 @@
       right: 85px
       text-decoration: none
       display: flex
+      +tr
       +r($tablet)
         position: relative
         transform: none
@@ -263,6 +265,8 @@
         width: 100%
         right: 0
         margin-top: 20px
+      &.active
+        background: $green
       p
         text-transform: uppercase
         color: $white
@@ -474,6 +478,8 @@
       color: $white
       text-decoration: none
       margin-top: 25px
+      position: relative
+      top: -9px
   &__conservation
     width: 100%
     background: $white

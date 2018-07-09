@@ -15,6 +15,8 @@
       width: 100%
     &:hover
       box-shadow: 0 10px 20px rgba(0,0,0,.3)
+      position: relative
+      z-index: 10
     &__header
       position: relative
       &__image
@@ -46,6 +48,8 @@
           font-weight: 500
           letter-spacing: 1.1px
           text-transform: uppercase
+          +r($tablet)
+            font-size: 13px
       .top
         position: absolute
         top: 15px
@@ -110,9 +114,10 @@
         line-height: 1.38
         letter-spacing: 1px
         color: rgba($black-three, 0.9)
-        font-weight: 400
+        font-weight: 600
         margin-bottom: 5px
         margin-top: -4px
+        height: 45px
         +r($tablet)
           font-size: 13px
       span
@@ -129,9 +134,9 @@
           +center
           flex-direction: column
           +r($tablet)
-            flex-direction: row-reverse
             height: 100%
             padding-top: 10px
+            height: 36px
         s
           color: #acacac
           margin-right: 5px
@@ -150,7 +155,8 @@
           +r($tablet)
             font-size: 11px
             font-weight: 600
-            margin-bottom: 0
+            margin-top: -13px
+            margin-bottom: 10px
         h4
           margin: 5px
           font-size: 22px
@@ -167,6 +173,8 @@
         width: 100%
         +r($tablet)
           height: 33px
+        &:hover
+          color: $white !important
       &.no-stock
         p
           color: $primary
@@ -176,6 +184,9 @@
           font-weight: 600
           position: relative
           top: -5px
+          +r($tablet)
+            font-size: 17px
+            top: 0
           +r($mobile)
             top: 0
             font-size: 16px
@@ -185,17 +196,19 @@
   width: 211px
   margin-left: 0
   height: initial
-  margin-bottom: 26px
+  margin-bottom: 17px
   +r($tablet)
     width: 220px
     margin-bottom: 20px
   +r($mobile)
     width: 100%
-    margin-bottom: 5px 
+    margin-bottom: 5px
   &__content
+    padding: 22px
     padding-bottom: 15px
     h3
-      font-size: 13px
+      font-size: 12.5px
+      height: 35px
   &__header
     &__image
       height: 170px
@@ -232,6 +245,12 @@
         right: 10px
       .wishlist__btn__tooltip
         left: -29px
+        +r($mobile)
+          right: -10px
+          left: initial
+          &:before
+            right: 12px
+            left: initial
   &__content
     padding-top: 33px
     +r($mobile)
@@ -241,23 +260,32 @@
       line-height: 1.35
       letter-spacing: 0.7px
       +r($mobile)
-        font-size: 10px
+        font-size: 12px
+        display: flex
+        align-items: center
+        height: 40px
     span
-      font-size: 9.5px
+      font-size: 11px
       +r($mobile)
         margin-bottom: 0
+        font-size: 10px
+    .btn
+      +r($mobile)
+        font-size: 11px !important
     &__price
       div
         height: 40px
         p
-          font-size: 10.9px
+          font-size: 10.9px !important
           font-weight: 600
+          +r($mobile)
+            margin-bottom: 5px !important
+            font-size: 10px !important
         s
           font-size: 10.9px
           letter-spacing: 0.4px
           font-weight: 500
         +r($mobile)
-          flex-direction: row
           p
             margin-bottom: 0
             margin-right: 5px
@@ -276,7 +304,7 @@
       font-weight: 500
       letter-spacing: 0.8px
       +r($mobile)
-        font-size: 13px !important
+        font-size: 12px !important
   .btn
     font-size: 11px
     height: 35px
@@ -323,3 +351,9 @@
       top: -10px
       left: 30px
     
+.content
+  .hits 
+    .swiper-container
+      width: calc(100% - 50px)
+  .product__card
+    width: 100%

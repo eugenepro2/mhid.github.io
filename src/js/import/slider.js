@@ -41,7 +41,38 @@ let hitsSLider = new Swiper('.hits-slider', {
     // when window width is <= 640px
     1170: {
       slidesPerView: 3,
-      slidesPerGroup: 3
+      slidesPerGroup: 3,
+      spaceBetween: 10
+    },
+    767: {
+      slidesPerGroup: 1,
+      spaceBetween: 10,
+      slidesPerView: 'auto',
+    }
+    
+  },
+  pagination: {
+    el: '.hits-pagination',
+    type: 'bullets',
+    clickable: true
+  },
+  navigation: {
+    nextEl: '.hits-next',
+    prevEl: '.hits-prev',
+  },
+});
+
+let hitsSLider1 = new Swiper('.hits-content-slider', {
+  speed: 400,
+  slidesPerView: 4,
+  slidesPerGroup: 4,
+  spaceBetween: 10,
+  breakpoints: {
+    // when window width is <= 640px
+    1170: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 10
     },
     767: {
       slidesPerGroup: 1,

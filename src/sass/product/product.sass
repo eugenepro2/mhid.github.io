@@ -13,6 +13,42 @@
       margin-top: 0
     +r($mobile)
       margin-top: 40px
+    .col-xs-12
+      position: relative
+    .swiper__hits
+      position: absolute
+      left: 30px
+      top: 30px
+      font-size: 18px
+      font-weight: normal
+      letter-spacing: 1.4px
+      text-align: center
+      color: $white
+      padding: 7px 13px
+      background: $green
+      text-transform: uppercase
+      z-index: 100
+      +r($mobile)
+        font-size: 11px
+        left: 10px
+        top: 10px
+    .swiper__sale
+      position: absolute
+      z-index: 100
+      left: 110px
+      top: 30px
+      font-size: 18px
+      font-weight: normal
+      letter-spacing: 1.4px
+      text-align: center
+      color: $white
+      padding: 7px 13px
+      background: $red
+      text-transform: uppercase
+      +r($mobile)
+        font-size: 11px
+        left: 70px
+        top: 10px
     .content__slider1
       width: 100% !important
       left: 50%
@@ -32,38 +68,6 @@
         img
           height: 100%
           width: auto
-        .swiper__sale
-          position: absolute
-          left: 110px
-          top: 30px
-          font-size: 18px
-          font-weight: normal
-          letter-spacing: 1.4px
-          text-align: center
-          color: $white
-          padding: 7px 13px
-          background: $red
-          text-transform: uppercase
-          +r($mobile)
-            font-size: 11px
-            left: 70px
-            top: 10px
-        .swiper__hits
-          position: absolute
-          left: 30px
-          top: 30px
-          font-size: 18px
-          font-weight: normal
-          letter-spacing: 1.4px
-          text-align: center
-          color: $white
-          padding: 7px 13px
-          background: $green
-          text-transform: uppercase
-          +r($mobile)
-            font-size: 11px
-            left: 10px
-            top: 10px
       .owl-dots
         display: none
       .owl-prev
@@ -157,6 +161,7 @@
         i
           font-size: 23px
           color: $red
+          +tr
           +r($tablet)
             font-size: 18px
             top: 2px
@@ -165,7 +170,7 @@
           position: absolute
           left: 0
           top: 0
-          display: none
+          opacity: 0
         .wishlist__btn__tooltip
           right: -42px
           left: initial
@@ -335,14 +340,30 @@
       width: calc(100% - 70px)
       padding-top: 20px
       padding-left: 5px
-      +r($tablet)
+      padding-bottom: 25px
+      +r($mobile)
         width: 220px
         overflow: visible
         padding-left: 0
       .swiper-slide
         +r($mobile)
           width: 220px !important
+        +r($tablet)
         &:nth-child(4n)
+          .wishlist__btn__tooltip
+            right: -10px
+            left: initial
+            &:before
+              right: 12px
+              left: initial
+        &:nth-child(3n)
+          .wishlist__btn__tooltip
+            right: -10px
+            left: initial
+            &:before
+              right: 12px
+              left: initial
+        +r($mobile)
           .wishlist__btn__tooltip
             right: -10px
             left: initial
@@ -353,8 +374,9 @@
       &-slide
         .product__card-other
           background-color: $primary
+          height: 472px
           +r($tablet)
-            height: 396px
+            height: 427px
           &__header
             +center
             flex-direction: column
@@ -367,8 +389,12 @@
               text-transform: uppercase
               padding: 45px 0
               padding-bottom: 45px
+              +r($mobile)
+                padding-bottom: 25px
             img
               margin-bottom: 50px
+              +r($mobile)
+                margin-bottom: 30px
           &__content
             h3
               font-size: 18px
@@ -376,9 +402,13 @@
               letter-spacing: 1.5px
               text-align: center
               color: $white
-              margin-bottom: 100px
+              margin-bottom: 93px
+              height: 100%
               +r($tablet)
-                font-size: 14px
+                font-size: 13px
+                margin-bottom: 70px
+              +r($mobile)
+                margin-bottom: 113px
             .btn-primary
               box-shadow: none
               border: 1px solid $white

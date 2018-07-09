@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <title>Контент</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" media="all" href="css/app.css">
@@ -119,19 +119,19 @@
                 <p>Бесплатно по всей России</p>
               </div>
             </div>
-            <div class="col-md-2 col-sm-3 col-sm-offset-1 col-md-offset-0 col-xs-6">
+            <div class="col-md-2 col-sm-3 end-sm col-sm-offset-1 col-md-offset-0 col-xs-6">
               <div class="header__toolbar"><a class="open-seacrh"><i class="icon icon-search"></i></a><a href="#"><i class="icon icon-phone"></i></a><a href="#" class="wishlist__btn__header"><i class="icon icon-heart"></i><span>74</span></a><a href="#" class="cart__btn"><i class="icon icon-cart"></i><span>4</span></a></div>
             </div>
           </div>
         </div>
         <div class="search">
-          <div><i class="icon icon-search"></i><input type="text" placeholder="Поиск по сайту"><i class="icon icon-close close"></i></div>
+          <form><button type="submit"><i class="icon icon-search"></i></button><input type="text" placeholder="Поиск по сайту"><i class="icon icon-close close"></i></form>
         </div>
       </header>
       <!--END header-->
       <div class="mobile-menu">
         <ul>
-          <li><a href="#">Каталог</a>
+          <li><a href="catalog.html" class="always-open">Каталог</a>
             <div class="mobile-sub">
               <ul>
                 <li><a href="#">Аксессуары</a></li>
@@ -188,8 +188,9 @@
       <div class="content">
         <div class="container">
           <div class="row">
-            <div class="col-md-3 hidden-sm hidden-xs">
+            <div class="col-md-3">
               <aside class="aside aside-profile">
+                <div class="close"><i class="icon icon-close"></i></div>
                 <h2><a href="#">Все о дизайне</a></h2>
                 <div class="aside-profile__factories">
                   <h3>Фабрики</h3>
@@ -357,102 +358,250 @@
                     <div class="form-group"><label for="login-pass-2" class="form-label">Подтвердите пароль</label><input id="login-pass-2" type="password" class="form-input"></div>
                     <div class="form-group"><button type="submit" class="btn btn-primary">Редактировать</button></div>
                   </form>
-                  <div class="up"></div>
+                  <div class="hits catalog">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <h2>Хиты продаж</h2>
+                        </div>
+                        <div class="col-xs-12">
+                          <div class="swiper-container hits-content-slider">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <div class="product__card">
+                                  <div class="product__card__header"><a href="#" data-product="data-product" class="product__card__header__image"><img src="img/catalog/product/1.jpg" alt=""/></a>
+                                    <div class="product__card__header__hits top">Хит</div>
+                                    <div class="product__card__header__sale top">-60%</div><a class="product__card__header__wishlist wishlist__btn"><i class="icon icon-heart"></i><i class="icon icon-heart-red"></i><div class="wishlist__btn__tooltip"><p>Товар добавлен в избранное</p></div></a></div>
+                                  <div
+                                    class="product__card__content">
+                                    <a href="#" data-product="data-product">
+                                      <h3>Кровать After Eight</h3>
+                                    </a><a href="#"> <span>AICO (Michael Amini)</span></a>
+                                    <div class="product__card__content__price">
+                                      <div>
+                                        <p>В наличии</p><s>445 256 руб.</s></div>
+                                      <h4>356 000 руб.</h4>
+                                    </div><a href="#" class="btn btn-secondary">Купить</a></div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="product__card">
+                                <div class="product__card__header"><a href="#" data-product="data-product" class="product__card__header__image"><img src="img/catalog/product/1.jpg" alt=""/></a>
+                                  <div class="product__card__header__hits top">Хит</div><a class="product__card__header__wishlist wishlist__btn"><i class="icon icon-heart"></i><i class="icon icon-heart-red"></i><div class="wishlist__btn__tooltip"><p>Товар добавлен в избранное</p></div></a></div>
+                                <div
+                                  class="product__card__content">
+                                  <a href="#" data-product="data-product">
+                                    <h3>Кровать After Eight</h3>
+                                  </a><a href="#"> <span>AICO (Michael Amini)</span></a>
+                                  <div class="product__card__content__price">
+                                    <div>
+                                      <p>В наличии</p>
+                                    </div>
+                                    <h4>356 000 руб.</h4>
+                                  </div><a href="#" class="btn btn-secondary">Купить</a></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="product__card">
+                              <div class="product__card__header"><a href="#" data-product="data-product" class="product__card__header__image"><img src="img/catalog/product/1.jpg" alt=""/></a><a class="product__card__header__wishlist wishlist__btn"><i class="icon icon-heart"></i><i class="icon icon-heart-red"></i><div class="wishlist__btn__tooltip"><p>Товар добавлен в избранное</p></div></a></div>
+                              <div
+                                class="product__card__content">
+                                <a href="#" data-product="data-product">
+                                  <h3>Кровать After Eight</h3>
+                                </a><a href="#"> <span>AICO (Michael Amini)</span></a>
+                                <div class="product__card__content__price">
+                                  <div>
+                                    <p>В наличии</p>
+                                  </div>
+                                  <h4>356 000 руб.</h4>
+                                </div><a href="#" class="btn btn-secondary">Купить</a></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="product__card">
+                            <div class="product__card__header"><a href="#" data-product="data-product" class="product__card__header__image"><img src="img/catalog/product/2.jpg" alt=""/><div class="product__card__header__image--no-stock">Продано</div></a><a class="product__card__header__wishlist wishlist__btn"><i class="icon icon-heart"></i><i class="icon icon-heart-red"></i><div class="wishlist__btn__tooltip"><p>Товар добавлен в избранное</p></div></a></div>
+                            <div
+                              class="product__card__content no-stock">
+                              <a href="#" data-product="data-product">
+                                <h3>Кровать After Eight</h3>
+                              </a><a href="#"> <span>AICO (Michael Amini)</span></a>
+                              <div class="product__card__content__price">
+                                <div>
+                                  <p>Под заказ</p>
+                                </div>
+                                <h4>Цена по запросу</h4>
+                              </div><a href="#price" rel="modal:open" class="btn btn-secondary">Запросить цену</a></div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="product__card">
+                          <div class="product__card__header"><a href="#" data-product="data-product" class="product__card__header__image"><img src="img/catalog/product/1.jpg" alt=""/></a>
+                            <div class="product__card__header__hits top">Хит</div>
+                            <div class="product__card__header__sale top">-60%</div><a class="product__card__header__wishlist wishlist__btn"><i class="icon icon-heart"></i><i class="icon icon-heart-red"></i><div class="wishlist__btn__tooltip"><p>Товар добавлен в избранное</p></div></a></div>
+                          <div
+                            class="product__card__content">
+                            <a href="#" data-product="data-product">
+                              <h3>Кровать After Eight</h3>
+                            </a><a href="#"> <span>AICO (Michael Amini)</span></a>
+                            <div class="product__card__content__price">
+                              <div>
+                                <p>В наличии</p><s>445 256 руб.</s></div>
+                              <h4>356 000 руб.</h4>
+                            </div><a href="#" class="btn btn-secondary">Купить</a></div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="product__card">
+                        <div class="product__card__header"><a href="#" data-product="data-product" class="product__card__header__image"><img src="img/catalog/product/1.jpg" alt=""/></a>
+                          <div class="product__card__header__hits top">Хит</div><a class="product__card__header__wishlist wishlist__btn"><i class="icon icon-heart"></i><i class="icon icon-heart-red"></i><div class="wishlist__btn__tooltip"><p>Товар добавлен в избранное</p></div></a></div>
+                        <div class="product__card__content">
+                          <a href="#" data-product="data-product">
+                            <h3>Кровать After Eight</h3>
+                          </a><a href="#"> <span>AICO (Michael Amini)</span></a>
+                          <div class="product__card__content__price">
+                            <div>
+                              <p>В наличии</p>
+                            </div>
+                            <h4>356 000 руб.</h4>
+                          </div><a href="#" class="btn btn-secondary">Купить</a></div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="product__card">
+                        <div class="product__card__header"><a href="#" data-product="data-product" class="product__card__header__image"><img src="img/catalog/product/1.jpg" alt=""/></a><a class="product__card__header__wishlist wishlist__btn"><i class="icon icon-heart"></i><i class="icon icon-heart-red"></i><div class="wishlist__btn__tooltip"><p>Товар добавлен в избранное</p></div></a></div>
+                        <div
+                          class="product__card__content">
+                          <a href="#" data-product="data-product">
+                            <h3>Кровать After Eight</h3>
+                          </a><a href="#"> <span>AICO (Michael Amini)</span></a>
+                          <div class="product__card__content__price">
+                            <div>
+                              <p>В наличии</p>
+                            </div>
+                            <h4>356 000 руб.</h4>
+                          </div><a href="#" class="btn btn-secondary">Купить</a></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product__card">
+                      <div class="product__card__header"><a href="#" data-product="data-product" class="product__card__header__image"><img src="img/catalog/product/2.jpg" alt=""/><div class="product__card__header__image--no-stock">Продано</div></a><a class="product__card__header__wishlist wishlist__btn"><i class="icon icon-heart"></i><i class="icon icon-heart-red"></i><div class="wishlist__btn__tooltip"><p>Товар добавлен в избранное</p></div></a></div>
+                      <div
+                        class="product__card__content no-stock">
+                        <a href="#" data-product="data-product">
+                          <h3>Кровать After Eight</h3>
+                        </a><a href="#"> <span>AICO (Michael Amini)</span></a>
+                        <div class="product__card__content__price">
+                          <div>
+                            <p>Под заказ</p>
+                          </div>
+                          <h4>Цена по запросу</h4>
+                        </div><a href="#price" rel="modal:open" class="btn btn-secondary">Запросить цену</a></div>
+                  </div>
                 </div>
               </div>
+            </div>
+            <div class="swiper-pagination hits-pagination"></div>
+            <div class="swiper-button-prev hits-prev"><i class="icon icon-slider-left"></i></div>
+            <div class="swiper-button-next hits-next"><i class="icon icon-slider-right"></i></div>
+          </div><a href="#" class="btn btn-secondary">Все хиты продаж</a></div>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="up"></div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 col-sm-12 col-xs-12">
+            <div class="footer__row">
+              <div class="footer__list"><a href="#">Каталог</a>
+                <ul>
+                  <li><a href="#">Аксессуары</a></li>
+                  <li><a href="#">Посуда</a></li>
+                  <li><a href="#">Свет</a></li>
+                  <li><a href="#">Текстиль</a></li>
+                  <li><a href="#">Мебель</a></li>
+                </ul>
+              </div>
+              <div class="footer__list"><a href="#">Наличие<div><i class="icon icon-sale"></i><span>%SALE</span></div></a></div>
+              <div class="footer__list"><a href="#">Бренды</a>
+                <ul>
+                  <li><a href="#">США</a></li>
+                  <li><a href="#">Италия</a></li>
+                  <li><a href="#">Испания</a></li>
+                  <li><a href="#">Франция</a></li>
+                </ul>
+              </div>
+              <div class="footer__list"><a href="#">Дилерам</a></div>
+              <div class="footer__list"><a href="#">О компании</a>
+                <ul>
+                  <li><a href="#">Информация </a></li>
+                  <li><a href="#">Контакты </a></li>
+                  <li><a href="#">Пользовательское соглашение</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-12 col-xs-12">
+            <div class="footer__contact">
+              <div class="footer__contact__block"><a href="mailto:info@mhid.ru">info@mhid.ru</a></div>
+              <div class="footer__contact__block"><a href="tel:8 800 2000 779">8 800 2000 779</a>
+                <p>Бесплатно по всей России</p>
+              </div>
+            </div>
+            <div class="footer__social"><a href="#"><i class="icon icon-facebook"></i></a><a href="#"><i class="icon icon-instagram"></i></a><a href="#"><i class="icon icon-vk"></i></a><a href="#"><i class="icon icon-twitter"></i></a><a href="#"><i class="icon icon-linkedin"></i></a>
+              <a
+                href="#"><i class="icon icon-od"></i></a><a href="#"><i class="icon icon-pinterest"></i></a></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5 col-sm-12 col-xs-12">
+            <div class="footer__copy">
+              <p>©m.house 2017</p>
+              <p>Нижний Новгород, ул. Республиканская д. 43, к. 7</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-md-offset-4 col-sm-12 col-xs-12 last-md first-xs">
+            <div class="footer__view">
+              <p>Рады видеть вас в <a href="#">салонах M. House</a></p>
             </div>
           </div>
         </div>
       </div>
-      <footer class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-7 col-sm-12 col-xs-12">
-              <div class="footer__row">
-                <div class="footer__list"><a href="#">Каталог</a>
-                  <ul>
-                    <li><a href="#">Аксессуары</a></li>
-                    <li><a href="#">Посуда</a></li>
-                    <li><a href="#">Свет</a></li>
-                    <li><a href="#">Текстиль</a></li>
-                    <li><a href="#">Мебель</a></li>
-                  </ul>
-                </div>
-                <div class="footer__list"><a href="#">Наличие<div><i class="icon icon-sale"></i><span>%SALE</span></div></a></div>
-                <div class="footer__list"><a href="#">Бренды</a>
-                  <ul>
-                    <li><a href="#">США</a></li>
-                    <li><a href="#">Италия</a></li>
-                    <li><a href="#">Испания</a></li>
-                    <li><a href="#">Франция</a></li>
-                  </ul>
-                </div>
-                <div class="footer__list"><a href="#">Дилерам</a></div>
-                <div class="footer__list"><a href="#">О компании</a>
-                  <ul>
-                    <li><a href="#">Информация </a></li>
-                    <li><a href="#">Контакты </a></li>
-                    <li><a href="#">Пользовательское соглашение</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-5 col-sm-12 col-xs-12">
-              <div class="footer__contact">
-                <div class="footer__contact__block"><a href="mailto:info@mhid.ru">info@mhid.ru</a></div>
-                <div class="footer__contact__block"><a href="tel:8 800 2000 779">8 800 2000 779</a>
-                  <p>Бесплатно по всей России</p>
-                </div>
-              </div>
-              <div class="footer__social"><a href="#"><i class="icon icon-facebook"></i></a><a href="#"><i class="icon icon-instagram"></i></a><a href="#"><i class="icon icon-vk"></i></a><a href="#"><i class="icon icon-twitter"></i></a><a href="#"><i class="icon icon-linkedin"></i></a>
-                <a
-                  href="#"><i class="icon icon-od"></i></a><a href="#"><i class="icon icon-pinterest"></i></a></div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-5 col-sm-12 col-xs-12">
-              <div class="footer__copy">
-                <p>©m.house 2017</p>
-                <p>Нижний Новгород, ул. Республиканская д. 43, к. 7</p>
-              </div>
-            </div>
-            <div class="col-md-3 col-md-offset-4 col-sm-12 col-xs-12 last-md first-xs">
-              <div class="footer__view">
-                <p>Рады видеть вас в <a href="#">салонах M. House</a></p>
-              </div>
-            </div>
-          </div>
+    </footer>
+    <div id="login" class="modal">
+      <h2>Вход в личный кабинет</h2>
+      <form class="form">
+        <div class="form-group"><label for="login-email" class="form-label">E-mail</label><input id="login-email" type="text" class="form-input"></div>
+        <div class="form-group"><label for="login-pass" class="form-label">Пароль</label><input id="login-pass" type="password" class="form-input"></div>
+        <div class="form-lost-password"><a href="#">Забыли пароль?</a></div>
+        <div class="form-group"><button type="submit" class="btn btn-primary">Войти</button></div>
+        <div class="form-group"><button type="submit" class="btn btn-secondary">Регистрация</button></div>
+        <div class="form-info">
+          <p>Если у Вас возникли трудности в работе с личным кабинетом, Вы можете направить письмо с вопросом на <a href="#">info@mhid.ru </a>или воспользоваться <a href="#">формой обратной связи.</a></p>
         </div>
-      </footer>
-      <div id="login" class="modal">
-        <h2>Вход в личный кабинет</h2>
-        <form class="form">
-          <div class="form-group"><label for="login-email" class="form-label">E-mail</label><input id="login-email" type="text" class="form-input"></div>
-          <div class="form-group"><label for="login-pass" class="form-label">Пароль</label><input id="login-pass" type="password" class="form-input"></div>
-          <div class="form-lost-password"><a href="#">Забыли пароль?</a></div>
-          <div class="form-group"><button type="submit" class="btn btn-primary">Войти</button></div>
-          <div class="form-group"><button type="submit" class="btn btn-secondary">Регистрация</button></div>
-          <div class="form-info">
-            <p>Если у Вас возникли трудности в работе с личным кабинетом, Вы можете направить письмо с вопросом на <a href="#">info@mhid.ru </a>или воспользоваться <a href="#">формой обратной связи.</a></p>
-          </div>
-        </form>
-      </div>
-      <div id="price" class="modal">
-        <h2>Узнать цену в один клик</h2>
-        <form class="form">
-          <div class="form-group"><label for="price-name" class="form-label">Как вас зовут?*</label><input id="price-name" type="text" class="form-input"></div>
-          <div class="form-group"><label for="price-phone" class="form-label">Ваш телефон*</label><input id="price-phone" type="tel" class="form-input"></div>
-          <div class="form-group"><label for="price-email" class="form-label">Ваш e-mail</label><input id="price-email" type="email" class="form-input"></div>
-          <div class="form-group form-textarea"><label for="price-ask" class="form-label">Ваш вопрос</label><input id="price-ask" type="text" class="form-input"></div>
-          <div class="form-require">* - обязательно для заполнения</div>
-          <div class="form-checkbox"><input id="checkbox-1" type="checkbox" name=""><label for="checkbox-1" class="label"></label><label for="checkbox-1" class="label-for">Я принимаю <a href="$">условия использования сайта и положения о конфеденциальности</a></label></div>
-          <div
-            class="form-group"> <button type="submit" class="btn btn-primary">Отправить</button></div>
-      <div class="form-info form-info-price">
-        <p>По всем вопросам вы также можете обратиться по телефону:</p>
-        <div class="form-info-phone"><a href="tel:8 800 2000 779">8 800 2000 779</a></div><span>Звонок бесплатный</span>
-        <div class="form-info-email"><a href="mailto:info@mhid.ru">info@mhid.ru</a></div>
-      </div>
+      </form>
+    </div>
+    <div id="price" class="modal">
+      <h2>Узнать цену в один клик</h2>
+      <form class="form">
+        <div class="form-group"><label for="price-name" class="form-label">Как вас зовут?*</label><input id="price-name" type="text" class="form-input"></div>
+        <div class="form-group"><label for="price-phone" class="form-label">Ваш телефон*</label><input id="price-phone" type="tel" class="form-input"></div>
+        <div class="form-group"><label for="price-email" class="form-label">Ваш e-mail</label><input id="price-email" type="email" class="form-input"></div>
+        <div class="form-group form-textarea"><label for="price-ask" class="form-label">Ваш вопрос</label><input id="price-ask" type="text" class="form-input"></div>
+        <div class="form-require">* - обязательно для заполнения</div>
+        <div class="form-checkbox"><input id="checkbox-1" type="checkbox" name=""><label for="checkbox-1" class="label"></label><label for="checkbox-1" class="label-for">Я принимаю <a href="$">условия использования сайта и положения о конфеденциальности</a></label></div>
+        <div class="form-group">
+        <button type="submit" class="btn btn-primary">Отправить</button></div>
+        <div class="form-info form-info-price">
+          <p>По всем вопросам вы также можете обратиться по телефону:</p>
+          <div class="form-info-phone"><a href="tel:8 800 2000 779">8 800 2000 779</a></div><span>Звонок бесплатный</span>
+          <div class="form-info-email"><a href="mailto:info@mhid.ru">info@mhid.ru</a></div>
+        </div>
       </form>
     </div>
     <div id="sign" class="modal sign">
@@ -463,7 +612,7 @@
           <h3>Пожалуйста, заполните форму</h3>
           <div class="form-row">
             <div class="form-col">
-              <div class="form-group"><label for="sign-email" class="form-label">E-mail (необходим для входа на сайт)*</label><input id="sign-email" type="email" class="form-input"></div>
+              <div class="form-group"><label for="sign-email" class="form-label">E-mail*</label><input id="sign-email" type="email" class="form-input"></div>
               <div class="form-group"><label for="sign-name" class="form-label">ФИО*</label><input id="sign-name" type="tel" class="form-input"></div>
               <div class="form-group"><label for="sign-pass" class="form-label">Пароль*</label><input id="sign-pass" type="password" class="form-input"></div>
               <div class="form-group"><label for="sign-pass-2" class="form-label">Повторите пароль*</label><input id="sign-pass-2" type="password" class="form-input"></div>
@@ -474,7 +623,7 @@
               <div class="form-group"><label for="sign-city" class="form-label">Город*</label><input id="sign-city" type="text" class="form-input"></div>
               <div class="form-group"><label for="sign-company" class="form-label">Название компании</label><input id="sign-company" type="text" class="form-input"></div>
               <div class="form-group"><label for="sign-site" class="form-label">Сайт компании</label><input id="sign-site" type="text" class="form-input"></div>
-              <div class="form-require">* - обязательно для заполнения</div>
+              <div class="form-require"> <span>*</span>Обязательно для заполнения</div>
               <div class="form-checkbox hidden-md hidden-sm"><input id="checkbox-4" type="checkbox" name=""><label for="checkbox-4" class="label"></label><label for="checkbox-4" class="label-for">Я принимаю <a href="#">условия использования сайта и положения о конфеденциальности</a></label></div>
             </div>
           </div>

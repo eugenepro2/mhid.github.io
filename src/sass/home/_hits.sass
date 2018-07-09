@@ -18,13 +18,28 @@
     padding-left: 5px
     padding-bottom: 25px
     +r($tablet)
+      width: 100%
+      .product__card
+        width: 100%
+    +r($mobile)
       width: 220px
       overflow: visible
       padding-left: 0
   .swiper-slide
+    .btn
+      font-size: 15px
+      +r($mobile)
+        font-size: 10.9px
     +r($mobile)
       width: 220px !important
     &:nth-child(4n)
+      .wishlist__btn__tooltip
+        right: -10px
+        left: initial
+        &:before
+          right: 12px
+          left: initial
+    +r($mobile)
       .wishlist__btn__tooltip
         right: -10px
         left: initial

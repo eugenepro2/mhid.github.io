@@ -51,9 +51,10 @@ $icon-slider-right: "\EA27";
 $icon-stock: "\EA28";
 $icon-top-banner: "\EA29";
 $icon-twitter: "\EA2A";
-$icon-up-arrow: "\EA2B";
-$icon-vk: "\EA2C";
-$icon-xls: "\EA2D";
+$icon-up-arrow-2: "\EA2B";
+$icon-up-arrow: "\EA2C";
+$icon-vk: "\EA2D";
+$icon-xls: "\EA2E";
 
 
 %icon {
@@ -114,6 +115,7 @@ $icon-xls: "\EA2D";
 .icon-stock:before { content: $icon-stock; }
 .icon-top-banner:before { content: $icon-top-banner; }
 .icon-twitter:before { content: $icon-twitter; }
+.icon-up-arrow-2:before { content: $icon-up-arrow-2; }
 .icon-up-arrow:before { content: $icon-up-arrow; }
 .icon-vk:before { content: $icon-vk; }
 .icon-xls:before { content: $icon-xls; }

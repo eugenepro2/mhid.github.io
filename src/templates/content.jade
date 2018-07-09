@@ -6,7 +6,7 @@ block content
 	.content
 		.container
 			.row
-				.col-md-3.hidden-sm.hidden-xs
+				.col-md-3
 					include partials/_aside-content
 				.col-md-9.col-xs-12
 					.content__breadcrumb
@@ -177,4 +177,34 @@ block content
 									input#login-pass-2.form-input(type='password')
 								.form-group
 									button.btn.btn-primary(type="submit") Редактировать
-							.up
+							.hits.catalog
+								.container
+									.row
+										.col-xs-12
+											h2 Хиты продаж
+										.col-xs-12
+											.swiper-container.hits-content-slider
+												.swiper-wrapper
+													.swiper-slide
+														+product(true, true, true)
+													.swiper-slide
+														+product(true, false, true)
+													.swiper-slide
+														+product(false, false, true)
+													.swiper-slide
+														+product(false, false, false)
+													.swiper-slide
+														+product(true, true, true)
+													.swiper-slide
+														+product(true, false, true)
+													.swiper-slide
+														+product(false, false, true)
+													.swiper-slide
+														+product(false, false, false)
+											.swiper-pagination.hits-pagination
+											.swiper-button-prev.hits-prev
+												i.icon.icon-slider-left
+											.swiper-button-next.hits-next
+												i.icon.icon-slider-right
+										a(href="#").btn.btn-secondary Все хиты продаж
+

@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <title>Категории</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" media="all" href="css/app.css">
@@ -119,19 +119,19 @@
                 <p>Бесплатно по всей России</p>
               </div>
             </div>
-            <div class="col-md-2 col-sm-3 col-sm-offset-1 col-md-offset-0 col-xs-6">
+            <div class="col-md-2 col-sm-3 end-sm col-sm-offset-1 col-md-offset-0 col-xs-6">
               <div class="header__toolbar"><a class="open-seacrh"><i class="icon icon-search"></i></a><a href="#"><i class="icon icon-phone"></i></a><a href="#" class="wishlist__btn__header"><i class="icon icon-heart"></i><span>74</span></a><a href="#" class="cart__btn"><i class="icon icon-cart"></i><span>4</span></a></div>
             </div>
           </div>
         </div>
         <div class="search">
-          <div><i class="icon icon-search"></i><input type="text" placeholder="Поиск по сайту"><i class="icon icon-close close"></i></div>
+          <form><button type="submit"><i class="icon icon-search"></i></button><input type="text" placeholder="Поиск по сайту"><i class="icon icon-close close"></i></form>
         </div>
       </header>
       <!--END header-->
       <div class="mobile-menu">
         <ul>
-          <li><a href="#">Каталог</a>
+          <li><a href="catalog.html" class="always-open">Каталог</a>
             <div class="mobile-sub">
               <ul>
                 <li><a href="#">Аксессуары</a></li>
@@ -202,7 +202,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-3 hidden-sm hidden-xs">
-              <aside id="aside" class="aside filter"><a href="#" class="close"><i class="icon icon-close"></i></a>
+              <aside id="aside" class="aside filter"><a href="#" class="close close-filter"><i class="icon icon-close"></i></a>
                 <div class="filter__form"><button type="submit" class="btn btn-filter">Сбросить фильтр</button>
                   <div class="filter__form__checkbox"><input id="stock" type="checkbox" name=""><label for="stock" class="label"></label><label for="stock" class="label-for">Товары в наличии</label></div>
                   <div class="filter__block"><a href="#filter-modal-categories" data-filter class="filter__block__more"></a>
@@ -221,7 +221,7 @@
                     <ul class="scrollbar"></ul>
                   </div>
                 </div>
-                <form id="filter-modal-categories" class="filter__modal">
+                <form id="filter-modal-categories" class="filter__modal"><a href="#" class="close close-filter-modal"><i class="icon icon-close"></i></a>
                   <h2>Категории</h2><a class="input__btn input__btn-secondary all">Выбрать все</a>
                   <div class="filter__modal__content">
                     <div class="filter__modal__block">
@@ -312,7 +312,7 @@
                     <div class="filter__modal__btn__left"><input type="submit" value="Применить" class="btn btn-filter"><input type="reset" value="Очистить все" class="input__btn"><a class="input__btn all">Выбрать все</a></div><input type="submit" value="Отменить" class="input__btn cancel"></div>
                 </form>
                 <form id="filter-modal-brands1" class="filter__modal">
-                  <h2>Бренды1</h2><a class="input__btn input__btn-secondary all">Выбрать все</a>
+                  <h2>Бренды1</h2><a href="#" class="close close-filter-modal"><i class="icon icon-close"></i></a><a class="input__btn input__btn-secondary all">Выбрать все</a>
                   <div class="filter__modal__content">
                     <div class="filter__modal__block">
                       <div class="filter__modal__country"><input id="usa-1" type="checkbox" name=""><label for="usa-1" class="label"></label><label for="usa-1" class="label-for">США</label></div>
@@ -402,7 +402,7 @@
                     <div class="filter__modal__btn__left"><input type="submit" value="Применить" class="btn btn-filter"><input type="reset" value="Очистить все" class="input__btn"><a class="input__btn all">Выбрать все</a></div><input type="submit" value="Отменить" class="input__btn cancel"></div>
                 </form>
                 <form id="filter-modal-brands2" class="filter__modal">
-                  <h2>Бренды2</h2><a class="input__btn input__btn-secondary all">Выбрать все</a>
+                  <h2>Бренды2</h2><a href="#" class="close close-filter-modal"><i class="icon icon-close"></i></a><a class="input__btn input__btn-secondary all">Выбрать все</a>
                   <div class="filter__modal__content">
                     <div class="filter__modal__block">
                       <div class="filter__modal__country"><input id="usa2-" type="checkbox" name=""><label for="usa2-" class="label"></label><label for="usa2-" class="label-for">США</label></div>
@@ -553,6 +553,7 @@
           </div>
         </div>
       </div>
+      <div class="up"></div>
       <footer class="footer">
         <div class="container">
           <div class="row">
@@ -652,7 +653,7 @@
           <h3>Пожалуйста, заполните форму</h3>
           <div class="form-row">
             <div class="form-col">
-              <div class="form-group"><label for="sign-email" class="form-label">E-mail (необходим для входа на сайт)*</label><input id="sign-email" type="email" class="form-input"></div>
+              <div class="form-group"><label for="sign-email" class="form-label">E-mail*</label><input id="sign-email" type="email" class="form-input"></div>
               <div class="form-group"><label for="sign-name" class="form-label">ФИО*</label><input id="sign-name" type="tel" class="form-input"></div>
               <div class="form-group"><label for="sign-pass" class="form-label">Пароль*</label><input id="sign-pass" type="password" class="form-input"></div>
               <div class="form-group"><label for="sign-pass-2" class="form-label">Повторите пароль*</label><input id="sign-pass-2" type="password" class="form-input"></div>
@@ -663,7 +664,7 @@
               <div class="form-group"><label for="sign-city" class="form-label">Город*</label><input id="sign-city" type="text" class="form-input"></div>
               <div class="form-group"><label for="sign-company" class="form-label">Название компании</label><input id="sign-company" type="text" class="form-input"></div>
               <div class="form-group"><label for="sign-site" class="form-label">Сайт компании</label><input id="sign-site" type="text" class="form-input"></div>
-              <div class="form-require">* - обязательно для заполнения</div>
+              <div class="form-require"> <span>*</span>Обязательно для заполнения</div>
               <div class="form-checkbox hidden-md hidden-sm"><input id="checkbox-4" type="checkbox" name=""><label for="checkbox-4" class="label"></label><label for="checkbox-4" class="label-for">Я принимаю <a href="#">условия использования сайта и положения о конфеденциальности</a></label></div>
             </div>
           </div>

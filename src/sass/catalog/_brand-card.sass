@@ -2,7 +2,7 @@
   background: $white
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.17)
   border-radius: 4px
-  margin-bottom: 16px
+  margin-bottom: 14px
   height: 213px
   position: relative
   +center
@@ -10,9 +10,15 @@
   text-decoration: none
   width: calc(100% - 9px)
   padding: 0 7px
+  width: 214px
+  height: 214px
   +tr
   &:hover
     box-shadow: 0 10px 20px rgba(0,0,0,.2)
+  +r($tablet)
+    width: 223px
+    height: 223px
+    margin-bottom: 20px
   +r($mobile)
     height: 155px
     margin-bottom: 4px

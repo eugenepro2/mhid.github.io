@@ -5,20 +5,62 @@
         a(href="#aside" data-aside).btn.btn-secondary  Фильтр
           .icon.icon-filter
       .col-sm-6.col-xs-12
-        .catalog__sort
+        .catalog__sort.is-active
           p Сортировать:
-          select
-            option По названию (А-Я)
-            option(data-img="123") От дорогих к дешевым1
+          a(href="#") По названию(А-Я)
+          ul
+            li.active По названию (А-Я)
+            li По названию (Я-А)
+            li По цене
+              i.icon.icon-up-arrow-2
+            li По цене
+              i.down.icon.icon-up-arrow-2
     .row.middle-xs
       .col-md-6.col-xs-12
         h1 Каталог
       .col-md-6.hidden-sm.hidden-xs
-        .catalog__sort
+        .catalog__sort.is-active
           p Сортировать:
-          select.select-target
-            option По названию (А-Я)
-            option От дорогих к дешевым
+          a(href="#") По названию(А-Я)
+          ul
+            li.active По названию (А-Я)
+            li По названию (Я-А)
+            li По цене
+              i.icon.icon-up-arrow-2
+            li По цене
+              i.down.icon.icon-up-arrow-2
+  .col-md-3.col-sm-4.col-xs-6
+    +product(true, true, true)
+  .col-md-3.col-sm-4.col-xs-6
+    +product(true, false, true, true)
+  .col-md-3.col-sm-4.col-xs-6
+    +product(false, false, true)
+  .col-md-3.col-sm-4.col-xs-6
+    +product(false, false, false)
+  .col-md-3.col-sm-4.col-xs-6
+    +product(true, true, true)
+  .col-md-3.col-sm-4.col-xs-6
+    +product(true, false, true)
+  .col-md-3.col-sm-4.col-xs-6
+    +product(false, false, true)
+  .col-md-3.col-sm-4.col-xs-6
+    +product(false, false, false)
+  .col-md-3.col-sm-4.col-xs-6
+    +product(true, true, true)
+  .col-md-3.col-sm-4.col-xs-6
+    +product(true, false, true, true)
+  .col-md-3.col-sm-4.col-xs-6
+    +product(false, false, true)
+  .col-md-3.col-sm-4.col-xs-6
+    +product(false, false, false)
+  .col-md-3.col-sm-4.col-xs-6
+    +product(true, true, true)
+  .col-md-3.col-sm-4.col-xs-6
+    +product(true, false, true)
+  .col-md-3.col-sm-4.col-xs-6
+    +product(false, false, true)
+  .col-md-3.col-sm-4.col-xs-6
+    +product(false, false, false)
   .col-md-3.col-sm-4.col-xs-6
     +product(true, true, true)
   .col-md-3.col-sm-4.col-xs-6

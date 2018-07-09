@@ -1,8 +1,12 @@
 
 $('.wishlist__btn').attr('data-count', 0);
+
+
 $('.wishlist__btn').on('click', function(event) {
   event.preventDefault();
   let click = parseInt($(this).attr('data-count'));
+  let wishlist = $('.wishlist__btn__header');
+  let wishlistCount = parseInt(wishlist.find('span').text());
 
 
   let tooltip = $(this).find('.wishlist__btn__tooltip');
@@ -11,20 +15,25 @@ $('.wishlist__btn').on('click', function(event) {
     $(this).attr('data-count', click);
     if (!isEven(click)) {
       tooltip.fadeToggle();
-      console.log(click, 'even');
     }
+    wishlist.addClass('animate-out');
+    setTimeout(function() {
+      wishlist.find('span').text(wishlistCount + 1);
+      wishlist.removeClass('animate-out').addClass('animate-in').removeClass('animate-in');
+    }, 500);  
+  
+  } else{
+    wishlist.addClass('animate-out');
+    setTimeout(function() {
+      wishlist.find('span').text(wishlistCount - 1);
+      wishlist.removeClass('animate-out').addClass('animate-in').removeClass('animate-in');
+    }, 500);  
+  
   }
   
 
   $(this).toggleClass('active');  
   
-  // let tooltip = $(this).find('.wishlist__btn__tooltip');
-  // $(this).find('.icon-heart').fadeToggle();
-  // $(this).find('.icon-heart-red').delay().fadeToggle();
-  // if(!tooltip.hasClass('active')) {
-  //   tooltip.fadeToggle();
-  // }
-  // tooltip.addClass('active');
   if (tooltip.is(':visible')) {
     setTimeout(function() {
       tooltip.fadeOut();
