@@ -6,7 +6,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Корзина</title>
+    <title>Cart</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="theme-color" content="#fff">
@@ -22,13 +22,18 @@
         <div class="container">
           <div class="row middle-xs">
             <div class="col-md-8 col-sm-7 col-xs7">
-              <p>Скидка 50% на весь ассортимент Hooker</p>
+              <p>50% discount on the entire Hooker assortment</p>
             </div>
-            <div class="col-md-4 col-sm-5 col-sm-5 hidden-xs"><a href="#sale" rel="modal:open"><i class="icon icon-top-banner"></i><span>Перейти в каталог бренда</span></a></div>
+            <div class="col-md-4 col-sm-5 col-sm-5 hidden-xs">
+              <a href="#sale" rel="modal:open">
+                <i class="icon icon-top-banner"></i><span>Go to the brand catalog</span>
+              </a>
+            </div>
           </div>
           <div class="close"><i class="icon icon-close"></i></div>
         </div>
       </div>
+      
       <header class="header">
         <div class="container">
           <div class="row middle-xs">
@@ -37,160 +42,187 @@
                 <div></div>
               </div>
             </div>
-            <div class="col-md-1 col-sm-2 col-xs-4"><a href="/" class="logo"><img src="img/logo.svg" alt=""></a></div>
+            <div class="col-md-1 col-sm-2 col-xs-4">
+              <a href="/" class="logo">
+                <img src="img/logo.svg" alt="">
+              </a>
+            </div>
             <div class="col-md-6 hidden-sm hidden-xs">
-              <div class="header__info"><a href="#sign" rel="modal:open"><i class="icon icon-delivery"></i><p>Доставка по всей России</p></a><a href="#login" rel="modal:open"><i class="icon icon-dealer"></i><p>Вход для дилеров</p></a><a href="#" class="music"><i class="icon icon-music-on"></i><p>Музыка вкл.</p></a></div>
+              <div class="header__info">
+                <a href="#sign" rel="modal:open">
+                  <i class="icon icon-dealer"></i><p>Sign Up</p>
+                </a>
+                <a href="#login" rel="modal:open">
+                  <i class="icon icon-delivery"></i><p>Dealer login</p>
+                </a>
+                <a href="#" class="music">
+                  <i class="icon icon-music-on"></i><p>Music On</p>
+                </a>
+              </div>
               <nav>
                 <ul class="nav">
-                  <li class="sub-open"><a href="catalog.html"> <span>Каталог</span></a>
+                  <li class="sub-open"><a href="catalog.html"> <span>Catalog</span></a>
                     <div class="sub">
                       <div class="sub__triangle"></div>
                       <div class="sub__block">
-                        <h3>Мебель</h3>
+                        <h3>Furniture</h3>
                         <ul>
-                          <li><a href="#">Вся мебель</a></li>
-                          <li><a href="#">Кухня</a></li>
-                          <li><a href="#">Гостиная</a></li>
-                          <li><a href="#">Мягкая мебель</a></li>
-                          <li><a href="#">Столовая</a></li>
-                          <li><a href="#">Спальня</a></li>
-                          <li><a href="#">Кабинет</a></li>
-                          <li><a href="#">Детская</a></li>
-                          <li><a href="#">Прихожая</a></li>
-                          <li><a href="#">Гардероб</a></li>
-                          <li><a href="#">Акценты</a></li>
-                          <li><a href="#">Мебель для сада</a></li>
+                          <li><a href="#">All Furniture</a></li>
+                          <li><a href="#">Kitchen</a></li>
+                          <li><a href="#">Living Room</a></li>
+                          <li><a href="#">Upholstered Furniture</a></li>
+                          <li><a href="#">Dining Room</a></li>
+                          <li><a href="#">Bedroom</a></li>
+                          <li><a href="#">Office</a></li>
+                          <li><a href="#">Children's Room</a></li>
+                          <li><a href="#">Hallway</a></li>
+                          <li><a href="#">Wardrobe</a></li>
+                          <li><a href="#">Accents</a></li>
+                          <li><a href="#">Garden Furniture</a></li>
                         </ul>
                       </div>
                       <div class="sub__block">
-                        <h3>Посуда</h3>
+                        <h3>Dishware</h3>
                         <ul>
-                          <li><a href="#">Вся посуда</a></li>
-                          <li><a href="#">Блюдо</a></li>
-                          <li><a href="#">Молочник</a></li>
-                          <li><a href="#">Салатник</a></li>
-                          <li><a href="#">Сахарница</a></li>
-                          <li><a href="#">Тарелка</a></li>
-                          <li><a href="#">Фруктовница</a></li>
-                          <li><a href="#">Чашка с блюдцем</a></li>
+                          <li><a href="#">All Dishware</a></li>
+                          <li><a href="#">Plate</a></li>
+                          <li><a href="#">Creamer</a></li>
+                          <li><a href="#">Salad Bowl</a></li>
+                          <li><a href="#">Sugar Bowl</a></li>
+                          <li><a href="#">Plate</a></li>
+                          <li><a href="#">Fruit Bowl</a></li>
+                          <li><a href="#">Cup with Saucer</a></li>
                         </ul>
                       </div>
                       <div class="sub__block">
-                        <h3>Текстиль</h3>
+                        <h3>Textile</h3>
                         <ul>
-                          <li><a href="#">Весь текстиль</a></li>
-                          <li><a href="#">Покрывало</a></li>
-                          <li><a href="#">Постельный набор</a></li>
-                          <li><a href="#">Гобелен</a></li>
+                          <li><a href="#">All Textile</a></li>
+                          <li><a href="#">Bedspread</a></li>
+                          <li><a href="#">Bedding Set</a></li>
+                          <li><a href="#">Tapestry</a></li>
                         </ul>
-                        <h3>Свет</h3>
+                        <h3>Lighting</h3>
                         <ul>
-                          <li><a href="#">Весь свет</a></li>
-                          <li><a href="#">Люстра</a></li>
-                          <li><a href="#">Настольные лампы</a></li>
-                          <li><a href="#">Торшер</a></li>
-                          <li><a href="#">Бра</a></li>
+                          <li><a href="#">All Lighting</a></li>
+                          <li><a href="#">Chandelier</a></li>
+                          <li><a href="#">Table Lamps</a></li>
+                          <li><a href="#">Floor Lamp</a></li>
+                          <li><a href="#">Wall Sconce</a></li>
                         </ul>
                       </div>
                       <div class="sub__block">
-                        <h3>Аксессуары</h3>
+                        <h3>Accessories</h3>
                         <ul>
-                          <li><a href="#">Все аксессуары</a></li>
-                          <li><a href="#">Ваза</a></li>
-                          <li><a href="#">Декоративный элемент</a></li>
-                          <li><a href="#">Держатель для книг</a></li>
-                          <li><a href="#">Картина</a></li>
-                          <li><a href="#">Мини-бар</a></li>
-                          <li><a href="#">Поднос</a></li>
-                          <li><a href="#">Подсвечник</a></li>
+                          <li><a href="#">All Accessories</a></li>
+                          <li><a href="#">Vase</a></li>
+                          <li><a href="#">Decorative Element</a></li>
+                          <li><a href="#">Book Holder</a></li>
+                          <li><a href="#">Painting</a></li>
+                          <li><a href="#">Mini Bar</a></li>
+                          <li><a href="#">Tray</a></li>
+                          <li><a href="#">Candle Holder</a></li>
                         </ul>
                       </div>
                     </div>
                   </li>
-                  <li><a href="#"> <span>Наличие</span><div><i class="icon icon-sale"></i><span>%Sale</span></div></a></li>
-                  <li><a href="#"> <span>Бренды</span></a></li>
-                  <li><a href="#"> <span>Дилерам</span></a></li>
-                  <li><a href="#"> <span>О компании     </span></a></li>
+                  <li><a href="#"> <span>Availability</span><div><i class="icon icon-sale"></i><span>%Sale</span></div></a></li>
+                  <li><a href="catalog-brands.html"> <span>Brands</span></a></li>
+                  <li><a href="#"> <span>For Dealers</span></a></li>
+                  <li><a href="#"> <span>About Us</span></a></li>
                 </ul>
               </nav>
             </div>
             <div class="col-md-3 col-sm-5 hidden-xs">
-              <div class="header__phone"><a href="tel:8 800 2000 779">8 800 2000 779</a>
-                <p>Бесплатно по всей России</p>
+              <div class="header__phone">
+                <a href="tel:+44 1632 960679">+441632960679</a>
+                <p> Free across world</p>
               </div>
             </div>
             <div class="col-md-2 col-sm-3 end-sm col-sm-offset-1 col-md-offset-0 col-xs-6">
-              <div class="header__toolbar"><a class="open-seacrh"><i class="icon icon-search"></i></a><a href="#"><i class="icon icon-phone"></i></a><a href="#" class="wishlist__btn__header"><i class="icon icon-heart"></i><span>74</span></a><a href="#" class="cart__btn"><i class="icon icon-cart"></i><span>4</span></a></div>
+              <div class="header__toolbar">
+                <a class="open-seacrh"><i class="icon icon-search"></i></a>
+                <a href="#"><i class="icon icon-phone"></i></a>
+                <a href="#" class="wishlist__btn__header"><i class="icon icon-heart"></i><span>74</span></a>
+                <a href="#" class="cart__btn"><i class="icon icon-cart"></i><span>4</span></a>
+              </div>
             </div>
           </div>
         </div>
         <div class="search">
-          <form><button type="submit"><i class="icon icon-search"></i></button><input type="text" placeholder="Поиск по сайту"><i class="icon icon-close close"></i></form>
+          <form>
+            <button type="submit"><i class="icon icon-search"></i></button>
+            <input type="text" placeholder="Search the site">
+            <i class="icon icon-close close"></i>
+          </form>
         </div>
       </header>
+      
       <!--END header-->
       <div class="mobile-menu">
         <ul>
-          <li><a href="catalog.html" class="always-open">Каталог</a>
+          <li><a href="catalog.html" class="always-open">Catalog</a>
             <div class="mobile-sub">
               <ul>
-                <li><a href="#">Аксессуары</a></li>
-                <li><a href="#">Посуда</a></li>
-                <li><a href="#">Свет</a></li>
-                <li><a href="#">Текстиль</a></li>
-                <li><a href="#">Мебель</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Dishware</a></li>
+                <li><a href="#">Lighting</a></li>
+                <li><a href="#">Textile</a></li>
+                <li><a href="#">Furniture</a></li>
               </ul>
             </div>
           </li>
-          <li><a href="#">Наличие<div><i class="icon icon-sale"></i><span>%Sale</span></div></a></li>
-          <li><a href="#">Бренды</a>
+          <li><a href="#">Availability<div><i class="icon icon-sale"></i><span>%Sale</span></div></a></li>
+          <li><a href="#">Brands</a>
             <div class="mobile-sub">
               <ul>
-                <li><a href="#">Аксессуары</a></li>
-                <li><a href="#">Посуда</a></li>
-                <li><a href="#">Свет</a></li>
-                <li><a href="#">Текстиль</a></li>
-                <li><a href="#">Мебель</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Dishware</a></li>
+                <li><a href="#">Lighting</a></li>
+                <li><a href="#">Textile</a></li>
+                <li><a href="#">Furniture</a></li>
               </ul>
             </div>
           </li>
-          <li><a href="#">Дилерам</a></li>
-          <li><a href="#">О компании</a>
+          <li><a href="#">For Dealers</a></li>
+          <li><a href="#">About Us</a>
             <div class="mobile-sub">
               <ul>
-                <li><a href="#">Аксессуары</a></li>
-                <li><a href="#">Посуда</a></li>
-                <li><a href="#">Свет</a></li>
-                <li><a href="#">Текстиль</a></li>
-                <li><a href="#">Мебель</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Dishware</a></li>
+                <li><a href="#">Lighting</a></li>
+                <li><a href="#">Textile</a></li>
+                <li><a href="#">Furniture</a></li>
               </ul>
             </div>
           </li>
         </ul>
-        <div class="header__info"><a href="#sign" rel="modal:open"><i class="icon icon-delivery"></i><p>Доставка по всей России</p></a><a href="#login" rel="modal:open"><i class="icon icon-dealer"></i><p>Вход для дилеров</p></a></div>
+        <div class="header__info"><a href="#sign" rel="modal:open"><i class="icon icon-delivery"></i><p>Delivery across world</p></a><a href="#login" rel="modal:open"><i class="icon icon-dealer"></i><p>Dealer login</p></a></div>
         <div class="footer__contact">
-          <div class="footer__contact__block"><a href="mailto:info@mhid.ru">info@mhid.ru</a></div>
-          <div class="footer__contact__block"><a href="tel:8 800 2000 779">8 800 2000 779</a>
-            <p>Бесплатно по всей России</p>
+          <div class="footer__contact__block"><a href="mailto:info@mhid.com">info@mhid.com</a></div>
+          <div class="footer__contact__block"><a href="tel:+44 1632 960679">+441632960679</a>
+            <p>Free across world</p>
           </div>
         </div>
-        <div class="footer__social"><a href="#"><i class="icon icon-facebook"></i></a><a href="#"><i class="icon icon-instagram"></i></a><a href="#"><i class="icon icon-vk"></i></a><a href="#"><i class="icon icon-twitter"></i></a><a href="#"><i class="icon icon-linkedin"></i></a>
-          <a
-            href="#"><i class="icon icon-od"></i></a><a href="#"><i class="icon icon-pinterest"></i></a></div>
+        <div class="footer__social"><a href="#"><i class="icon icon-facebook"></i></a><a href="#"><i class="icon icon-instagram"></i></a><a href="#"><i class="icon icon-twitter"></i></a><a href="#"><i class="icon icon-linkedin"></i></a>
+          <a href="#"><i class="icon icon-pinterest"></i></a></div>
         <div class="footer__view">
-          <p>Рады видеть вас в <a href="#">салонах M. House</a></p>
+          <p>Happy to see you in <a href="#">M. House showrooms</a></p>
         </div>
         <div class="footer__copy">
           <p>©m.house 2017</p>
-          <p>Нижний Новгород, ул. Республиканская д. 43, к. 7</p>
         </div>
+      
+      
       </div>
+      
+      
       <div class="breadcrumb">
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
-              <div class="breadcrumb__item"><a href="#">Главная</a><span>/</span></div>
-              <div class="breadcrumb__item"><a href="#">Корзина</a><span>/</span></div>
+              <div class="breadcrumb__item"><a href="index.html">Home</a><span>/</span></div>
+              <div class="breadcrumb__item"><a href="#">Cart</a><span>/</span></div>
             </div>
             <div class="col-xs-12">
               <div class="close"></div>
@@ -400,133 +432,132 @@
           </div>
         </div>
       </div>
+      
+      
       <div class="up"></div>
       <footer class="footer">
         <div class="container">
           <div class="row">
             <div class="col-md-7 col-sm-12 col-xs-12">
               <div class="footer__row">
-                <div class="footer__list"><a href="#">Каталог</a>
+                <div class="footer__list"><a href="catalog-categories.html">Catalog</a>
                   <ul>
-                    <li><a href="#">Аксессуары</a></li>
-                    <li><a href="#">Посуда</a></li>
-                    <li><a href="#">Свет</a></li>
-                    <li><a href="#">Текстиль</a></li>
-                    <li><a href="#">Мебель</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Dishware</a></li>
+                    <li><a href="#">Lighting</a></li>
+                    <li><a href="#">Textile</a></li>
+                    <li><a href="#">Furniture</a></li>
                   </ul>
                 </div>
-                <div class="footer__list"><a href="#">Наличие<div><i class="icon icon-sale"></i><span>%SALE</span></div></a></div>
-                <div class="footer__list"><a href="#">Бренды</a>
+                <div class="footer__list"><a href="#">Availability<div><i class="icon icon-sale"></i><span>%SALE</span></div></a></div>
+                <div class="footer__list"><a href="#">Brands</a>
                   <ul>
-                    <li><a href="#">США</a></li>
-                    <li><a href="#">Италия</a></li>
-                    <li><a href="#">Испания</a></li>
-                    <li><a href="#">Франция</a></li>
+                    <li><a href="#">USA</a></li>
+                    <li><a href="#">Italy</a></li>
+                    <li><a href="#">Spain</a></li>
+                    <li><a href="#">France</a></li>
                   </ul>
                 </div>
-                <div class="footer__list"><a href="#">Дилерам</a></div>
-                <div class="footer__list"><a href="#">О компании</a>
+                <div class="footer__list"><a href="#">For Dealers</a></div>
+                <div class="footer__list"><a href="#">About Us</a>
                   <ul>
-                    <li><a href="#">Информация </a></li>
-                    <li><a href="#">Контакты </a></li>
-                    <li><a href="#">Пользовательское соглашение</a></li>
+                    <li><a href="#">Information</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">User Agreement</a></li>
                   </ul>
                 </div>
               </div>
             </div>
             <div class="col-md-5 col-sm-12 col-xs-12">
               <div class="footer__contact">
-                <div class="footer__contact__block"><a href="mailto:info@mhid.ru">info@mhid.ru</a></div>
-                <div class="footer__contact__block"><a href="tel:8 800 2000 779">8 800 2000 779</a>
-                  <p>Бесплатно по всей России</p>
+                <div class="footer__contact__block"><a href="mailto:info@mhid.com">info@mhid.com</a></div>
+                <div class="footer__contact__block"><a href="tel:+44 1632 960679">+441632960679</a>
+                  <p>Free across world</p>
                 </div>
               </div>
-              <div class="footer__social"><a href="#"><i class="icon icon-facebook"></i></a><a href="#"><i class="icon icon-instagram"></i></a><a href="#"><i class="icon icon-vk"></i></a><a href="#"><i class="icon icon-twitter"></i></a><a href="#"><i class="icon icon-linkedin"></i></a>
-                <a
-                  href="#"><i class="icon icon-od"></i></a><a href="#"><i class="icon icon-pinterest"></i></a></div>
+              <div class="footer__social"><a href="#"><i class="icon icon-facebook"></i></a><a href="#"><i class="icon icon-instagram"></i></a><a href="#"><a href="#"><i class="icon icon-twitter"></i></a><a href="#"><i class="icon icon-linkedin"></i></a>
+                <a href="#"><i class="icon icon-pinterest"></i></a></div>
             </div>
           </div>
           <div class="row">
             <div class="col-md-5 col-sm-12 col-xs-12">
               <div class="footer__copy">
                 <p>©m.house 2017</p>
-                <p>Нижний Новгород, ул. Республиканская д. 43, к. 7</p>
               </div>
             </div>
             <div class="col-md-3 col-md-offset-4 col-sm-12 col-xs-12 last-md first-xs">
               <div class="footer__view">
-                <p>Рады видеть вас в <a href="#">салонах M. House</a></p>
+                <p>Happy to see you in <a href="#">M. House showrooms</a></p>
               </div>
             </div>
           </div>
         </div>
       </footer>
       <div id="login" class="modal">
-        <h2>Вход в личный кабинет</h2>
+        <h2>Login to your account</h2>
         <form class="form">
           <div class="form-group"><label for="login-email" class="form-label">E-mail</label><input id="login-email" type="text" class="form-input"></div>
-          <div class="form-group"><label for="login-pass" class="form-label">Пароль</label><input id="login-pass" type="password" class="form-input"></div>
-          <div class="form-lost-password"><a href="#">Забыли пароль?</a></div>
-          <div class="form-group"><button type="submit" class="btn btn-primary">Войти</button></div>
-          <div class="form-group"><button type="submit" class="btn btn-secondary">Регистрация</button></div>
+          <div class="form-group"><label for="login-pass" class="form-label">Password</label><input id="login-pass" type="password" class="form-input"></div>
+          <div class="form-lost-password"><a href="#">Forgot password?</a></div>
+          <div class="form-group"><button type="submit" class="btn btn-primary">Login</button></div>
+          <div class="form-group"><button type="submit" class="btn btn-secondary">Register</button></div>
           <div class="form-info">
-            <p>Если у Вас возникли трудности в работе с личным кабинетом, Вы можете направить письмо с вопросом на <a href="#">info@mhid.ru </a>или воспользоваться <a href="#">формой обратной связи.</a></p>
+            <p>If you have difficulties with your personal account, you can send a letter with a question to <a href="#">info@mhid.com </a>or use the <a href="#">feedback form.</a></p>
           </div>
         </form>
       </div>
       <div id="price" class="modal">
-        <h2>Узнать цену в один клик</h2>
+        <h2>Get the price in one click</h2>
         <form class="form">
-          <div class="form-group"><label for="price-name" class="form-label">Как вас зовут?*</label><input id="price-name" type="text" class="form-input"></div>
-          <div class="form-group"><label for="price-phone" class="form-label">Ваш телефон*</label><input id="price-phone" type="tel" class="form-input"></div>
-          <div class="form-group"><label for="price-email" class="form-label">Ваш e-mail</label><input id="price-email" type="email" class="form-input"></div>
-          <div class="form-group form-textarea"><label for="price-ask" class="form-label">Ваш вопрос</label><input id="price-ask" type="text" class="form-input"></div>
-          <div class="form-require">* - обязательно для заполнения</div>
-          <div class="form-checkbox"><input id="checkbox-1" type="checkbox" name=""><label for="checkbox-1" class="label"></label><label for="checkbox-1" class="label-for">Я принимаю <a href="$">условия использования сайта и положения о конфеденциальности</a></label></div>
-          <div
-            class="form-group"> <button type="submit" class="btn btn-primary">Отправить</button></div>
-      <div class="form-info form-info-price">
-        <p>По всем вопросам вы также можете обратиться по телефону:</p>
-        <div class="form-info-phone"><a href="tel:8 800 2000 779">8 800 2000 779</a></div><span>Звонок бесплатный</span>
-        <div class="form-info-email"><a href="mailto:info@mhid.ru">info@mhid.ru</a></div>
-      </div>
-      </form>
-    </div>
-    <div id="sign" class="modal sign">
-      <div class="sign-flex">
-        <h2>Регистрация на сайте</h2>
-        <p>После регистрации на нашем сайте, Вы получите доступ к дополнительным справочным материалам, полным каталогам фабрик, и сможете сохранять и распечатывать Ваши подборки. </p>
-        <form class="form form-sign">
-          <h3>Пожалуйста, заполните форму</h3>
-          <div class="form-row">
-            <div class="form-col">
-              <div class="form-group"><label for="sign-email" class="form-label">E-mail*</label><input id="sign-email" type="email" class="form-input"></div>
-              <div class="form-group"><label for="sign-name" class="form-label">ФИО*</label><input id="sign-name" type="tel" class="form-input"></div>
-              <div class="form-group"><label for="sign-pass" class="form-label">Пароль*</label><input id="sign-pass" type="password" class="form-input"></div>
-              <div class="form-group"><label for="sign-pass-2" class="form-label">Повторите пароль*</label><input id="sign-pass-2" type="password" class="form-input"></div>
-              <div class="form-checkbox hidden-xs"><input id="checkbox-2" type="checkbox" name=""><label for="checkbox-2" class="label"></label><label for="checkbox-2" class="label-for">Я принимаю <a href="#">условия использования сайта и положения о конфеденциальности</a></label></div>
-            </div>
-            <div class="form-col">
-              <div class="form-group"><label for="sign-phone" class="form-label">Контактный телефон*</label><input id="sign-phone" type="tel" class="form-input"></div>
-              <div class="form-group"><label for="sign-city" class="form-label">Город*</label><input id="sign-city" type="text" class="form-input"></div>
-              <div class="form-group"><label for="sign-company" class="form-label">Название компании</label><input id="sign-company" type="text" class="form-input"></div>
-              <div class="form-group"><label for="sign-site" class="form-label">Сайт компании</label><input id="sign-site" type="text" class="form-input"></div>
-              <div class="form-require"> <span>*</span>Обязательно для заполнения</div>
-              <div class="form-checkbox hidden-md hidden-sm"><input id="checkbox-4" type="checkbox" name=""><label for="checkbox-4" class="label"></label><label for="checkbox-4" class="label-for">Я принимаю <a href="#">условия использования сайта и положения о конфеденциальности</a></label></div>
-            </div>
-          </div>
-          <div class="form-group form-center"><button type="submit" class="btn btn-primary">Отправить</button></div>
+          <div class="form-group"><label for="price-name" class="form-label">Your Name*</label><input id="price-name" type="text" class="form-input"></div>
+          <div class="form-group"><label for="price-phone" class="form-label">Your Phone*</label><input id="price-phone" type="tel" class="form-input"></div>
+          <div class="form-group"><label for="price-email" class="form-label">Your E-mail</label><input id="price-email" type="email" class="form-input"></div>
+          <div class="form-group form-textarea"><label for="price-ask" class="form-label">Your Question</label><input id="price-ask" type="text" class="form-input"></div>
+          <div class="form-require">* - required fields</div>
+          <div class="form-checkbox"><input id="checkbox-1" type="checkbox" name=""><label for="checkbox-1" class="label"></label><label for="checkbox-1" class="label-for">I accept the <a href="$">terms of use and privacy policy</a></label></div>
+          <div class="form-group"> <button type="submit" class="btn btn-primary">Send</button></div>
           <div class="form-info form-info-price">
-            <p>Если у Вас возникли трудности в работе с личным кабинетом, Вы можете направить письмо с вопросом на <a href="#">info@mhid.ru </a>или воспользоваться <a href="#">формой обратной связи.</a></p>
+            <p>For all questions, you can also contact us by phone:</p>
+            <div class="form-info-phone"><a href="tel:+44 1632 960679">+44 1632 960679</a></div><span>Free call</span>
+            <div class="form-info-email"><a href="mailto:info@mhid.com">info@mhid.com</a></div>
           </div>
         </form>
       </div>
-    </div>
-    <div id="sale" class="modal sale">
-      <h2>Специальное предложение</h2>
-      <div class="sale-block">
-        <div class="sale-block-text">Скидка 50% на<br> все аксессуары</div><a href="#" class="btn btn-primary">Подробнее</a></div>
-    </div>
+      <div id="sign" class="modal sign">
+        <div class="sign-flex">
+          <h2>Registration on the site</h2>
+          <p>After registering on our site, you will get access to additional reference materials, complete catalogs of factories, and will be able to save and print your selections.</p>
+          <form class="form form-sign">
+            <h3>Please fill out the form</h3>
+            <div class="form-row">
+              <div class="form-col">
+                <div class="form-group"><label for="sign-email" class="form-label">E-mail*</label><input id="sign-email" type="email" class="form-input"></div>
+                <div class="form-group"><label for="sign-name" class="form-label">Full Name*</label><input id="sign-name" type="tel" class="form-input"></div>
+                <div class="form-group"><label for="sign-pass" class="form-label">Password*</label><input id="sign-pass" type="password" class="form-input"></div>
+                <div class="form-group"><label for="sign-pass-2" class="form-label">Repeat Password*</label><input id="sign-pass-2" type="password" class="form-input"></div>
+                <div class="form-checkbox hidden-xs"><input id="checkbox-2" type="checkbox" name=""><label for="checkbox-2" class="label"></label><label for="checkbox-2" class="label-for">I accept the <a href="#">terms of use and privacy policy</a></label></div>
+              </div>
+              <div class="form-col">
+                <div class="form-group"><label for="sign-phone" class="form-label">Contact Phone*</label><input id="sign-phone" type="tel" class="form-input"></div>
+                <div class="form-group"><label for="sign-city" class="form-label">City*</label><input id="sign-city" type="text" class="form-input"></div>
+                <div class="form-group"><label for="sign-company" class="form-label">Company Name</label><input id="sign-company" type="text" class="form-input"></div>
+                <div class="form-group"><label for="sign-site" class="form-label">Company Website</label><input id="sign-site" type="text" class="form-input"></div>
+                <div class="form-require"> <span>*</span>Required fields</div>
+                <div class="form-checkbox hidden-md hidden-sm"><input id="checkbox-4" type="checkbox" name=""><label for="checkbox-4" class="label"></label><label for="checkbox-4" class="label-for">I accept the <a href="#">terms of use and privacy policy</a></label></div>
+              </div>
+            </div>
+            <div class="form-group form-center"><button type="submit" class="btn btn-primary">Send</button></div>
+            <div class="form-info form-info-price">
+              <p>If you have difficulties with your personal account, you can send a letter with a question to <a href="#">info@mhid.com </a>or use the <a href="#">feedback form.</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="sale" class="modal sale">
+        <h2>Special offer</h2>
+        <div class="sale-block">
+          <div class="sale-block-text">50% discount on<br> all accessories</div><a href="#" class="btn btn-primary">Learn More</a></div>
+      </div>
     </div>
     <!--END out-->
     <!--LOAD SCRIPTS-->
