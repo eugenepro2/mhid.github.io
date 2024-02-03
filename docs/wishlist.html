@@ -143,7 +143,7 @@
               <div class="header__toolbar">
                 <a class="open-seacrh"><i class="icon icon-search"></i></a>
                 <a href="#"><i class="icon icon-phone"></i></a>
-                <a href="#" class="wishlist__btn__header"><i class="icon icon-heart"></i><span>74</span></a>
+                <a href="wishlist.html" class="wishlist__btn__header"><i class="icon icon-heart"></i><span>1</span></a>
                 <a href="cart.html" class="cart__btn"><i class="icon icon-cart"></i><span>4</span></a>
               </div>
             </div>
@@ -222,7 +222,7 @@
           <div class="row">
             <div class="col-xs-12">
               <div class="breadcrumb__item"><a href="index.html">Home</a><span>/</span></div>
-              <div class="breadcrumb__item"><a href="#">Cart</a><span>/</span></div>
+              <div class="breadcrumb__item"><a href="catalog.html">Catalog</a><span>/</span></div>
             </div>
             <div class="col-xs-12">
               <div class="close"></div>
@@ -232,206 +232,83 @@
       </div>
       <div class="cart wishlist">
         <div class="container">
-          <div class="row">
-            <div class="col-xs-12">
-              <h2>Избранное</h2>
-              <div class="cart__table">
-                <div class="cart__table__header">
-                  <div class="cart__table__product">
-                    <h3>Товары</h3>
-                  </div>
-                  <div class="cart__table__stock">
-                    <h3>Наличие</h3>
-                  </div>
-                  <div class="cart__table__price">
-                    <h3>Цена</h3>
-                  </div>
-                  <div class="cart__table__count">
-                    <h3>Количество</h3>
-                  </div>
-                  <div class="cart__table__total">
-                    <h3>Стоимость</h3>
-                    <h3>В корзину</h3>
-                  </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2>Favorites</h2>
+                    <div class="cart__table">
+                        <div class="cart__table__header">
+                            <div class="cart__table__product">
+                                <h3>Products</h3>
+                            </div>
+                            <div class="cart__table__stock">
+                                <h3>Availability</h3>
+                            </div>
+                            <div class="cart__table__price">
+                                <h3>Price</h3>
+                            </div>
+                            <div class="cart__table__count">
+                                <h3>Quantity</h3>
+                            </div>
+                            <div class="cart__table__total">
+                                <h3>Total Cost</h3>
+                                <h3>Add to Cart</h3>
+                            </div>
+                        </div>
+                        <!-- Repeat for each item in the wishlist -->
+                        <div class="cart__table__block">
+                            <div class="cart__table__product">
+                                <div class="cart__table__product__image"><img src="img/catalog/product/1.jpg" alt=""></div>
+                                <div class="cart__table__product__content">
+                                    <h4>After Eight Bed</h4>
+                                    <p>AICO (Michael Amini)</p>
+                                    <span>SKU: 19000EK3-88</span>
+                                    <b>In stock</b>
+                                </div>
+                            </div>
+                            <div class="cart__table__stock">
+                                <p>In stock</p>
+                            </div>
+                            <div class="cart__table__block--secondary">
+                                <div class="cart__table__block__sum">
+                                    <div class="cart__table__price--secondary"><span>Price</span>
+                                        <p>3560$</p>
+                                    </div>
+                                    <div class="cart__table__total--secondary"><span>Total Cost</span>
+                                        <p>3560$</p>
+                                    </div>
+                                </div>
+                                <div class="cart__table__count--secondary cart__table__count">
+                                    <div>
+                                        <div class="minus">‒</div><input type="number" value="1">
+                                        <div class="add">+</div>
+                                    </div>
+                                    <a href="#" class="cart__table__basket">
+                                        <p>Add to Cart</p><i class="icon icon-basket"></i></a>
+                                </div>
+                            </div>
+                            <div class="cart__table__price">
+                                <p>3560$</p>
+                            </div>
+                            <div class="cart__table__count">
+                                <div>
+                                    <div class="minus">‒</div><input type="number" value="1">
+                                    <div class="add">+</div>
+                                </div>
+                            </div>
+                            <div class="cart__table__total">
+                                <p>3560$</p>
+                            </div>
+                            <a href="#" class="cart__table__basket hidden-sm hidden-xs">
+                                <p>Add to Cart</p><i class="icon icon-basket"></i></a><a href="#" class="cart__table__remove remove__wishlist"><i>+</i></a></div>
+                        <!-- Repeat for additional wishlist items -->
+                    </div>
                 </div>
-                <div class="cart__table__block">
-                  <div class="cart__table__product">
-                    <div class="cart__table__product__image"><img src="img/catalog/product/1.jpg" alt=""></div>
-                    <div class="cart__table__product__content">
-                      <h4>Кровать After Eight</h4>
-                      <p>AICO (Michael Amini)</p><span>Артикул: 19000EK3-88</span><b>В наличии</b></div>
-                  </div>
-                  <div class="cart__table__stock">
-                    <p>В наличии</p>
-                  </div>
-                  <div class="cart__table__block--secondary">
-                    <div class="cart__table__block__sum">
-                      <div class="cart__table__price--secondary"><span>Цена</span>
-                        <p>356 000 руб.</p>
-                      </div>
-                      <div class="cart__table__total--secondary"><span>Стоимость</span>
-                        <p>356 000 руб.</p>
-                      </div>
-                    </div>
-                    <div class="cart__table__count--secondary cart__table__count">
-                      <div>
-                        <div class="minus">‒</div><input type="number" value="1">
-                        <div class="add">+</div>
-                      </div>
-                      <a href="#" class="cart__table__basket">
-                        <p>В корзину</p><i class="icon icon-basket"></i></a>
-                    </div>
-                  </div>
-                  <div class="cart__table__price">
-                    <p>356 000 руб.</p>
-                  </div>
-                  <div class="cart__table__count">
-                    <div>
-                      <div class="minus">‒</div><input type="number" value="1">
-                      <div class="add">+</div>
-                    </div>
-                  </div>
-                  <div class="cart__table__total">
-                    <p>356 000 руб.</p>
-                  </div>
-                  <a href="#" class="cart__table__basket hidden-sm hidden-xs">
-                    <p>В корзину</p><i class="icon icon-basket"></i></a><a href="#" class="cart__table__remove remove__wishlist"><i>+</i></a></div>
-                <div class="cart__table__block">
-                  <div class="cart__table__product">
-                    <div class="cart__table__product__image"><img src="img/catalog/product/1.jpg" alt=""></div>
-                    <div class="cart__table__product__content">
-                      <h4>Кровать After Eight</h4>
-                      <p>AICO (Michael Amini)</p><span>Артикул: 19000EK3-88</span><b>В наличии</b></div>
-                  </div>
-                  <div class="cart__table__stock">
-                    <p>В наличии</p>
-                  </div>
-                  <div class="cart__table__block--secondary">
-                    <div class="cart__table__block__sum">
-                      <div class="cart__table__price--secondary"><span>Цена</span>
-                        <p>356 000 руб.</p>
-                      </div>
-                      <div class="cart__table__total--secondary"><span>Стоимость</span>
-                        <p>356 000 руб.</p>
-                      </div>
-                    </div>
-                    <div class="cart__table__count--secondary cart__table__count">
-                      <div>
-                        <div class="minus">‒</div><input type="number" value="1">
-                        <div class="add">+</div>
-                      </div>
-                      <a href="#" class="cart__table__basket">
-                        <p>В корзину</p><i class="icon icon-basket"></i></a>
-                    </div>
-                  </div>
-                  <div class="cart__table__price">
-                    <p>356 000 руб.</p>
-                  </div>
-                  <div class="cart__table__count">
-                    <div>
-                      <div class="minus">‒</div><input type="number" value="1">
-                      <div class="add">+</div>
-                    </div>
-                  </div>
-                  <div class="cart__table__total">
-                    <p>356 000 руб.</p>
-                  </div>
-                  <a href="#" class="cart__table__basket hidden-sm hidden-xs">
-                    <p>В корзину</p><i class="icon icon-basket"></i></a><a href="#" class="cart__table__remove remove__wishlist"><i>+</i></a></div>
-                <div class="cart__table__block">
-                  <div class="cart__table__product">
-                    <div class="cart__table__product__image"><img src="img/catalog/product/1.jpg" alt=""></div>
-                    <div class="cart__table__product__content">
-                      <h4>Кровать After Eight</h4>
-                      <p>AICO (Michael Amini)</p><span>Артикул: 19000EK3-88</span><b class="no-stock">Поступление <span>10.10.2018</span></b></div>
-                  </div>
-                  <div class="cart__table__stock">
-                    <div class="no-stock">
-                      <p>Поступление</p><span>10.10.2018</span></div>
-                  </div>
-                  <div class="cart__table__block--secondary">
-                    <div class="cart__table__block__sum">
-                      <div class="cart__table__price--secondary"><span>Цена</span><s>445 256 руб.</s>
-                        <p>356 000 руб.</p>
-                      </div>
-                      <div class="cart__table__total--secondary"><span>Стоимость</span><s>445 256 руб.</s>
-                        <p>356 000 руб.</p>
-                      </div>
-                    </div>
-                    <div class="cart__table__count--secondary cart__table__count">
-                      <div>
-                        <div class="minus">‒</div><input type="number" value="1">
-                        <div class="add">+</div>
-                      </div>
-                      <a href="#" class="cart__table__basket">
-                        <p>В корзину</p><i class="icon icon-basket"></i></a>
-                    </div>
-                  </div>
-                  <div class="cart__table__price"><s>445 256 руб.</s>
-                    <p>356 000 руб.</p>
-                  </div>
-                  <div class="cart__table__count">
-                    <div>
-                      <div class="minus">‒</div><input type="number" value="1">
-                      <div class="add">+</div>
-                    </div>
-                  </div>
-                  <div class="cart__table__total"><s>445 256 руб.</s>
-                    <p>356 000 руб.</p>
-                  </div>
-                  <a href="#" class="cart__table__basket hidden-sm hidden-xs">
-                    <p>В корзину</p><i class="icon icon-basket"></i></a><a href="#" class="cart__table__remove remove__wishlist"><i>+</i></a></div>
-                <div class="cart__table__block">
-                  <div class="cart__table__product">
-                    <div class="cart__table__product__image"><img src="img/catalog/product/1.jpg" alt=""></div>
-                    <div class="cart__table__product__content">
-                      <h4>Кровать After Eight</h4>
-                      <p>AICO (Michael Amini)</p><span>Артикул: 19000EK3-88</span><b class="no-stock">Поступление <span>10.10.2018</span></b></div>
-                  </div>
-                  <div class="cart__table__stock">
-                    <div class="no-stock">
-                      <p>Поступление</p><span>10.10.2018</span></div>
-                  </div>
-                  <div class="cart__table__block--secondary">
-                    <div class="cart__table__block__sum">
-                      <div class="cart__table__price--secondary"><span>Цена</span><s>445 256 руб.</s>
-                        <p>356 000 руб.</p>
-                      </div>
-                      <div class="cart__table__total--secondary"><span>Стоимость</span><s>445 256 руб.</s>
-                        <p>356 000 руб.</p>
-                      </div>
-                    </div>
-                    <div class="cart__table__count--secondary cart__table__count">
-                      <div>
-                        <div class="minus">‒</div><input type="number" value="1">
-                        <div class="add">+</div>
-                      </div>
-                      <a href="#" class="cart__table__basket">
-                        <p>В корзину</p><i class="icon icon-basket"></i></a>
-                    </div>
-                  </div>
-                  <div class="cart__table__price"><s>445 256 руб.</s>
-                    <p>356 000 руб.</p>
-                  </div>
-                  <div class="cart__table__count">
-                    <div>
-                      <div class="minus">‒</div><input type="number" value="1">
-                      <div class="add">+</div>
-                    </div>
-                  </div>
-                  <div class="cart__table__total"><s>445 256 руб.</s>
-                    <p>356 000 руб.</p>
-                  </div>
-                  <a href="#" class="cart__table__basket hidden-sm hidden-xs">
-                    <p>В корзину</p><i class="icon icon-basket"></i></a><a href="#" class="cart__table__remove remove__wishlist"><i>+</i></a></div>
-              </div>
+                <div class="col-xs-12">
+                    <div class="cart__conservation"><a href="#" class="btn btn-secondary">Request Information</a><a href="#" class="btn btn-secondary"> <i class="icon icon-pdf"></i>Save as PDF</a></div>
+                </div>
             </div>
-            <div class="col-xs-12">
-              <div class="cart__conservation"><a href="#" class="btn btn-secondary">Запросить информацию</a><a href="#" class="btn btn-secondary"> <i class="icon icon-pdf"></i>Сохранить в pdf</a></div>
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
       
       
       <div class="up"></div>

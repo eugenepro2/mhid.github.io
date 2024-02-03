@@ -30,11 +30,11 @@ music.on('click', function() {
   if (icon.hasClass('icon-music-on')) {
     icon.removeClass('icon-music-on');
     icon.addClass('icon-music-off');
-    text.text('Музыка выкл.');
+    text.text('Music off');
   } else{
     icon.removeClass('icon-music-off');
     icon.addClass('icon-music-on');
-    text.text('Музыка вкл.');
+    text.text('Music on.');
   }
 });
 
